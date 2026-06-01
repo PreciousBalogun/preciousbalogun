@@ -42,12 +42,12 @@ export function Projects() {
         <div className="mb-14 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-              03 — Selected Work
+              02 — Selected Work
             </p>
             <h2 className="mt-3 text-4xl font-bold md:text-5xl">Projects</h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            A small selection of recent work — case studies coming soon.
+            A small selection of recent work.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2">

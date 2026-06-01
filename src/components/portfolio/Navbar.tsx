@@ -25,7 +25,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-lg font-bold tracking-tight">
-          Precious<span className="text-primary">.</span>Balogun
+          <span className="text-primary">P</span>B
         </a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
