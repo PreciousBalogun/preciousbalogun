@@ -1,4 +1,5 @@
 import { MapPin, ArrowRight, Download, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
 import profile from "@/assets/profile.jpg";
 
@@ -8,7 +9,28 @@ const badges = [
   { label: "3 Design Systems Built" },
 ];
 
+function useLagosTime() {
+  const [time, setTime] = useState<string>("");
+  useEffect(() => {
+    const update = () => {
+      setTime(
+        new Date().toLocaleTimeString("en-US", {
+          timeZone: "Africa/Lagos",
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
+    };
+    update();
+    const id = setInterval(update, 1000);
+    return () => clearInterval(id);
+  }, []);
+  return time;
+}
+
 export function Hero() {
+  const lagosTime = useLagosTime();
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
       <div
@@ -26,7 +48,7 @@ export function Hero() {
               <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full" />
             </span>
             <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-primary px-2 py-1 text-[10px] font-medium text-primary-foreground opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100">
-              Based in West Africa · GMT+1
+              {lagosTime ? `Lagos · ${lagosTime}` : "Based in West Africa · GMT+1"}
             </span>
           </span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
