@@ -9,8 +9,28 @@ const badges = [
   { label: "3 Design Systems Built" },
 ];
 
+function useLagosTime() {
+  const [time, setTime] = useState<string>("");
+  useEffect(() => {
+    const update = () => {
+      setTime(
+        new Date().toLocaleTimeString("en-US", {
+          timeZone: "Africa/Lagos",
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
+    };
+    update();
+    const id = setInterval(update, 1000);
+    return () => clearInterval(id);
+  }, []);
+  return time;
+}
+
 export function Hero() {
-  return (
+  const lagosTime = useLagosTime();
     <section id="top" className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-[0.06]"
