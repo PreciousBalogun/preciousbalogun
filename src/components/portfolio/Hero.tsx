@@ -19,8 +19,15 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" aria-hidden />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-[1.2fr_1fr]">
         <div className="animate-fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm">
-            <MapPin className="h-3.5 w-3.5 text-primary" /> Lagos, Nigeria
+          <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
+            <MapPin className="h-3.5 w-3.5 text-primary" />
+            <span className="relative">
+              Lagos, Nigeria
+              <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full" />
+            </span>
+            <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-primary px-2 py-1 text-[10px] font-medium text-primary-foreground opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100">
+              Based in West Africa · GMT+1
+            </span>
           </span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
             Designing with{" "}
