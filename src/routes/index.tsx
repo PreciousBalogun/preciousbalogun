@@ -25,8 +25,8 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <Experience />
         <Projects />
+        <Experience />
         <Contact />
       </main>
       <footer className="bg-surface py-8 text-center text-sm text-muted-foreground">

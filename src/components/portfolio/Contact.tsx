@@ -24,10 +24,12 @@ export function Contact() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
           <a href="mailto:preciousbbalogun1406@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80">
-            <Mail className="h-4 w-4" /> preciousbbalogun1406@gmail.com
+            <Mail className="h-4 w-4" />
+            <span>preciousbbalogun1406@gmail.com</span>
           </a>
           <a href="tel:+2349030724216" className="inline-flex items-center gap-2 hover:opacity-80">
-            <Phone className="h-4 w-4" /> +234 903 072 4216
+            <Phone className="h-4 w-4" />
+            <span>+234 903 072 4216</span>
           </a>
         </div>
 
