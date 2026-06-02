@@ -64,12 +64,12 @@ export function Projects() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="flex flex-1 flex-col p-7">
-                <div className="flex flex-wrap gap-2">
+              <div className="flex flex-1 flex-col p-6 sm:p-7">
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   {p.tags.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full bg-primary-soft px-2.5 py-0.5 text-xs font-medium text-primary"
+                      className="inline-flex max-w-full shrink-0 items-center whitespace-nowrap rounded-full bg-primary-soft px-2.5 py-1 text-[11px] font-medium leading-none text-primary sm:text-xs"
                     >
                       {t}
                     </span>
