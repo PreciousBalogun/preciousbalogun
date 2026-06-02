@@ -80,11 +80,14 @@ export function Contact() {
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: BehanceIcon, href: "#", label: "Behance" },
             { icon: Github, href: "#", label: "GitHub" },
+            { icon: SubstackIcon, href: "https://substack.com/@preciousbalogun", label: "Substack" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
               href={href}
               aria-label={label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white hover:text-primary"
             >
               <Icon className="h-5 w-5" />
