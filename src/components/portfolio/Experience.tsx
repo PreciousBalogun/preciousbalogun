@@ -43,7 +43,7 @@ export function Experience() {
       <div className="mx-auto max-w-5xl px-6">
         <div className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            02 — Experience
+            03 — Experience
           </p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">A journey through craft</h2>
         </div>
