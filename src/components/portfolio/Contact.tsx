@@ -9,6 +9,14 @@ function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function SubstackIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M3 4.5h18V7H3V4.5Zm0 4.25h18v2.5H3v-2.5ZM3 13h18v8l-9-4-9 4v-8Z" />
+    </svg>
+  );
+}
+
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
