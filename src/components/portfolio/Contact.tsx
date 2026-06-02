@@ -15,7 +15,7 @@ export function Contact() {
     <section id="contact" className="bg-primary py-24 text-primary-foreground md:py-32">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">
-          04 — Contact
+          05 — Contact
         </p>
         <h2 className="mt-3 text-4xl font-bold md:text-6xl">Let's Build Something Together</h2>
         <p className="mx-auto mt-5 max-w-xl text-lg text-primary-foreground/80">
@@ -23,9 +23,9 @@ export function Contact() {
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
-          <a href="mailto:preciousbbalogun1406@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80">
+          <a href="mailto:preciousbalogun1406@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80">
             <Mail className="h-4 w-4" />
-            <span>preciousbbalogun1406@gmail.com</span>
+            <span>preciousbalogun1406@gmail.com</span>
           </a>
           <a href="tel:+2349030724216" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone className="h-4 w-4" />
