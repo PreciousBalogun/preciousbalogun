@@ -9,6 +9,14 @@ function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function SubstackIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M3 4.5h18V7H3V4.5Zm0 4.25h18v2.5H3v-2.5ZM3 13h18v8l-9-4-9 4v-8Z" />
+    </svg>
+  );
+}
+
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
@@ -72,11 +80,14 @@ export function Contact() {
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: BehanceIcon, href: "#", label: "Behance" },
             { icon: Github, href: "#", label: "GitHub" },
+            { icon: SubstackIcon, href: "https://substack.com/@preciousbalogun", label: "Substack" },
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
               href={href}
               aria-label={label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white hover:text-primary"
             >
               <Icon className="h-5 w-5" />
