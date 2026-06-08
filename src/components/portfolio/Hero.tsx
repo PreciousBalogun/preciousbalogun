@@ -1,13 +1,8 @@
-import { MapPin, ArrowRight, Download, Sparkles } from "lucide-react";
+import { MapPin, ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
 import profile from "@/assets/profile.jpg";
 
-const badges = [
-  { label: "4 Companies" },
-  { label: "2 MVPs Delivered" },
-  { label: "3 Design Systems Built" },
-];
 
 function useLagosTime() {
   const [time, setTime] = useState<string>("");
@@ -72,14 +67,6 @@ export function Hero() {
             >
               <Download className="h-4 w-4" /> Download CV
             </a>
-          </div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3">
-            {badges.map((b) => (
-              <div key={b.label} className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Sparkles className="h-4 w-4 text-primary" />
-                <span className="font-medium text-foreground">{b.label}</span>
-              </div>
-            ))}
           </div>
         </div>
         <div className="relative animate-fade-up [animation-delay:200ms]">
