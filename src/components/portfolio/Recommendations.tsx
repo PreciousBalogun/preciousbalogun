@@ -3,10 +3,10 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Precious brings a rare combination of design rigor and product intuition. She translated vague requirements into a coherent design system that our engineers could ship without friction.",
-    name: "Adaeze Okafor",
-    title: "Product Lead, NovaBuk",
-    initials: "AO",
+      "Precious played a key role in producing our product MVP (NovaBuk App) User's interface. Her ability to meet deadlines and respond well to criticism made a positive impact on our team and workflow. Precious is disciplined, collaborative, and eager to learn, qualities that makes her well-suited for dynamic and growth-driven environments. I confidently recommend her for any opportunity she choose to pursue.",
+    name: "Faith Ibukun Michael",
+    title: "Founder, NovaBuk",
+    initials: "FM",
   },
   {
     quote:
