@@ -4,7 +4,7 @@ import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
-import { Recommendations } from "@/components/portfolio/Recommendations";
+import { Testimonials } from "@/components/portfolio/Testimonials";
 import { Contact } from "@/components/portfolio/Contact";
 
 export const Route = createFileRoute("/")({
@@ -28,7 +28,7 @@ function Index() {
         <About />
         <Projects />
         <Experience />
-        <Recommendations />
+        <Testimonials />
         <Contact />
       </main>
       <footer className="bg-surface py-10">
