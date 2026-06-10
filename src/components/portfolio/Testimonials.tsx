@@ -24,13 +24,13 @@ const testimonials = [
   },
 ];
 
-export function Recommendations() {
+export function Testimonials() {
   return (
-    <section id="recommendations" className="bg-surface py-24 md:py-32">
+    <section id="testimonials" className="bg-surface py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-            04 — Recommendations
+            04 — Testimonials
           </p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">Kind words from collaborators</h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
