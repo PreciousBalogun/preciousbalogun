@@ -33,7 +33,7 @@ export function Navbar() {
         scrolled ? "shadow-[0_4px_20px_-12px_rgba(0,0,0,0.15)]" : ""
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10 lg:px-16 py-4">
         <a href="#top" onClick={close} className="font-display text-lg font-bold tracking-tight">
           <span className="text-primary">P</span>B
         </a>

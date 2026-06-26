@@ -32,7 +32,7 @@ function Index() {
         <Contact />
       </main>
       <footer className="bg-surface py-10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-6 text-center text-sm text-muted-foreground">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-4 px-6 sm:px-10 lg:px-16 text-center text-sm text-muted-foreground">
           <p>© 2026 Precious Balogun.</p>
         </div>
       </footer>

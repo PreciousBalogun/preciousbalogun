@@ -38,7 +38,7 @@ const projects = [
 export function Projects() {
   return (
     <section id="projects" className="bg-surface py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
