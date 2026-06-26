@@ -34,7 +34,7 @@ export function Hero() {
         aria-hidden
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" aria-hidden />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-[1.2fr_1fr]">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
         <div className="animate-fade-up">
           <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
             <MapPin className="h-3.5 w-3.5 text-primary" />
