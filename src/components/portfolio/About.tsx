@@ -16,7 +16,7 @@ const tools = ["Figma", "Stitch", "Lovable", "VS Code", "Wix", "Vercel", "Canva"
 export function About() {
   return (
     <section id="about" className="bg-surface py-24 md:py-32">
-      <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-2 md:gap-20">
+      <div className="mx-auto grid max-w-7xl gap-16 px-6 sm:px-10 lg:px-16 md:grid-cols-2 md:gap-20">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 — About</p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">About Me</h2>
