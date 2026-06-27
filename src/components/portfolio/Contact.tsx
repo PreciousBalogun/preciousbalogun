@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 
 function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -79,7 +79,6 @@ export function Contact() {
           {[
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: BehanceIcon, href: "#", label: "Behance" },
-            { icon: Github, href: "#", label: "GitHub" },
             { icon: SubstackIcon, href: "https://substack.com/@preciousbalogun", label: "Substack" },
           ].map(({ icon: Icon, href, label }) => (
             <a
