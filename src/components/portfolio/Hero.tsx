@@ -51,8 +51,8 @@ export function Hero() {
             <span className="text-primary">Purpose.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Product Designer specialising in design systems, MVPs, and user-centered
-            digital experiences across Fintech and Agency environments.
+            Product Designer crafting user-centered digital experiences that work
+            across industries and markets.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
