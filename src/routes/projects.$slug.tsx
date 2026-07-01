@@ -51,7 +51,7 @@ function CaseStudy() {
 
         <header className="mt-10">
           <div className="flex flex-wrap gap-2">
-            {project.tags.map((t) => (
+            {project.tags.map((t: string) => (
               <span
                 key={t}
                 className="inline-flex items-center rounded-full bg-primary-soft px-2.5 py-1 text-xs font-medium text-primary"
@@ -149,7 +149,7 @@ function CaseStudy() {
         {project.gallery.length > 0 && (
           <section className="mt-16">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
-              {project.gallery.map((src, i) => (
+              {project.gallery.map((src: string, i: number) => (
                 <div
                   key={`${src}-${i}`}
                   className="aspect-[4/3] overflow-hidden rounded-2xl bg-surface-muted"
