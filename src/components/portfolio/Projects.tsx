@@ -1,39 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import novabuk from "@/assets/project-novabuk.jpg";
-import webcoupers from "@/assets/project-webcoupers.jpg";
-import lima from "@/assets/project-lima.jpg";
-import verunAsset from "@/assets/project-verun.png.asset.json";
-
-const projects = [
-  {
-    title: "NovaBuk Platform",
-    description:
-      "Founding design for a fintech MVP — building a coherent design system and onboarding flows from zero to launch.",
-    tags: ["Fintech", "Design System", "MVP"],
-    image: novabuk,
-  },
-  {
-    title: "Clarity",
-    description:
-      "A residential cleaning services website for a San Mateo, CA-based business. Designed and built a clean, conversion-focused one-pager with service listings, a quote request form, and trust indicators.",
-    tags: ["Web Design", "Lovable", "Landing Page"],
-    image: lima,
-  },
-  {
-    title: "Verun",
-    description:
-      "Landing page for an AI-powered digital advertising platform. Designed a bold, high-contrast hero and conversion flow that communicates real-time optimization and performance analytics at a glance.",
-    tags: ["Web Design", "SaaS", "Landing Page"],
-    image: verunAsset.url,
-  },
-  {
-    title: "Capdal Website Redesign",
-    description:
-      "End-to-end redesign of the Capdal marketing site — rebuilt information architecture, visual system, and key conversion surfaces for a sharper, more trustworthy brand presence.",
-    tags: ["Web Design", "Redesign", "Branding"],
-    image: webcoupers,
-  },
-];
+import { Link } from "@tanstack/react-router";
+import { projects } from "@/lib/projects-data";
 
 export function Projects() {
   return (
@@ -53,12 +20,12 @@ export function Projects() {
         <div className="grid gap-8 md:grid-cols-2">
           {projects.map((p) => (
             <article
-              key={p.title}
+              key={p.slug}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
                 <img
-                  src={p.image}
+                  src={p.heroImage}
                   alt={p.title}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -77,14 +44,15 @@ export function Projects() {
                 </div>
                 <h3 className="mt-4 text-2xl font-bold">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {p.description}
+                  {p.summary}
                 </p>
-                <a
-                  href="#contact"
+                <Link
+                  to="/projects/$slug"
+                  params={{ slug: p.slug }}
                   className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5"
                 >
                   View Project <ArrowUpRight className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </article>
           ))}
