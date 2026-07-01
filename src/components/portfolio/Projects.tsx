@@ -2,7 +2,6 @@ import { ArrowUpRight } from "lucide-react";
 import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
-import naan from "@/assets/project-naan.jpg";
 import verunAsset from "@/assets/project-verun.png.asset.json";
 
 const projects = [
