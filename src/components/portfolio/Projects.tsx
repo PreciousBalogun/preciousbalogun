@@ -3,6 +3,7 @@ import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
 import naan from "@/assets/project-naan.jpg";
+import verunAsset from "@/assets/project-verun.png.asset.json";
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
     image: webcoupers,
   },
   {
-    title: "Lima Services",
+    title: "Clarity",
     description:
       "A residential cleaning services website for a San Mateo, CA-based business. Designed and built a clean, conversion-focused one-pager with service listings, a quote request form, and trust indicators.",
     tags: ["Web Design", "Lovable", "Landing Page"],
@@ -32,6 +33,20 @@ const projects = [
       "A restaurant website for a Korean dining experience. Built a warm, atmospheric one-pager featuring the menu, brand story, and reservation flow — designed to reflect the restaurant's personality and culture.",
     tags: ["Web Design", "Lovable", "Restaurant", "Branding"],
     image: naan,
+  },
+  {
+    title: "Verun",
+    description:
+      "Landing page for an AI-powered digital advertising platform. Designed a bold, high-contrast hero and conversion flow that communicates real-time optimization and performance analytics at a glance.",
+    tags: ["Web Design", "SaaS", "Landing Page"],
+    image: verunAsset.url,
+  },
+  {
+    title: "Capdal Website Redesign",
+    description:
+      "End-to-end redesign of the Capdal marketing site — rebuilt information architecture, visual system, and key conversion surfaces for a sharper, more trustworthy brand presence.",
+    tags: ["Web Design", "Redesign", "Branding"],
+    image: webcoupers,
   },
 ];
 
