@@ -2,7 +2,6 @@ import { ArrowUpRight } from "lucide-react";
 import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
-import naan from "@/assets/project-naan.jpg";
 import verunAsset from "@/assets/project-verun.png.asset.json";
 
 const projects = [
@@ -14,25 +13,11 @@ const projects = [
     image: novabuk,
   },
   {
-    title: "Webcoupers Intelligence",
-    description:
-      "Analytics surface for a consulting agency — turning dense data into decisions through clear hierarchy and motion.",
-    tags: ["Agency", "Dashboard", "UX Research"],
-    image: webcoupers,
-  },
-  {
     title: "Clarity",
     description:
       "A residential cleaning services website for a San Mateo, CA-based business. Designed and built a clean, conversion-focused one-pager with service listings, a quote request form, and trust indicators.",
     tags: ["Web Design", "Lovable", "Landing Page"],
     image: lima,
-  },
-  {
-    title: "Naan Soju Bang",
-    description:
-      "A restaurant website for a Korean dining experience. Built a warm, atmospheric one-pager featuring the menu, brand story, and reservation flow — designed to reflect the restaurant's personality and culture.",
-    tags: ["Web Design", "Lovable", "Restaurant", "Branding"],
-    image: naan,
   },
   {
     title: "Verun",
