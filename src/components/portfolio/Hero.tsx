@@ -115,7 +115,7 @@ export function Hero() {
           </div>
           <a
             href="#contact"
-            className="group/avail absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-border bg-surface px-4 py-3 shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary hover:shadow-xl"
+            className="group/avail absolute -bottom-5 -left-5 flex items-center gap-3 rounded-2xl border border-border bg-surface px-4 py-3 lg:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary hover:shadow-xl"
           >
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
