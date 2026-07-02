@@ -95,7 +95,15 @@ export function Hero() {
           </div>
         </div>
         <div className="relative animate-fade-up [animation-delay:200ms]">
-          <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary-soft to-transparent blur-2xl" aria-hidden />
+          <div
+            key={`profile-glow-${isDark ? "dark" : "light"}`}
+            className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
+            }}
+            aria-hidden
+          />
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted shadow-xl">
             <img
               src={profile}
