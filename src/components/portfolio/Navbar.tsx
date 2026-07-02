@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Download, Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { href: "#about", label: "About" },
@@ -52,6 +53,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <a
             href="#contact"
             className="hidden items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:opacity-90 hover:shadow-md sm:inline-flex"
