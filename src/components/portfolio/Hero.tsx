@@ -104,7 +104,7 @@ export function Hero() {
             }}
             aria-hidden
           />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted shadow-xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted lg:shadow-xl">
             <img
               src={profile}
               alt="Precious Balogun"
