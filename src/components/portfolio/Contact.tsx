@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 
 function BehanceIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -21,7 +21,7 @@ export function Contact() {
   const [sent, setSent] = useState(false);
   return (
     <section id="contact" className="bg-primary py-24 text-primary-foreground md:py-32">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+      <div className="mx-auto max-w-4xl px-6 sm:px-10 lg:px-16 text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">
           05 — Contact
         </p>
@@ -79,7 +79,6 @@ export function Contact() {
           {[
             { icon: Linkedin, href: "#", label: "LinkedIn" },
             { icon: BehanceIcon, href: "#", label: "Behance" },
-            { icon: Github, href: "#", label: "GitHub" },
             { icon: SubstackIcon, href: "https://substack.com/@preciousbalogun", label: "Substack" },
           ].map(({ icon: Icon, href, label }) => (
             <a

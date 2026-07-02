@@ -40,7 +40,7 @@ const experience = [
 export function Experience() {
   return (
     <section id="experience" className="bg-surface-muted py-24 md:py-32">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-5xl px-6 sm:px-10 lg:px-16">
         <div className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             03 — Experience

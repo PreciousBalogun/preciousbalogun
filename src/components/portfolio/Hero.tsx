@@ -24,8 +24,25 @@ function useLagosTime() {
   return time;
 }
 
+function useIsDark() {
+  const [isDark, setIsDark] = useState<boolean>(
+    typeof document !== "undefined" &&
+      document.documentElement.classList.contains("dark"),
+  );
+  useEffect(() => {
+    const el = document.documentElement;
+    const update = () => setIsDark(el.classList.contains("dark"));
+    update();
+    const obs = new MutationObserver(update);
+    obs.observe(el, { attributes: true, attributeFilter: ["class"] });
+    return () => obs.disconnect();
+  }, []);
+  return isDark;
+}
+
 export function Hero() {
   const lagosTime = useLagosTime();
+  const isDark = useIsDark();
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
       <div
@@ -33,8 +50,16 @@ export function Hero() {
         style={{ backgroundImage: `url(${workspace})` }}
         aria-hidden
       />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" aria-hidden />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-[1.2fr_1fr]">
+      <div
+        key={isDark ? "dark" : "light"}
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, color-mix(in oklab, var(--background) 40%, transparent), color-mix(in oklab, var(--background) 80%, transparent), var(--background))",
+        }}
+        aria-hidden
+      />
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
         <div className="animate-fade-up">
           <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
             <MapPin className="h-3.5 w-3.5 text-primary" />
@@ -51,8 +76,8 @@ export function Hero() {
             <span className="text-primary">Purpose.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Product Designer specialising in design systems, MVPs, and user-centered
-            digital experiences across Fintech and Agency environments.
+            Product Designer crafting user-centered digital experiences that work
+            across industries and markets.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
@@ -70,7 +95,15 @@ export function Hero() {
           </div>
         </div>
         <div className="relative animate-fade-up [animation-delay:200ms]">
-          <div className="absolute -inset-6 -z-10 rounded-3xl bg-gradient-to-br from-primary-soft to-transparent blur-2xl" aria-hidden />
+          <div
+            key={`profile-glow-${isDark ? "dark" : "light"}`}
+            className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
+            }}
+            aria-hidden
+          />
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted shadow-xl">
             <img
               src={profile}
