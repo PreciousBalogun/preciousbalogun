@@ -36,18 +36,6 @@ export function Hero() {
         style={{ backgroundImage: `url(${workspace})` }}
         aria-hidden
       />
-      <div
-  key={`profile-glow-${isDark ? "dark" : "light"}`}
-  className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
-  style={{
-    backgroundImage:
-      "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
-    willChange: "transform",
-    transform: "translateZ(0)",
-  }}
-  aria-hidden
-/>
-      />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
         <div className="animate-fade-up">
           <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
@@ -85,14 +73,16 @@ export function Hero() {
         </div>
         <div className="relative animate-fade-up [animation-delay:200ms]">
           <div
-            key={`profile-glow-${isDark ? "dark" : "light"}`}
-            className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
-            style={{
-              backgroundImage:
-                "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
-            }}
-            aria-hidden
-          />
+  key={`profile-glow-${isDark ? "dark" : "light"}`}
+  className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
+  style={{
+    backgroundImage:
+      "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
+    willChange: "transform",
+    transform: "translateZ(0)",
+  }}
+  aria-hidden
+/>
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted transition-colors duration-300 lg:shadow-xl">
             <img
               src={profileImage}
