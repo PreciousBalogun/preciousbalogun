@@ -1,6 +1,7 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
+import { useIsDark } from "@/hooks/useIsDark";
 
 
 function useLagosTime() {
@@ -23,21 +24,6 @@ function useLagosTime() {
   return time;
 }
 
-function useIsDark() {
-  const [isDark, setIsDark] = useState<boolean>(
-    typeof document !== "undefined" &&
-      document.documentElement.classList.contains("dark"),
-  );
-  useEffect(() => {
-    const el = document.documentElement;
-    const update = () => setIsDark(el.classList.contains("dark"));
-    update();
-    const obs = new MutationObserver(update);
-    obs.observe(el, { attributes: true, attributeFilter: ["class"] });
-    return () => obs.disconnect();
-  }, []);
-  return isDark;
-}
 
 export function Hero() {
   const lagosTime = useLagosTime();
