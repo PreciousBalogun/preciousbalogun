@@ -37,13 +37,16 @@ export function Hero() {
         aria-hidden
       />
       <div
-        key={isDark ? "dark" : "light"}
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, color-mix(in oklab, var(--background) 40%, transparent), color-mix(in oklab, var(--background) 80%, transparent), var(--background))",
-        }}
-        aria-hidden
+  key={`profile-glow-${isDark ? "dark" : "light"}`}
+  className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
+  style={{
+    backgroundImage:
+      "linear-gradient(to right bottom, var(--primary-soft) 0%, transparent 100%)",
+    willChange: "transform",
+    transform: "translateZ(0)",
+  }}
+  aria-hidden
+/>
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
         <div className="animate-fade-up">
