@@ -1,6 +1,7 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
+import profileImage from "@/assets/profile.jpg";
 import { useIsDark } from "@/hooks/useIsDark";
 
 
@@ -91,7 +92,7 @@ export function Hero() {
           />
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted transition-colors duration-300 lg:shadow-xl">
             <img
-              src="/src/assets/profile.jpg"
+              src={profileImage}
               alt="Precious Balogun"
               className="h-full w-full object-cover"
               width="900"
