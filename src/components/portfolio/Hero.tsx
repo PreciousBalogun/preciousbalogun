@@ -1,7 +1,6 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
-import profile from "@/assets/profile.jpg";
 
 
 function useLagosTime() {
@@ -104,13 +103,15 @@ export function Hero() {
             }}
             aria-hidden
           />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted lg:shadow-xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted transition-colors duration-300 lg:shadow-xl">
             <img
-              src={profile}
+              src="/src/assets/profile.jpg"
               alt="Precious Balogun"
               className="h-full w-full object-cover"
-              width={900}
-              height={1100}
+              width="900"
+              height="1100"
+              loading="eager"
+              decoding="async"
             />
           </div>
           <a
