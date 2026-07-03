@@ -1,7 +1,6 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
-import profile from "@/assets/profile.jpg";
 
 
 function useLagosTime() {
