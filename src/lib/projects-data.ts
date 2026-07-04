@@ -18,6 +18,26 @@ export type Project = {
   solution: string;
   results: string;
   liveUrl?: string;
+  // Extended case-study fields (all optional; sensible fallbacks used when absent)
+  tagline?: string;
+  timeline?: string;
+  platform?: string;
+  tools?: string;
+  problem?: string;
+  problemBullets?: string[];
+  roleDetails?: string;
+  responsibilities?: string[];
+  researchIntro?: string;
+  insights?: { title: string; body: string }[];
+  hmw?: string;
+  ideation?: { image: string; caption: string }[];
+  designDecisions?: { title: string; body: string; image: string }[];
+  finalDesigns?: string[];
+  prototypeUrl?: string;
+  stats?: { value: string; label: string }[];
+  resultsContext?: string;
+  forwardLooking?: string;
+  reflection?: string;
 };
 
 export const projects: Project[] = [
