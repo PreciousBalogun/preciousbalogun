@@ -64,9 +64,7 @@ export function Hero() {
               View My Work <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1KwynHQqHc9lvnCk9vhBc_6KkwF0wbCKV/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
               <Download className="h-4 w-4" /> Download CV
