@@ -50,8 +50,8 @@ export const projects: Project[] = [
     client: "Verun",
     role: "Web Design, UI/UX",
     year: "2026",
-    heroImage: verunAsset.url,
-    gallery: [verunAsset.url, verunAsset.url],
+    heroImage: verun,
+gallery: [verun, verun],
     overview:
       "Longer-form intro paragraph about the project context. Verun needed a marketing surface that could quickly establish credibility in the crowded ad-tech space while explaining a technically dense product to non-technical buyers.",
     challenge:
