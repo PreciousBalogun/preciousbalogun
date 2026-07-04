@@ -42,7 +42,10 @@ export const Route = createFileRoute("/projects/$slug")({
 });
 
 function CaseStudy() {
-  const { project, next } = Route.useLoaderData();
+  const { project, next } = Route.useLoaderData() as {
+    project: Project;
+    next: Project;
+  };
 
   useEffect(() => {
     const prev = document.documentElement.style.scrollBehavior;
