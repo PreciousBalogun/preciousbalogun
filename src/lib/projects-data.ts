@@ -392,6 +392,7 @@ export const projects: Project[] = [
     reflection:
       "The most interesting constraint on this project was designing for three completely different users without letting the page feel schizophrenic. The solution — persona-specific sections within a single narrative arc — taught me that audience segmentation doesn't have to mean content fragmentation. You can write one story that different people enter at different points. I'd push the product UI mockups even further next time — the sections where you can actually see the Clarity interface are where the page earns the most trust, and I'd want more of them, earlier.",
   },
+  
   {
   slug: "capdal-redesign",
   title: "Capdal Website Redesign",
