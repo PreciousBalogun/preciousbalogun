@@ -554,21 +554,6 @@ export const projects: Project[] = [
     "Designing for a company with close to a century of deep-seated physical heritage taught me that effective UI design often means stepping back and letting the structural beauty of the work do the heavy lifting. The challenge wasn't about injecting superficial aesthetic trends; it was about bringing the permanence and authority of concrete, steel, and architectural vision into a digital frame. In future iterations, I intend to explore an interactive, geographic map engine that visualizes Capdal’s nationwide projects directly across the country's grid topography.",
 }
   {
-    slug: "10over10-cosmetics",
-    title: "10over10 Cosmetics",
-    tags: ["Web Design", "E-commerce", "Branding"],
-    summary: "Placeholder summary for 10over10 Cosmetics.",
-    client: "10over10 Cosmetics",
-    role: "Web Design, UI/UX",
-    year: "2026",
-    heroImage: lima,
-    gallery: [lima, lima],
-    overview: "Placeholder overview paragraph for 10over10 Cosmetics.",
-    challenge: "Placeholder challenge copy for 10over10 Cosmetics.",
-    solution: "Placeholder solution copy for 10over10 Cosmetics.",
-    results: "Placeholder results copy for 10over10 Cosmetics.",
-  },
-  {
     slug: "studysnap",
     title: "StudySnap",
     tags: ["Product Design", "Mobile", "EdTech"],
