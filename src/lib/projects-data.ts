@@ -422,8 +422,9 @@ export const projects: Project[] = [
 
     // ── Challenge ─────────────────────────────────────────────
     challenge:
-      "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage
-  {
+    challenge:
+  "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage
+{
     slug: "studysnap",
     title: "StudySnap",
     tags: ["Product Design", "Mobile", "EdTech"],
