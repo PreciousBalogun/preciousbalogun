@@ -81,7 +81,7 @@ function CaseStudy() {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden items-center gap-2 text-sm font-semibold text-primary hover:opacity-80 sm:inline-flex"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80"
             >
               Visit Live Site <ExternalLink className="h-4 w-4" />
             </a>
