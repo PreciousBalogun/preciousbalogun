@@ -422,9 +422,130 @@ export const projects: Project[] = [
 
     // ── Challenge ─────────────────────────────────────────────
     challenge:
-    challenge:
-  "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage
-{
+      "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage risked looking dated, while one that leaned too hard into 'modern' risked losing the gravitas that comes with being a nearly century-old institution. The site also needed to organise a large amount of content — services, a sizeable project portfolio, company history — without becoming a maze.",
+
+    // ── Problem + bullets ─────────────────────────────────────
+    problem:
+      "The existing site didn't reflect the scale or credibility of the company behind it. It needed a full redesign across every page, not a visual refresh — new information architecture, new visual language, and a way to present a large project portfolio that made it easy to browse and filter.",
+
+    problemBullets: [
+      "The brand needed to feel established and trustworthy without feeling stuck in the past — heritage as an asset, not a limitation.",
+      "A large, varied project portfolio (spanning different sectors and decades) needed clear filtering and browsing, not a single long list.",
+      "Multi-page architecture meant navigation had to stay consistent and predictable across very different types of content — services, projects, company info.",
+      "As a B2B institutional site, the design had to speak convincingly to clients evaluating a construction partner for major projects — a very different bar than a consumer landing page.",
+    ],
+
+    // ── Role ──────────────────────────────────────────────────
+    roleDetails:
+      "I designed every page on the Capdal website end-to-end — visual language, layout, navigation system, and the project portfolio structure — and implemented the front end directly in Tailwind and HTML.",
+
+    responsibilities: [
+      "Full visual and UI design across every page of the site",
+      "Information architecture for a multi-page, content-heavy site",
+      "Scroll-triggered navigation behaviour design and implementation",
+      "Project portfolio design, including filtering logic by sector/category",
+      "Front-end implementation using Stitch and Tailwind CSS",
+      "Incorporating design review feedback across multiple revision rounds",
+    ],
+
+    // ── Research ──────────────────────────────────────────────
+    researchIntro:
+      "I looked at how established construction and engineering firms — locally and internationally — balance heritage and modernity on their websites, and audited Capdal's own project archive to understand the range of work the portfolio section would need to hold.",
+
+    insights: [
+      {
+        title: "Heritage brands earn trust through restraint, not decoration",
+        body: "The construction firms that read as most credible online weren't the ones with the most ornamentation — they used generous whitespace, confident typography, and let photography of real projects do the talking.",
+      },
+      {
+        title: "A portfolio this size needs filtering, not scrolling",
+        body: "With projects spanning many years and sectors, a single long page would have buried the firm's best work under sheer volume. Category-based filtering let visitors find relevant projects fast.",
+      },
+      {
+        title: "B2B decision-makers scan for proof points first",
+        body: "Visitors evaluating a construction partner look for scale, track record, and completed work before anything else — this shaped which content sat above the fold on the homepage.",
+      },
+    ],
+
+    // ── HMW ───────────────────────────────────────────────────
+    hmw: "How might we redesign a website for a company built on decades of trust — without making the site feel like it belongs to a different, less established company?",
+
+    // ── Ideation ──────────────────────────────────────────────
+    ideation: [
+      {
+        image: capdal,
+        caption:
+          "Early direction exploring a heavier, more traditional corporate layout — felt closer to the existing site than a genuine redesign. Abandoned.",
+      },
+      {
+        image: capdal,
+        caption:
+          "Photography-led direction — large project imagery leading each section, minimal chrome around it. This became the foundation for the final design.",
+      },
+      {
+        image: capdal,
+        caption:
+          "Navigation exploration — testing a scroll-triggered header that condenses on scroll to keep navigation accessible across long, content-heavy pages.",
+      },
+    ],
+
+    // ── Design Decisions ──────────────────────────────────────
+    designDecisions: [
+      {
+        title: "Photography as the primary trust signal",
+        body: "Rather than relying on copy to establish credibility, the redesign puts large-format photography of actual completed projects front and centre on the homepage and throughout the site — letting the built work speak for itself.",
+        image: capdal,
+      },
+      {
+        title: "A scroll-triggered navbar for long, content-heavy pages",
+        body: "Given how content-dense pages like Projects and Services are, the navbar condenses and stays accessible as users scroll, so orientation is never lost on a long page.",
+        image: capdal,
+      },
+      {
+        title: "Filterable project portfolio by sector",
+        body: "The projects page uses category filtering so visitors — whether evaluating residential, commercial, or infrastructure work — can get to relevant examples in one or two clicks instead of scrolling a long undifferentiated list.",
+        image: capdal,
+      },
+      {
+        title: "Typography carrying the 'established' feel",
+        body: "Rather than heritage cues like ornamental borders or dated serif treatments, confidence and history are communicated through restrained, deliberate typographic hierarchy — a more contemporary way to say 'we've been doing this a long time.'",
+        image: capdal,
+      },
+    ],
+
+    // ── Final Designs ─────────────────────────────────────────
+    finalDesigns: [capdal],
+
+    // ── Stats ─────────────────────────────────────────────────
+    stats: [
+      {
+        value: "5+",
+        label: "Full pages redesigned end-to-end across the site",
+      },
+      {
+        value: "90+",
+        label: "Years of company history reframed for a modern audience",
+      },
+    ],
+
+    // ── Results ───────────────────────────────────────────────
+    solution:
+      "Designed and implemented a full multi-page website redesign that repositions Capdal as a modern, credible construction partner — using photography-led storytelling, a filterable project portfolio, and consistent scroll-aware navigation to organise a large body of institutional content.",
+
+    results:
+      "Shipped a complete website redesign, live and serving as Capdal's primary digital presence for prospective clients and partners evaluating the firm's work.",
+
+    resultsContext:
+      "Capdal is an active client relationship through Webcoupers. The redesigned site is now the firm's primary public-facing surface.",
+
+    forwardLooking:
+      "The new information architecture and design system give Capdal room to keep adding to their project portfolio without needing a future redesign — new work slots into the existing filtering structure.",
+
+    // ── Reflection ────────────────────────────────────────────
+    reflection:
+      "This project sharpened how I think about heritage in design — the instinct is often to signal 'established' with literal historical cues, but the more convincing move was restraint: clean typography, real photography, and getting out of the way of the work itself. Next time, I'd push even further on differentiating the project categories visually, so the filtering feels like a discovery tool rather than just a sorting mechanism.",
+  },
+  {
     slug: "studysnap",
     title: "StudySnap",
     tags: ["Product Design", "Mobile", "EdTech"],
