@@ -394,165 +394,35 @@ export const projects: Project[] = [
   },
   
   {
-  slug: "capdal-redesign",
-  title: "Capdal Website Redesign",
-  tags: ["Web Design", "Corporate", "Engineering", "Information Architecture"],
+    slug: "capdal",
+    title: "Cappa & D'Alberto",
+    tags: ["Web Design", "Construction", "Corporate", "Multi-page"],
 
-  summary:
-    "Complete digital overhaul and website redesign for Cappa & D'Alberto (Capdal) — Nigeria’s premier building and civil engineering firm. Structured an elite corporate platform that honors a 94-year construction legacy while dynamically showcasing high-profile infrastructure projects to commercial developers, investors, and joint-venture partners.",
+    summary:
+      "Full website redesign for Cappa & D'Alberto (Capdal) — one of Nigeria's oldest construction and engineering firms. Designed every page of the site, translating decades of institutional credibility into a modern, navigable digital presence.",
 
-  client: "Cappa & D'Alberto Plc",
-  role: "Lead Product Designer",
-  year: "2026",
-  timeline: "Q1 – Q2 2026",
-  platform: "Web (Desktop + Mobile)",
-  tools: "Figma · Webflow · Tailwind CSS · GSAP",
-  liveUrl: "https://capdal.wbcstaging.com",
+    client: "Cappa & D'Alberto",
+    role: "Product Designer",
+    year: "2026",
+    timeline: "Q1 2026",
+    platform: "Web (Desktop + Mobile)",
+    tools: "Figma · Stitch · Tailwind · Vercel",
+    liveUrl: "https://capdal.wbcstaging.com",
 
-  heroImage: capdalHero, 
-  gallery: [capdalHero, capdalGrid, capdalMobile],
+    heroImage: capdal,
+    gallery: [capdal, capdal],
 
-  // ── Tagline ───────────────────────────────────────────────
-  tagline:
-    "Shaping Nigeria's landmark skyline since 1932.",
+    // ── Tagline ───────────────────────────────────────────────
+    tagline:
+      "Nine decades of building Nigeria. A website that finally looked like it.",
 
-  // ── Overview ──────────────────────────────────────────────
-  overview:
-    "Cappa & D'Alberto is the literal bedrock of premium construction and civil engineering in Nigeria. However, their legacy digital presence did not reflect their physical monumentality. The old platform was flat, static, and failed to communicate their end-to-end capabilities—spanning heavy civil engineering, luxury residential high-rises, commercial offices, and facility management. The goal of this complete redesign was to create a high-performance marketing surface. It needed to establish institutional credibility for massive enterprise tenders, honor a historic legacy, and offer an immersive, visual-first portfolio showcase without drowning visitors in dry corporate documentation.",
+    // ── Overview ──────────────────────────────────────────────
+    overview:
+      "Cappa & D'Alberto is one of Nigeria's oldest and most established construction and engineering firms, with a project portfolio spanning some of the country's most recognisable buildings and infrastructure. The existing website undersold that history — it read as generic and dated, out of step with a company whose actual body of work commands serious institutional trust. The redesign covered every page of the site: home, about, services, projects, and contact, each rebuilt from the ground up.",
 
-  // ── Challenge ─────────────────────────────────────────────
-  challenge:
-    "The central design challenge was balancing historical institutional gravity with bleeding-edge engineering modernism. Capdal needed to feel like a heritage institution that remains the definitive forward-looking choice for complex modern infrastructure. The architecture had to speak simultaneously to institutional investors validating financial stability, commercial developers assessing construction delivery timelines, and premium tenants reviewing property management standards, all within a singular, highly polished user journey.",
-
-  // ── Problem + bullets ─────────────────────────────────────
-  problem:
-    "Capdal's physical portfolio features the country's most iconic infrastructure, but their previous web presence felt like an outdated, text-heavy brochure. It lacked the modern information architecture, responsive breathability, and dynamic storytelling required to demonstrate complex engineering capabilities to international and local stakeholders.",
-
-  problemBullets: [
-    "A vast, 90+ year portfolio of monumental projects was buried in flat lists, making it difficult for developers to filter by sector or project scale.",
-    "The firm's broader multidisciplinary service pillars—such as specialized facility management and aluminum fabrication—were obscured, masking Capdal's value as an end-to-end partner.",
-    "The layout lacked structural responsive optimization, offering a degraded experience for high-profile stakeholders reviewing capability documents on mobile devices.",
-    "There was no unified visual system or motion language to convey the meticulous accuracy, safety protocols, and scale intrinsic to tier-one construction engineering.",
-  ],
-
-  // ── Role ──────────────────────────────────────────────────
-  roleDetails:
-    "As the Lead Product Designer, I took full ownership of the end-to-end digital transformation. This included performing UX audits of global construction giants, redefining the platform's information architecture, designing a comprehensive component-driven UI system, crafting the motion design direction, and overseeing the front-end translation to ensure absolute pixel fidelity.",
-
-  responsibilities: [
-    "End-to-end user experience and user interface design for all web layouts and device breakpoints.",
-    "Information architecture redesign, consolidating unstructured archival records into an interactive Project Hub.",
-    "Editorial copy direction and content structuring to achieve a premium, authoritative, and institutional tone.",
-    "Creation of a scalable Figma component library for interactive filtering systems, asset grids, and dynamic timeline elements.",
-    "Collaborated with developers on micro-interactions, asset optimization, and scroll-driven animation sequencing.",
-  ],
-
-  // ── Research ──────────────────────────────────────────────
-  researchIntro:
-    "I analyzed the digital touchpoints of international engineering conglomerates (e.g., Bechtel, Balfour Beatty, Julius Berger) and mapped how elite, high-stakes contracting firms build digital trust. I coupled this with stakeholder mapping to understand what property developers, corporate clients, and institutional partners care about most.",
-
-  insights: [
-    {
-      title: "Enterprise scale is validated visually, not textually",
-      body: "High-value commercial clients do not read feature checklists; they look for proof of physical execution. They evaluate scale, material finishing, and structural integrity through architectural imagery and key project metadata (e.g., location, scope, structural archetype). The platform had to lead with grand-scale photography and bold typographic layouts.",
-    },
-    {
-      title: "Legacy is the ultimate risk mitigation tool",
-      body: "In a volatile construction market, Capdal's deepest competitive advantage is its 94-year continuous operation. Longevity is synonymous with structural reliability, fiscal discipline, and institutional memory. The design system needed to treat their chronological history as an active, living proof-point rather than a hidden archive.",
-    },
-    {
-      title: "Service isolation hurts cross-selling opportunities",
-      body: "Many clients knew Capdal solely for concrete structural engineering, missing their extensive mechanical, electrical, and facility management ecosystems. The interface design needed to visually anchor these specialized services as interconnected pillars under a unified corporate framework.",
-    },
-  ],
-
-  // ── HMW ───────────────────────────────────────────────────
-  hmw: "How might we design a monumental digital experience for Cappa & D'Alberto that leverages a near-century of historical prestige while dynamically projecting modern, tier-one engineering and multidisciplinary capabilities?",
-
-  // ── Ideation ──────────────────────────────────────────────
-  ideation: [
-    {
-      image: capdalIdeation1,
-      caption:
-        "Direction 01 — Modern Corporate Minimalist. A clean, text-centric layout utilizing generous whitespace and light typography. While elegant, it felt too clinical and lacked the physical mass, gravity, and structural texture of an elite construction firm. Abandoned.",
-    },
-    {
-      image: capdalIdeation2,
-      caption:
-        "Direction 02 — Construction Media Grid. An aggressive, multi-column layout showing real-time onsite updates and raw construction progress. It successfully communicated activity, but lacked the premium, executive-level polish that Capdal commands at the bidding table. Abandoned.",
-    },
-    {
-      image: capdalIdeation3,
-      caption:
-        "Direction 03 — Structural Grid & Cinematic Monumentality. A design built around structural alignments, crisp editorial serif headings, and wide-aspect cinematic media windows showing iconic completed projects. The interface elements directly mirrored architectural precision. This became the selected direction.",
-    },
-  ],
-
-  // ── Design Decisions ──────────────────────────────────────
-  designDecisions: [
-    {
-      title: "Hero sections built with architectural mass",
-      body: "The homepage hero skips abstract graphics and immediately drops visitors into an immersive, full-width window featuring Capdal's most recognizable architectural landmarks. Paired with a rigorous layout grid and sharp, premium typography, it establishes an instantaneous impression of institutional dominance and structural stability.",
-      image: capdalHeroDesign,
-    },
-    {
-      title: "Interactive, instantaneous portfolio matrix",
-      body: "To make their extensive archive easily digestible, I designed a fluid, filterable Project Archive Hub. Users can instantaneously switch between Commercial, Residential, Infrastructure, and Historical Restoration sectors. Each project card clearly details structural metadata, allowing developers to instantly verify historical execution capabilities.",
-      image: capdalPortfolioDesign,
-    },
-    {
-      title: "Contextual, tabbed service architecture",
-      body: "Instead of building fragmented service pages or a long, exhausting feature dump, I structured the multidisciplinary capabilities—Civil Engineering, Facility Management, and Fabrication—into an elegant, interconnected tabbed UI section. This lets prospective clients grasp the full end-to-end operational capacity of the firm on a single screen.",
-      image: capdalServicesDesign,
-    },
-    {
-      title: "Chronological legacy as an active trust engine",
-      body: "Instead of hiding Capdal’s heritage on a static text page, I designed an interactive historical timeline component. It maps the company’s trajectory since 1932 alongside major national landmarks they engineered. This turns an 'About Us' section into an unassailable proof of national impact and endurance.",
-      image: capdalTimelineDesign,
-    },
-    {
-      title: "Uncompromised execution across mobile breakpoints",
-      body: "Recognizing that stakeholders frequently access the site while on construction fields or in executive transit, every page layout was engineered with fluid responsive grids. Complex data tables, project filters, and high-resolution galleries collapse elegantly, retaining structural legibility and speed on mobile viewports.",
-      image: capdalMobileDesign,
-    },
-  ],
-
-  // ── Final Designs ─────────────────────────────────────────
-  finalDesigns: [capdalFinalSystem],
-
-  // ── Stats ─────────────────────────────────────────────────
-  stats: [
-    {
-      value: "1932",
-      label: "Deep institutional roots and architectural history preserved inside a modern digital system",
-    },
-    {
-      value: "100%",
-      label: "Fluid breakpoint responsiveness across desktop, tablet, and mobile browsers for on-site verification",
-    },
-    {
-      value: "4+",
-      label: "Operational service pillars seamlessly integrated into a single, cohesive user architecture",
-    },
-  ],
-
-  // ── Results ───────────────────────────────────────────────
-  solution:
-    "Designed a monumental, legacy-driven web ecosystem that elevates Capdal's digital presence to match its real-world physical stature. By pairing structural grid alignments and refined editorial layout styling with powerful portfolio sorting and tabbed service breakdowns, the platform communicates unmatched engineering precision, scale, and multi-generational trust.",
-
-  results:
-    "Shipped the entire designed surface for Capdal — currently live on the staging infrastructure and actively serving as the primary digital flagship as the organization scales its client portfolio and joint ventures.",
-
-  resultsContext:
-    "The redesigned corporate platform serves as Capdal's definitive digital entry point for international contractors, enterprise property developers, and sovereign infrastructure boards looking to validate tier-one building expertise in West Africa.",
-
-  forwardLooking:
-    "The digital platform is built upon a highly modular component engine. This allows internal administrators to continuously update project media pipelines, announce new infrastructure breakthroughs, and append corporate compliance updates without breaking the visual grid.",
-
-  // ── Reflection ────────────────────────────────────────────
-  reflection:
-    "Designing for a company with close to a century of deep-seated physical heritage taught me that effective UI design often means stepping back and letting the structural beauty of the work do the heavy lifting. The challenge wasn't about injecting superficial aesthetic trends; it was about bringing the permanence and authority of concrete, steel, and architectural vision into a digital frame. In future iterations, I intend to explore an interactive, geographic map engine that visualizes Capdal’s nationwide projects directly across the country's grid topography.",
-}
+    // ── Challenge ─────────────────────────────────────────────
+    challenge:
+      "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage
   {
     slug: "studysnap",
     title: "StudySnap",
