@@ -1,8 +1,24 @@
+import { useState, type MouseEvent } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { projects } from "@/lib/projects-data";
+import { useCoarsePointer } from "@/hooks/useCoarsePointer";
 
 export function Projects() {
+  const isTouch = useCoarsePointer();
+  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+
+  const handleTap = (slug: string) => (e: MouseEvent<HTMLElement>) => {
+    if (!isTouch) return;
+    if (activeSlug !== slug) {
+      // First tap on touch: reveal hover state, block navigation.
+      e.preventDefault();
+      e.stopPropagation();
+      setActiveSlug(slug);
+    }
+    // Second tap: allow the Link to navigate.
+  };
+
   return (
     <section id="projects" className="bg-surface py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
@@ -21,14 +37,16 @@ export function Projects() {
           {projects.map((p) => (
             <article
               key={p.slug}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl"
+              data-active={activeSlug === p.slug}
+              onClickCapture={handleTap(p.slug)}
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl data-[active=true]:-translate-y-1 data-[active=true]:shadow-xl"
             >
               <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
                 <img
                   src={p.heroImage}
                   alt={p.title}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-data-[active=true]:scale-105"
                 />
               </div>
               <div className="flex flex-1 flex-col p-6 sm:p-7">
@@ -49,7 +67,7 @@ export function Projects() {
                 <Link
                   to="/projects/$slug"
                   params={{ slug: p.slug }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5"
+                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5 group-data-[active=true]:gap-2.5"
                 >
                   View Project <ArrowUpRight className="h-4 w-4" />
                 </Link>

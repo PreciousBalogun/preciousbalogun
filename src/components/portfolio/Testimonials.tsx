@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Quote } from "lucide-react";
+import { useCoarsePointer } from "@/hooks/useCoarsePointer";
 
 const testimonials = [
   {
@@ -25,6 +27,8 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const isTouch = useCoarsePointer();
+  const [activeName, setActiveName] = useState<string | null>(null);
   return (
     <section id="testimonials" className="bg-surface py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
@@ -41,7 +45,9 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.name}
-              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+              data-active={activeName === t.name}
+              onClick={() => isTouch && setActiveName((prev) => (prev === t.name ? null : t.name))}
+              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg data-[active=true]:-translate-y-1 data-[active=true]:border-primary/40 data-[active=true]:shadow-lg"
             >
               <Quote className="h-6 w-6 text-primary" />
               <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-foreground">
