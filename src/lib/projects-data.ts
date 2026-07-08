@@ -2,7 +2,7 @@ import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
 import verun from "@/assets/project-verun.png";
-import capdal from "@/assets/project-capdal.jpg";
+import capdal from "@/assets/project-naan.jpg";
 
 export type Project = {
   slug: string;
