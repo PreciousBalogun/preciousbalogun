@@ -41,8 +41,7 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <figure
               key={t.name}
-              data-tap-reveal
-              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg data-[tapped=true]:-translate-y-1 data-[tapped=true]:border-primary/40 data-[tapped=true]:shadow-lg"
+              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
             >
               <Quote className="h-6 w-6 text-primary" />
               <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-foreground">

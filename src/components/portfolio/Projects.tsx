@@ -21,15 +21,14 @@ export function Projects() {
           {projects.map((p) => (
             <article
               key={p.slug}
-              data-tap-reveal
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl data-[tapped=true]:-translate-y-1 data-[tapped=true]:shadow-xl"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
                 <img
                   src={p.heroImage}
                   alt={p.title}
                   loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-data-[tapped=true]:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-1 flex-col p-6 sm:p-7">
@@ -50,7 +49,7 @@ export function Projects() {
                 <Link
                   to="/projects/$slug"
                   params={{ slug: p.slug }}
-                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5 group-data-[tapped=true]:gap-2.5"
+                  className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-semibold text-primary transition-all group-hover:gap-2.5"
                 >
                   View Project <ArrowUpRight className="h-4 w-4" />
                 </Link>

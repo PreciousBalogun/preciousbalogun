@@ -372,15 +372,14 @@ function CaseStudy() {
           <Link
             to="/projects/$slug"
             params={{ slug: next.slug }}
-            data-tap-reveal
-            className="group mt-4 flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl data-[tapped=true]:-translate-y-1 data-[tapped=true]:shadow-xl md:flex-row"
+            className="group mt-4 flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl md:flex-row"
           >
             <div className="aspect-[16/9] overflow-hidden bg-surface-muted md:aspect-auto md:w-1/2">
               <img
                 src={next.heroImage}
                 alt={next.title}
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-data-[tapped=true]:scale-105"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="flex flex-1 flex-col justify-center p-8 md:p-10">
@@ -396,7 +395,7 @@ function CaseStudy() {
               </div>
               <h3 className="mt-4 inline-flex items-center gap-3 text-3xl font-bold md:text-4xl">
                 {next.title}
-                <ArrowUpRight className="h-6 w-6 text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-data-[tapped=true]:translate-x-1 group-data-[tapped=true]:-translate-y-1" />
+                <ArrowUpRight className="h-6 w-6 text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </h3>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                 {next.summary}
