@@ -6,6 +6,27 @@ import { useIsDark } from "@/hooks/useIsDark";
 import { cn } from "@/lib/utils";
 
 
+function useLagosTime() {
+  const [time, setTime] = useState<string>("");
+  useEffect(() => {
+    const update = () => {
+      setTime(
+        new Date().toLocaleTimeString("en-US", {
+          timeZone: "Africa/Lagos",
+          hour: "numeric",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
+    };
+    update();
+    const id = setInterval(update, 1000);
+    return () => clearInterval(id);
+  }, []);
+  return time;
+}
+
+
 const WORDS = ["Purpose", "Clarity", "Intention"];
 const CYCLE_MS = 2500;
 const TRANSITION_MS = 350;
