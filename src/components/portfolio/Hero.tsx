@@ -27,8 +27,8 @@ function useLagosTime() {
 }
 
 
-const WORDS = ["Purpose", "Clarity", "Intention"];
-const CYCLE_MS = 2500;
+const WORDS = ["Purpose.", "Clarity.", "Intention."];
+const CYCLE_MS = 4000;
 const TRANSITION_MS = 350;
 
 function RotatingWord() {
