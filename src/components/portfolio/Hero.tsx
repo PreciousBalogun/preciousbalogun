@@ -132,7 +132,7 @@ export function Hero() {
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
             Designing with{" "}
             <span className="text-primary">
-              <RotatingWord />.
+              <RotatingWord />
             </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
