@@ -11,7 +11,7 @@ const skills = [
   "Information Architecture",
 ];
 
-const tools = ["Figma", "Stitch", "Lovable", "VS Code", "Wix", "Vercel", "Canva", "WordPress"];
+const tools = ["Figma", "Stitch", "Lovable", "VS Code", "Wix", "Vercel", "Canva", "WordPress", "Replit"];
 
 export function About() {
   return (
