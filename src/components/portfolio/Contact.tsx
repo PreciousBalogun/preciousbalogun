@@ -78,7 +78,7 @@ export function Contact() {
         <div className="mt-10 flex justify-center gap-4">
           {[
             { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: BehanceIcon, href: "#", label: "Behance" },
+            { icon: InstagramIcon, href: "#", label: "Instagram" },
             { icon: SubstackIcon, href: "https://substack.com/@preciousbalogun", label: "Substack" },
           ].map(({ icon: Icon, href, label }) => (
             <a
