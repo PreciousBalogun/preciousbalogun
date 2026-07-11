@@ -19,6 +19,31 @@ function SubstackIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSending(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xyzabcde", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSent(true);
+        form.reset();
+      }
+    } catch (err) {
+      console.error("Form submission failed", err);
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <section id="contact" className="bg-primary py-24 text-primary-foreground md:py-32">
       <div className="mx-auto max-w-4xl px-6 sm:px-10 lg:px-16 text-center">
@@ -29,7 +54,6 @@ export function Contact() {
         <p className="mx-auto mt-5 max-w-xl text-lg text-primary-foreground/80">
           Open to full-time roles, freelance projects, and collaborations.
         </p>
-
         <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
           <a href="mailto:preciousbalogun1406@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80">
             <Mail className="h-4 w-4" />
@@ -40,41 +64,44 @@ export function Contact() {
             <span>+234 903 072 4216</span>
           </a>
         </div>
-
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setSent(true);
-          }}
+          onSubmit={handleSubmit}
           className="mx-auto mt-12 grid max-w-2xl gap-4 rounded-3xl bg-white/10 p-6 text-left backdrop-blur md:p-8"
         >
           <div className="grid gap-4 md:grid-cols-2">
             <input
               required
+              name="name"
               placeholder="Your name"
               className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
             />
             <input
               required
               type="email"
+              name="email"
               placeholder="Email address"
               className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
             />
           </div>
           <textarea
             required
+            name="message"
             rows={4}
             placeholder="Tell me about your project…"
             className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
           />
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-primary shadow-md transition-transform hover:-translate-y-0.5"
+            disabled={sending}
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-primary shadow-md transition-transform hover:-translate-y-0.5 disabled:opacity-60"
           >
-            {sent ? "Message Sent ✓" : (<>Send Message <Send className="h-4 w-4" /></>)}
+            {sent ? "Message Sent ✓" : sending ? "Sending…" : (<>Send Message <Send className="h-4 w-4" /></>)}
           </button>
         </form>
-
+      </div>
+    </section>
+  );
+}
         <div className="mt-10 flex justify-center gap-4">
           {[
             { icon: Linkedin, href: "https://www.linkedin.com/in/precious-balogun?utm_source=share_via&utm_content=profile&utm_medium=member_ios", label: "LinkedIn" },
