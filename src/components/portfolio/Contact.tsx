@@ -98,10 +98,7 @@ export function Contact() {
             {sent ? "Message Sent ✓" : sending ? "Sending…" : (<>Send Message <Send className="h-4 w-4" /></>)}
           </button>
         </form>
-      </div>
-    </section>
-  );
-}
+
         <div className="mt-10 flex justify-center gap-4">
           {[
             { icon: Linkedin, href: "https://www.linkedin.com/in/precious-balogun?utm_source=share_via&utm_content=profile&utm_medium=member_ios", label: "LinkedIn" },
