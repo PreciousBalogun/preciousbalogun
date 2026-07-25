@@ -23,14 +23,14 @@ export function Projects() {
               key={p.slug}
               className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
-                <img
-                  src={p.heroImage}
-                  alt={p.title}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
+            <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
+  <img
+    src={p.heroImage}
+    alt={p.title}
+    loading="lazy"
+    className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
+  />
+</div>
               <div className="flex flex-1 flex-col p-6 sm:p-7">
                 <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   {p.tags.map((t) => (
