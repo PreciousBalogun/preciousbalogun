@@ -62,7 +62,7 @@ export const projects: Project[] = [
     timeline: "Q1 – Q2 2026",
     platform: "Web (Desktop + Mobile)",
     tools: "Figma · Stitch · Tailwind · Vercel",
-    liveUrl: "https://verun.aPP",
+    liveUrl: "https://verun.app",
 
     heroImage: Verunnew.png,
     gallery: [verun, verun],
