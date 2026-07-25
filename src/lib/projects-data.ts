@@ -1,7 +1,7 @@
 import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
-import verun from "@/assets/Verunnew.png";
+import verun from "@/assets/verunnew.png";
 import capdal from "@/assets/project-naan.jpg";
 
 export type Project = {
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tools: "Figma · Stitch · Tailwind · Vercel",
     liveUrl: "https://verun.app",
 
-    heroImage: Verunnew.png,
+    heroImage: verunnew.png,
     gallery: [verun, verun],
 
     // ── Tagline (shown under the hero title) ──────────────────
