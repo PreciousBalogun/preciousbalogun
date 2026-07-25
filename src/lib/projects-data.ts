@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tools: "Figma · Stitch · Tailwind · Vercel",
     liveUrl: "https://verun.app",
 
-    heroImage: verunnew.png,
+    heroImage: verun,
     gallery: [verun, verun],
 
     // ── Tagline (shown under the hero title) ──────────────────
