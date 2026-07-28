@@ -203,7 +203,6 @@ export const projects: Project[] = [
     reflection:
       "Redesigning an existing product's landing page taught me that restraint in copy is just as important as restraint in design. Every time I was tempted to add another feature callout or explain one more capability, the page got worse. The most effective landing page is the one that says just enough to make someone want to know more — not the one that answers every question upfront. I'd also approach the testimonials section differently next time — locking in real customer quotes earlier in the process would have let the design flex properly around authentic content rather than retrofitting it at the end.",
   },
-  },
   // ─────────────────────────────────────────────────────────────
 // CLARITY — Complete project data object
 // Replace the existing clarity entry in src/lib/projects-data.ts
