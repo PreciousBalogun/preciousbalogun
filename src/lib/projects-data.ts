@@ -152,35 +152,6 @@ export const projects: Project[] = [
       },
     ],
 
-    // ── Design Decisions ──────────────────────────────────────
-    designDecisions: [
-      {
-        title: "Leading with outcome, not features",
-        body: "The hero headline reads 'The Future of Digital Advertising' — not 'Manage Meta, Google and TikTok in one place.' Performance marketers are pitch-fatigued. Leading with a feature list triggers the same mental skip as every other tool they've seen. By opening with an outcome-forward statement and letting the dashboard mockup do the feature storytelling visually, the page creates curiosity before it creates understanding — the right order for a cold visitor.",
-        image: verun,
-      },
-      {
-        title: "Four features, not eight",
-        body: "Verun has many capabilities, but the feature section was constrained to four: Unified Ad Performance View, AI Powered Optimisation, Precision Targeting, and Real-Time Tracking. Feature grids with 8+ items create decision fatigue and signal a product that hasn't figured out what it is. Four well-named capabilities communicate confidence. Each feature name was also written to describe an outcome the user gains — not a technical mechanism the product has.",
-        image: verun,
-      },
-      {
-        title: "A colour break as a persuasion moment",
-        body: "The mid-page section — 'Run Smarter Campaigns. Grow Faster.' — breaks into a full-width navy background. Colour changes in a scroll journey signal a shift in register: the page is no longer introducing itself, it's making its case. Placed after features and before testimonials, this acts as the conviction layer — where the product stops explaining and starts asserting.",
-        image: verun,
-      },
-      {
-        title: "Testimonials after conviction, not before",
-        body: "Most SaaS pages put social proof near the top. For Verun, testimonials were placed after the feature and positioning sections. A cold visitor reading 'Trusted by Marketing Leaders' before they understand the product is being asked to trust something they haven't formed an opinion about yet. Social proof lands harder once the visitor already has a hypothesis — the testimonial then confirms what they were already starting to believe.",
-        image: verun,
-      },
-      {
-        title: "A contact form that removes friction",
-        body: "The contact block uses a split layout — trust signals on the left, a clean minimal form on the right. Fields kept to: name, title, email, website, message. No phone number required, no dropdown selects. Every additional field is a small act of attrition. The visitor who reaches the form has already done the hard work of considering. The form's only job is to remove every remaining reason not to submit.",
-        image: verun,
-      },
-    ],
-
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [verun],
 
@@ -303,30 +274,6 @@ export const projects: Project[] = [
 
     // ── HMW ───────────────────────────────────────────────────
     hmw: "How might we design a landing page that makes a team lead, a contributor, and an executive all feel like Clarity was built specifically for them — without writing three different pages?",
-
-    // ── Ideation ──────────────────────────────────────────────
-    ideation: [
-      {
-        image: lima,
-        caption:
-          "Direction 01 — Feature-forward layout. Led with a full feature grid above the fold. Covered the product depth well but felt like every other project management tool landing page. Abandoned early.",
-      },
-      {
-        image: lima,
-        caption:
-          "Direction 02 — Dashboard-first hero. Opened with a full product UI screenshot to let the interface speak for itself. Lost the narrative — visitors didn't know what they were looking at without context.",
-      },
-      {
-        image: lima,
-        caption:
-          "Direction 03 — Outcome-led hero with tabbed product preview. Headline leads with the outcome, product UI sits below it in a tab-switcher showing different views (My Tasks, Team Activity, Reporting). This became the chosen direction.",
-      },
-      {
-        image: lima,
-        caption:
-          "Persona-based section exploration — testing a 3-row 'Built for everyone in the room' layout that addresses Contributors, Team Leads, and Executives separately. Allowed one page to speak to three audiences without fragmenting.",
-      },
-    ],
 
     // ── Design Decisions ──────────────────────────────────────
     designDecisions: [
@@ -471,48 +418,6 @@ export const projects: Project[] = [
     // ── HMW ───────────────────────────────────────────────────
     hmw: "How might we redesign a website for a company built on decades of trust — without making the site feel like it belongs to a different, less established company?",
 
-    // ── Ideation ──────────────────────────────────────────────
-    ideation: [
-      {
-        image: capdal,
-        caption:
-          "Early direction exploring a heavier, more traditional corporate layout — felt closer to the existing site than a genuine redesign. Abandoned.",
-      },
-      {
-        image: capdal,
-        caption:
-          "Photography-led direction — large project imagery leading each section, minimal chrome around it. This became the foundation for the final design.",
-      },
-      {
-        image: capdal,
-        caption:
-          "Navigation exploration — testing a scroll-triggered header that condenses on scroll to keep navigation accessible across long, content-heavy pages.",
-      },
-    ],
-
-    // ── Design Decisions ──────────────────────────────────────
-    designDecisions: [
-      {
-        title: "Photography as the primary trust signal",
-        body: "Rather than relying on copy to establish credibility, the redesign puts large-format photography of actual completed projects front and centre on the homepage and throughout the site — letting the built work speak for itself.",
-        image: capdal,
-      },
-      {
-        title: "A scroll-triggered navbar for long, content-heavy pages",
-        body: "Given how content-dense pages like Projects and Services are, the navbar condenses and stays accessible as users scroll, so orientation is never lost on a long page.",
-        image: capdal,
-      },
-      {
-        title: "Filterable project portfolio by sector",
-        body: "The projects page uses category filtering so visitors — whether evaluating residential, commercial, or infrastructure work — can get to relevant examples in one or two clicks instead of scrolling a long undifferentiated list.",
-        image: capdal,
-      },
-      {
-        title: "Typography carrying the 'established' feel",
-        body: "Rather than heritage cues like ornamental borders or dated serif treatments, confidence and history are communicated through restrained, deliberate typographic hierarchy — a more contemporary way to say 'we've been doing this a long time.'",
-        image: capdal,
-      },
-    ],
 
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [capdal],
