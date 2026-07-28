@@ -6,7 +6,7 @@ import verunhero from "@/assets/verunnn.png";
 import verunfeatures from "@/assets/verunfeatures.png";
 import verunblue from "@/assets/verunblue.png";
 import veruntestimonials from "@/assets/veruntestimonials.png";
-import veruncontact from "@/assets/veruncontact.png";
+import veruncontactform from "@/assets/veruncontactform.png";
 import capdal from "@/assets/project-naan.jpg";
 
 export type Project = {
@@ -147,7 +147,7 @@ export const projects: Project[] = [
       {
         title: "A contact flow with the friction removed",
         body: "The redesigned contact section uses a clean split layout — company details and trust signals on the left, a minimal form on the right (name, job title, email, budget, subject, message). No unnecessary fields, no phone number requirement. By the time a visitor reaches this section, they've already decided to engage — the form's only job is to not get in their way.",
-        image: veruncontact,
+        image: veruncontactform,
       },
     ],
 
