@@ -228,29 +228,6 @@ function CaseStudy() {
         </blockquote>
       </Section>
 
-      {/* 7. Ideation & Exploration */}
-      <Section>
-        <Eyebrow>Ideation & Exploration</Eyebrow>
-        <SectionHeading>Sketches and lo-fi explorations</SectionHeading>
-        <div className="grid gap-6 sm:grid-cols-2">
-          {ideation.map((it, i) => (
-            <figure key={i}>
-              <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-surface-muted">
-                <img
-                  src={it.image}
-                  alt={it.caption}
-                  loading="lazy"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <figcaption className="mt-3 text-sm text-muted-foreground">
-                {it.caption}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
-      </Section>
-
       {/* 8. Design Decisions */}
       <div className="bg-surface-muted">
         <Section>
