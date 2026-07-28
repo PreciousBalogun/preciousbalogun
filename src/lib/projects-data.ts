@@ -143,7 +143,7 @@ export const projects: Project[] = [
       {
         title: "Leading with the future, not the feature list",
         body: "The previous page opened by describing what Verun does. The redesign opens with 'The Future Of Digital Advertising' — an outcome-forward headline that positions Verun as where advertising is heading, not just another tool in a marketer's stack. This reframes the first impression from functional to aspirational, which matters for a category this crowded.",
-        image: verunHero,
+        image: verunnn.png,
       },
       {
         title: "Four features, not a wall of them",
