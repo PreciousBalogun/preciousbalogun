@@ -143,14 +143,6 @@ export const projects: Project[] = [
     // ── HMW ───────────────────────────────────────────────────
     hmw: "How might we redesign Verun's outdated landing page so performance marketers — who've seen every AdTech pitch — immediately understand why this platform is worth their attention?",
 
-    // --- Imports (assuming these are image files) ---
-import verunnn from './assets/images/verunnn.png';
-import verunfeatures from './assets/images/verunfeatures.png';
-import verunblue from './assets/images/verunblue.png';
-import veruntestimonials from './assets/images/veruntestimonials.png';
-import veruncontact from './assets/images/veruncontact.png';
-
-const designDecisionsData = {
   // ── Design Decisions ───────────────────────────────────────
   designDecisions: [
     {
