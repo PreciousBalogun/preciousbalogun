@@ -158,12 +158,12 @@ export const projects: Project[] = [
       {
         title: "Trust signals placed where scepticism peaks",
         body: "The old page buried or omitted social proof. The redesign places a 'Trusted by Marketing Leaders' testimonial section right after the feature and conviction sections — timed for the moment a sceptical performance marketer is deciding whether to believe the claims they've just read, rather than asking for trust upfront.",
-        image: verunTestimonials,
+        image: veruntestimonials.png,
       },
       {
         title: "A contact flow with the friction removed",
         body: "The redesigned contact section uses a clean split layout — company details and trust signals on the left, a minimal form on the right (name, job title, email, budget, subject, message). No unnecessary fields, no phone number requirement. By the time a visitor reaches this section, they've already decided to engage — the form's only job is to not get in their way.",
-        image: verunContact,
+        image: veruncontact.png,
       },
     ],
 
