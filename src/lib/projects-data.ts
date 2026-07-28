@@ -47,10 +47,6 @@ export const projects: Project[] = [
 // Paste this in place of the existing verun entry in
 // src/lib/projects-data.ts (including the braces).
 //
-// NOTE: You still need to add these 5 new imports near the top
-// of projects-data.ts, once you've cropped and uploaded the
-// section screenshots to src/assets/:
-//
 // import verunHero from "@/assets/verun-hero-section.png";
 // import verunFeatures from "@/assets/verun-features-section.png";
 // import verunBlue from "@/assets/verun-blue-section.png";
