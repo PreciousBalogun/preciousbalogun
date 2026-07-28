@@ -173,8 +173,6 @@ export const projects: Project[] = [
   ],
 };
 
-export default designDecisionsData;
-
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [verun],
 
