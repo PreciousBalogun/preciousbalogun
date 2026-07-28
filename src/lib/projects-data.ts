@@ -1,7 +1,7 @@
 import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
-import verun from "@/assets/verunnew.png";
+import verun from "@/assets/verunnn.png";
 import capdal from "@/assets/project-naan.jpg";
 
 export type Project = {
