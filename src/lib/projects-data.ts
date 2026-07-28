@@ -148,7 +148,7 @@ export const projects: Project[] = [
       {
         title: "Four features, not a wall of them",
         body: "The outdated version tried to communicate everything Verun could do in one dense block. The redesign narrows the feature grid to four: Unified Ad Performance View, AI Powered Optimization, Precision Targeting, and Real-Time Tracking & Analytics — each named around the outcome it delivers, not the mechanism behind it. Fewer, clearer claims read as more credible than an exhaustive list.",
-        image: verunFeatures,
+        image: verunfeatures.png,
       },
       {
         title: "A colour break to signal conviction",
