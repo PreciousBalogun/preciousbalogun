@@ -42,10 +42,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // ─────────────────────────────────────────────────────────────
-// VERUN — Complete project data object
-// Replace the existing verun entry in src/lib/projects-data.ts
-// with everything between the { } below (including the braces).
+ // ─────────────────────────────────────────────────────────────
+// VERUN — Updated project data object
+// Paste this in place of the existing verun entry in
+// src/lib/projects-data.ts (including the braces).
+//
+// NOTE: You still need to add these 5 new imports near the top
+// of projects-data.ts, once you've cropped and uploaded the
+// section screenshots to src/assets/:
+//
+// import verunHero from "@/assets/verun-hero-section.png";
+// import verunFeatures from "@/assets/verun-features-section.png";
+// import verunBlue from "@/assets/verun-blue-section.png";
+// import verunTestimonials from "@/assets/verun-testimonials-section.png";
+// import verunContact from "@/assets/verun-contact-section.png";
+//
+// Until those are uploaded, the fields below use the existing
+// `verun` variable as a placeholder so the build won't break.
 // ─────────────────────────────────────────────────────────────
 
   {
@@ -54,7 +67,7 @@ export const projects: Project[] = [
     tags: ["Web Design", "SaaS", "AdTech", "Landing Page"],
 
     summary:
-      "Landing page for an AI-powered digital advertising platform built at Webcoupers. Designed a conversion-focused page that makes a technically complex product feel instantly clear and credible to performance marketers.",
+      "Redesign of the landing page for Verun, an AI-powered digital advertising platform built at Webcoupers. The previous page was outdated and underselling the product — this redesign makes a technically complex platform feel instantly clear and credible to performance marketers.",
 
     client: "Webcoupers",
     role: "Product Designer",
@@ -69,42 +82,43 @@ export const projects: Project[] = [
 
     // ── Tagline (shown under the hero title) ──────────────────
     tagline:
-      "Making a complex AI advertising platform feel instantly trustworthy — and worth a second look.",
+      "Redesigning an outdated AdTech landing page into something instantly trustworthy — and worth a second look.",
 
     // ── Overview ──────────────────────────────────────────────
     overview:
-      "Verun is an AI-powered digital advertising platform built at Webcoupers, designed for marketing teams running campaigns across Meta, Google, and TikTok. It gives advertisers a unified dashboard to monitor performance, compare spend, and get AI-driven recommendations — all without switching between platforms. The challenge was positioning. Verun sits in a crowded space, and the landing page needed to communicate a complex, multi-channel product clearly and credibly, while standing out enough to make a performance marketer stop and actually read.",
+      "Verun is an AI-powered digital advertising platform built at Webcoupers, designed for marketing teams running campaigns across Meta, Google, and TikTok. It gives advertisers a unified dashboard to monitor performance, compare spend, and get AI-driven recommendations — all without switching between platforms. The existing landing page had grown outdated and no longer reflected the product's real depth or credibility. This project was a full redesign: repositioning Verun clearly and confidently for a crowded market, while making a complex, multi-channel product easy to understand within seconds of landing on the page.",
 
     // ── Challenge (legacy field — keep for fallback) ──────────
     challenge:
-      "Verun had real product depth — unified ad intelligence, cross-platform data, AI recommendations — but none of that was landing clearly. Marketing teams visiting the site had no quick way to understand why it was different from the dozen other tools they already used.",
+      "The previous Verun landing page was outdated and wasn't landing clearly with visitors. Verun had real product depth — unified ad intelligence, cross-platform data, AI recommendations — but none of that came through. Marketing teams visiting the site had no quick way to understand why it was different from the dozen other tools they already used.",
 
     // ── Problem + bullets ─────────────────────────────────────
     problem:
-      "Verun had real product depth — unified ad intelligence, cross-platform data, AI recommendations — but none of that was landing clearly. Marketing teams visiting the site had no quick way to understand why it was different from the dozen other tools they already used.",
+      "The existing page was outdated and needed a full redesign, not a refresh. Verun had real product depth — unified ad intelligence, cross-platform data, AI recommendations — but none of that was landing clearly, and the page wasn't giving marketing teams a reason to trust or choose it over the dozen other tools they already used.",
 
     problemBullets: [
+      "The existing page felt dated and didn't reflect the product's actual capability or credibility.",
       "Multi-channel ad management is hard to explain — the value proposition needed distilling without losing its depth.",
       "Marketing teams are sceptical of 'AI-powered' claims. The design needed to earn trust before asking for a sign-up.",
-      "A significant portion of initial traffic arrives on mobile, but the experience wasn't designed for it.",
+      "A significant portion of traffic arrives on mobile, but the previous experience wasn't designed for it.",
       "Visitors weren't being guided toward a clear next action — CTAs were present but not well-timed within the scroll journey.",
     ],
 
     // ── Role ──────────────────────────────────────────────────
     roleDetails:
-      "This was an internal Webcoupers product project. I led the design and front-end implementation of the landing page — from initial concept through to the live deployed version at verun.app.",
+      "This was an internal Webcoupers product redesign. I led the design end-to-end in Figma — from research through to a fully polished, developer-ready hi-fi design — then handed the final design over to a developer for build and deployment at verun.app.",
 
     responsibilities: [
       "Visual & UI design across all landing page sections",
       "Copywriting direction — headline, subheadline, and feature copy",
-      "Front-end implementation using Stitch and Tailwind CSS",
-      "Deployment pipeline via GitHub and Vercel",
+      "Competitive research to inform positioning and layout",
+      "Full hi-fi design in Figma, handed off developer-ready",
       "Product positioning and value proposition framing",
     ],
 
     // ── Research ──────────────────────────────────────────────
     researchIntro:
-      "Before touching a frame, I studied the competitive landscape — how tools like Smartly, AdEspresso, and Triple Whale present themselves — and reviewed how Verun's core users (media buyers and performance marketers) talk about their pain points in the wild.",
+      "Before opening Figma, I studied the competitive landscape — how tools like Smartly, AdEspresso, and Triple Whale present themselves — and looked at how Verun's core users (media buyers and performance marketers) talk about their pain points in the wild. This grounded the redesign in what a modern AdTech landing page needs to do, rather than starting from a blank page.",
 
     insights: [
       {
@@ -126,7 +140,36 @@ export const projects: Project[] = [
     ],
 
     // ── HMW ───────────────────────────────────────────────────
-    hmw: "How might we design a landing page that makes a performance marketer — who has seen every AdTech pitch — feel like Verun is the one tool they've actually been waiting for?",
+    hmw: "How might we redesign Verun's outdated landing page so performance marketers — who've seen every AdTech pitch — immediately understand why this platform is worth their attention?",
+
+    // ── Design Decisions ───────────────────────────────────────
+    designDecisions: [
+      {
+        title: "Leading with the future, not the feature list",
+        body: "The previous page opened by describing what Verun does. The redesign opens with 'The Future Of Digital Advertising' — an outcome-forward headline that positions Verun as where advertising is heading, not just another tool in a marketer's stack. This reframes the first impression from functional to aspirational, which matters for a category this crowded.",
+        image: verunHero,
+      },
+      {
+        title: "Four features, not a wall of them",
+        body: "The outdated version tried to communicate everything Verun could do in one dense block. The redesign narrows the feature grid to four: Unified Ad Performance View, AI Powered Optimization, Precision Targeting, and Real-Time Tracking & Analytics — each named around the outcome it delivers, not the mechanism behind it. Fewer, clearer claims read as more credible than an exhaustive list.",
+        image: verunFeatures,
+      },
+      {
+        title: "A colour break to signal conviction",
+        body: "Midway down the page, the layout shifts into a full-width blue section — 'Run Smarter Campaigns. Grow Faster.' This colour change marks a deliberate shift in register: the page stops introducing Verun and starts making its case, reinforced with a checklist of concrete capabilities (best-time monitoring, cross-platform intelligence, AI-driven recommendations, multi-user access).",
+        image: verunBlue,
+      },
+      {
+        title: "Trust signals placed where scepticism peaks",
+        body: "The old page buried or omitted social proof. The redesign places a 'Trusted by Marketing Leaders' testimonial section right after the feature and conviction sections — timed for the moment a sceptical performance marketer is deciding whether to believe the claims they've just read, rather than asking for trust upfront.",
+        image: verunTestimonials,
+      },
+      {
+        title: "A contact flow with the friction removed",
+        body: "The redesigned contact section uses a clean split layout — company details and trust signals on the left, a minimal form on the right (name, job title, email, budget, subject, message). No unnecessary fields, no phone number requirement. By the time a visitor reaches this section, they've already decided to engage — the form's only job is to not get in their way.",
+        image: verunContact,
+      },
+    ],
 
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [verun],
@@ -149,20 +192,21 @@ export const projects: Project[] = [
 
     // ── Results ───────────────────────────────────────────────
     solution:
-      "Reframed the narrative around measurable outcomes, built a high-contrast hero with a live-data dashboard motif, and streamlined the conversion path with a single primary CTA repeated at key scroll milestones.",
+      "Redesigned an outdated landing page from the ground up in Figma — reframing the narrative around measurable outcomes, building a high-contrast hero with a live-data dashboard motif, and streamlining the conversion path with a single primary CTA repeated at key scroll milestones — then handed the design off developer-ready for build.",
 
     results:
-      "Shipped a fully rebuilt landing page with clearer messaging, a stronger hero, and a simplified conversion flow — live at verun.app.",
+      "Shipped a fully redesigned landing page with clearer messaging, a stronger hero, and a simplified conversion flow — live at verun.app.",
 
     resultsContext:
-      "Verun is currently in active development. The landing page forms the public-facing foundation for the product's go-to-market as the platform moves toward its first beta release with marketing teams.",
+      "Verun is currently in active development. The redesigned landing page forms the public-facing foundation for the product's go-to-market as the platform moves toward its first beta release with marketing teams.",
 
     forwardLooking:
-      "Verun is currently in active development. The landing page is the public foundation for the product's go-to-market — built to support a beta launch with performance marketing teams.",
+      "Verun is currently in active development. The redesigned landing page is the public foundation for the product's go-to-market — built to support a beta launch with performance marketing teams.",
 
     // ── Reflection ────────────────────────────────────────────
     reflection:
-      "Designing for a technical B2B product taught me that restraint in copy is just as important as restraint in design. Every time I was tempted to add another feature callout or explain one more capability, the page got worse. The most effective landing page is the one that says just enough to make someone want to know more — not the one that answers every question upfront. I'd also approach the testimonials section differently next time — locking in real customer quotes earlier in the process would have let the design flex properly around authentic content rather than retrofitting it at the end.",
+      "Redesigning an existing product's landing page taught me that restraint in copy is just as important as restraint in design. Every time I was tempted to add another feature callout or explain one more capability, the page got worse. The most effective landing page is the one that says just enough to make someone want to know more — not the one that answers every question upfront. I'd also approach the testimonials section differently next time — locking in real customer quotes earlier in the process would have let the design flex properly around authentic content rather than retrofitting it at the end.",
+  },
   },
   // ─────────────────────────────────────────────────────────────
 // CLARITY — Complete project data object
