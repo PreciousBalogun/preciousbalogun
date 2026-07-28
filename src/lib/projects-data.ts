@@ -148,27 +148,27 @@ export const projects: Project[] = [
       {
         title: "Leading with the future, not the feature list",
         body: "The previous page opened by describing what Verun does. The redesign opens with 'The Future Of Digital Advertising' — an outcome-forward headline that positions Verun as where advertising is heading, not just another tool in a marketer's stack. This reframes the first impression from functional to aspirational, which matters for a category this crowded.",
-        image: verunnn.png,
+        image: verunnn,
       },
       {
         title: "Four features, not a wall of them",
         body: "The outdated version tried to communicate everything Verun could do in one dense block. The redesign narrows the feature grid to four: Unified Ad Performance View, AI Powered Optimization, Precision Targeting, and Real-Time Tracking & Analytics — each named around the outcome it delivers, not the mechanism behind it. Fewer, clearer claims read as more credible than an exhaustive list.",
-        image: verunfeatures.png,
+        image: verunfeatures,
       },
       {
         title: "A colour break to signal conviction",
         body: "Midway down the page, the layout shifts into a full-width blue section — 'Run Smarter Campaigns. Grow Faster.' This colour change marks a deliberate shift in register: the page stops introducing Verun and starts making its case, reinforced with a checklist of concrete capabilities (best-time monitoring, cross-platform intelligence, AI-driven recommendations, multi-user access).",
-        image: verunblue.png,
+        image: verunblue,
       },
       {
         title: "Trust signals placed where scepticism peaks",
         body: "The old page buried or omitted social proof. The redesign places a 'Trusted by Marketing Leaders' testimonial section right after the feature and conviction sections — timed for the moment a sceptical performance marketer is deciding whether to believe the claims they've just read, rather than asking for trust upfront.",
-        image: veruntestimonials.png,
+        image: veruntestimonials,
       },
       {
         title: "A contact flow with the friction removed",
         body: "The redesigned contact section uses a clean split layout — company details and trust signals on the left, a minimal form on the right (name, job title, email, budget, subject, message). No unnecessary fields, no phone number requirement. By the time a visitor reaches this section, they've already decided to engage — the form's only job is to not get in their way.",
-        image: veruncontact.png,
+        image: veruncontact,
       },
     ],
 
