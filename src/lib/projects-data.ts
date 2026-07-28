@@ -2,6 +2,11 @@ import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
 import lima from "@/assets/project-lima.jpg";
 import verun from "@/assets/verunnn.png";
+import verunHero from "@/assets/verunnn.png";
+import verunFeatures from "@/assets/verunfeatures.png";
+import verunBlue from "@/assets/verunblue.png";
+import verunTestimonials from "@/assets/veruntestimonials.png";
+import verunContact from "@/assets/veruncontact.png";
 import capdal from "@/assets/project-naan.jpg";
 
 export type Project = {
