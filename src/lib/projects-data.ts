@@ -153,7 +153,7 @@ export const projects: Project[] = [
       {
         title: "A colour break to signal conviction",
         body: "Midway down the page, the layout shifts into a full-width blue section — 'Run Smarter Campaigns. Grow Faster.' This colour change marks a deliberate shift in register: the page stops introducing Verun and starts making its case, reinforced with a checklist of concrete capabilities (best-time monitoring, cross-platform intelligence, AI-driven recommendations, multi-user access).",
-        image: verunBlue,
+        image: verunblue.png,
       },
       {
         title: "Trust signals placed where scepticism peaks",
