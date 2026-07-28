@@ -128,30 +128,6 @@ export const projects: Project[] = [
     // ── HMW ───────────────────────────────────────────────────
     hmw: "How might we design a landing page that makes a performance marketer — who has seen every AdTech pitch — feel like Verun is the one tool they've actually been waiting for?",
 
-    // ── Ideation ──────────────────────────────────────────────
-    ideation: [
-      {
-        image: verun,
-        caption:
-          "Direction 01 — Dark, data-forward aesthetic. Led with a live-looking dashboard at full bleed. Felt product-credible but tested as intimidating for first-time visitors. Moved away from this as the opening impression.",
-      },
-      {
-        image: verun,
-        caption:
-          "Direction 02 — Light with illustration. More approachable, but performance marketers are a sceptical B2B audience. The tone read as too consumer-facing for a SaaS tool.",
-      },
-      {
-        image: verun,
-        caption:
-          "Direction 03 — Hybrid: light open, dark mid-page, strong close. Created visual momentum that matched the persuasion arc of a good sales conversation. This became the chosen direction.",
-      },
-      {
-        image: verun,
-        caption:
-          "Mobile wireframe pass at 375px — surfaced layout decisions that wouldn't scale, particularly the 4-column feature grid which was redesigned as a responsive 2-column stack.",
-      },
-    ],
-
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [verun],
 
@@ -275,34 +251,6 @@ export const projects: Project[] = [
     // ── HMW ───────────────────────────────────────────────────
     hmw: "How might we design a landing page that makes a team lead, a contributor, and an executive all feel like Clarity was built specifically for them — without writing three different pages?",
 
-    // ── Design Decisions ──────────────────────────────────────
-    designDecisions: [
-      {
-        title: "A headline that calls out the pain, not the product",
-        body: "'Run your projects. Not the other way around.' This headline doesn't mention Clarity, doesn't list features, and doesn't explain what the product is. It names a feeling that every project lead recognises — the sensation of being managed by your own task list rather than in control of it. Getting a visitor to nod before they read a second word is the hardest thing a headline can do, and this one does it.",
-        image: lima,
-      },
-      {
-        title: "A tabbed product preview instead of a static screenshot",
-        body: "The hero product UI uses a tab switcher — Projects, My Tasks, Team Activity, Reporting. This does two things: it shows that Clarity has real depth (multiple views, not just a task list), and it lets visitors self-select into the view most relevant to their role. A team lead gravitates to Team Activity. A contributor goes to My Tasks. One UI element, three audiences.",
-        image: lima,
-      },
-      {
-        title: "Showing smart difficulty scoring, not just naming it",
-        body: "The 'Work grouped by outcome' and 'Smart difficulty scoring' feature blocks are shown as actual UI cards — not icon + headline + two-line description. You can see the interface, the scoring labels, the task structure. This matters because 'smart difficulty scoring' means nothing to someone who hasn't seen it. Showing the UI in context makes the feature legible before the copy explains it.",
-        image: lima,
-      },
-      {
-        title: "Metrics placed where scepticism peaks",
-        body: "The stats block — 98% weekly velocity, Realtime sync interval, 365d data history — sits after the feature showcase, not at the top. Visitors who reach this section have already formed a view of what the product is. Numbers at this point confirm rather than convince. Placed at the top, the same numbers would have felt unearned — a claim before a reason.",
-        image: lima,
-      },
-      {
-        title: "'Built for everyone in the room' — one page, three audiences",
-        body: "Rather than building three separate landing pages or burying persona content in FAQs, the page has a dedicated section that speaks directly to Contributors, Team Leads, and Executives with a distinct value proposition for each. This section is structured as a table — role on the left, what Clarity does for that role on the right — so visitors can scan straight to their own row and feel like the product was designed with them in mind.",
-        image: lima,
-      },
-    ],
 
     // ── Final Designs ─────────────────────────────────────────
     finalDesigns: [lima],
