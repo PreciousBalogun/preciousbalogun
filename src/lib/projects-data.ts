@@ -52,11 +52,11 @@ export const projects: Project[] = [
 // Paste this in place of the existing verun entry in
 // src/lib/projects-data.ts (including the braces).
 //
-// import verunHero from "@/assets/verun-hero-section.png";
-// import verunFeatures from "@/assets/verun-features-section.png";
-// import verunBlue from "@/assets/verun-blue-section.png";
-// import verunTestimonials from "@/assets/verun-testimonials-section.png";
-// import verunContact from "@/assets/verun-contact-section.png";
+// import verunhero from "@/assets/verunnn.png";
+// import verunfeatures from "@/assets/verunfeatures.png";
+// import verunblue from "@/assets/verunblue.png";
+// import veruntestimonials from "@/assets/veruntestimonials.png";
+// import veruncontact from "@/assets/veruncontact.png";
 //
 // Until those are uploaded, the fields below use the existing
 // `verun` variable as a placeholder so the build won't break.
