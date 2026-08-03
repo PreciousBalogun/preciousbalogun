@@ -1,27 +1,30 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { projects } from "@/lib/projects-data";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function Projects() {
   return (
     <section id="projects" className="bg-surface py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-4">
-          <div>
+          <Reveal>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               02 — Selected Work
             </p>
             <h2 className="mt-3 text-4xl font-bold md:text-5xl">Projects</h2>
-          </div>
-          <p className="max-w-md text-muted-foreground">
+          </Reveal>
+          <Reveal as="p" delay={120} className="max-w-md text-muted-foreground">
             A small selection of recent work.
-          </p>
+          </Reveal>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
-          {projects.map((p) => (
-            <article
+          {projects.map((p, i) => (
+            <Reveal
               key={p.slug}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl"
+              as="article"
+              delay={i * 110}
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-[transform,box-shadow,border-color] duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl"
             >
             <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
   <img
@@ -54,7 +57,7 @@ export function Projects() {
                   View Project <ArrowUpRight className="h-4 w-4" />
                 </Link>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

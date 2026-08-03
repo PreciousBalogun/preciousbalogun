@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
 
 const skills = [
   "UI/UX Design",
@@ -18,46 +19,52 @@ export function About() {
     <section id="about" className="bg-surface py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 sm:px-10 lg:px-16 md:grid-cols-2 md:gap-20">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 — About</p>
-          <h2 className="mt-3 text-4xl font-bold md:text-5xl">About Me</h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+          <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 — About</Reveal>
+          <Reveal as="h2" delay={80} className="mt-3 text-4xl font-bold md:text-5xl">About Me</Reveal>
+          <Reveal as="p" delay={160} className="mt-6 text-lg leading-relaxed text-muted-foreground">
             I'm a detail-oriented Product Designer with experience working across
             diverse industries, startups, and consulting firms. I collaborate with
             cross-functional teams to turn complex business problems into clean,
             user-centered solutions.
-          </p>
-          <a
-            href="#contact"
-            className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all hover:gap-3"
-          >
-            Let's Connect <ArrowRight className="h-4 w-4" />
-          </a>
+          </Reveal>
+          <Reveal delay={240}>
+            <a
+              href="#contact"
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 ease-out hover:gap-3"
+            >
+              Let's Connect
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+            </a>
+          </Reveal>
         </div>
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+          <Reveal as="h3" className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Skillset
-          </h3>
+          </Reveal>
           <div className="mt-4 flex flex-wrap gap-2">
-            {skills.map((s) => (
-              <span
+            {skills.map((s, i) => (
+              <Reveal
                 key={s}
-                className="rounded-full border border-primary/20 bg-primary-soft px-3.5 py-1.5 text-sm font-medium text-primary"
+                as="span"
+                delay={60 + i * 50}
+                className="inline-block rounded-full border border-primary/20 bg-primary-soft px-3.5 py-1.5 text-sm font-medium text-primary transition-transform duration-300 ease-out hover:-translate-y-0.5 hover:scale-[1.04]"
               >
                 {s}
-              </span>
+              </Reveal>
             ))}
           </div>
-          <h3 className="mt-10 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+          <Reveal as="h3" className="mt-10 block text-sm font-semibold uppercase tracking-wider text-muted-foreground">
             Tools
-          </h3>
+          </Reveal>
           <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
-            {tools.map((t) => (
-              <div
+            {tools.map((t, i) => (
+              <Reveal
                 key={t}
-                className="rounded-lg border border-border bg-background px-3 py-2.5 text-center text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+                delay={60 + i * 50}
+                className="rounded-lg border border-border bg-background px-3 py-2.5 text-center text-sm font-medium text-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-primary hover:text-primary hover:shadow-sm"
               >
                 {t}
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
