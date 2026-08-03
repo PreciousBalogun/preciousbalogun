@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
 import profileImage from "@/assets/profile.jpg";
 import { useIsDark } from "@/hooks/useIsDark";
+import { useParallax } from "@/hooks/useMotion";
 import { cn } from "@/lib/utils";
 
 
@@ -110,6 +111,7 @@ function RotatingWord() {
 export function Hero() {
   const lagosTime = useLagosTime();
   const isDark = useIsDark();
+  const [parallaxRef, parallaxY] = useParallax<HTMLDivElement>(0.06, 22);
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
       <div
@@ -118,8 +120,8 @@ export function Hero() {
         aria-hidden
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
-        <div className="animate-fade-up">
-          <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
+        <div>
+          <span className="group relative inline-flex animate-fade-up cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
             <MapPin className="h-3.5 w-3.5 text-primary" />
             <span className="relative">
               Lagos, Nigeria
@@ -129,28 +131,29 @@ export function Hero() {
               {lagosTime ? `Lagos · ${lagosTime}` : "Based in West Africa · GMT+1"}
             </span>
           </span>
-          <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
+          <h1 className="mt-6 animate-fade-up font-display text-5xl font-extrabold leading-[1.05] tracking-tight [animation-delay:120ms] md:text-7xl">
             Designing with{" "}
             <span className="text-primary">
               <RotatingWord />
             </span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl animate-fade-up text-lg leading-relaxed text-muted-foreground [animation-delay:240ms]">
             Product Designer crafting user-centered digital experiences that work
             across industries and markets.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex animate-fade-up flex-wrap gap-3 [animation-delay:360ms]">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:opacity-90 hover:shadow-lg"
+              className="group inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md transition-all duration-300 ease-out hover:-translate-y-0.5 hover:opacity-90 hover:shadow-lg active:translate-y-0 active:scale-[0.98]"
             >
-              View My Work <ArrowRight className="h-4 w-4" />
+              View My Work
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
             </a>
             <a
               href="https://drive.google.com/file/d/1izdGYDBm6ZDXY9F5bavPmaow5fjSuiQc/view?usp=drivesdk"
-              className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="group inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-primary hover:text-primary hover:shadow-sm active:translate-y-0 active:scale-[0.98]"
             >
-              <Download className="h-4 w-4" /> Download CV
+              <Download className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-y-0.5" /> Download CV
             </a>
           </div>
         </div>
@@ -166,7 +169,11 @@ export function Hero() {
   }}
   aria-hidden
 />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted transition-colors duration-300 lg:shadow-xl">
+          <div
+            ref={parallaxRef}
+            style={{ transform: `translate3d(0, ${parallaxY}px, 0)` }}
+            className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-surface-muted transition-colors duration-300 lg:shadow-xl"
+          >
             <img
               src={profileImage}
               alt="Precious Balogun"
