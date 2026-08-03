@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/motion/Reveal";
+
 const experience = [
   {
     company: "Webcoupers Consulting Agency",
@@ -41,17 +43,17 @@ export function Experience() {
   return (
     <section id="experience" className="bg-surface-muted py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-6 sm:px-10 lg:px-16">
-        <div className="mb-14 text-center">
+        <Reveal className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             03 — Experience
           </p>
           <h2 className="mt-3 text-4xl font-bold md:text-5xl">A journey through craft</h2>
-        </div>
+        </Reveal>
         <ol className="relative border-l-2 border-border pl-8 md:pl-12">
-          {experience.map((exp) => (
-            <li key={exp.company} className="mb-10 last:mb-0">
+          {experience.map((exp, i) => (
+            <Reveal as="li" key={exp.company} delay={i * 110} from="left" className="mb-10 block last:mb-0">
               <span className="absolute -left-[9px] mt-2 h-4 w-4 rounded-full border-4 border-background bg-primary" />
-              <div className="rounded-2xl border border-border bg-surface p-6 shadow-sm transition-shadow hover:shadow-md md:p-8">
+              <div className="rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md md:p-8">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="text-xl font-bold">{exp.company}</h3>
                   <span className="text-xs font-medium text-muted-foreground">{exp.date}</span>
@@ -66,7 +68,7 @@ export function Experience() {
                   ))}
                 </ul>
               </div>
-            </li>
+            </Reveal>
           ))}
         </ol>
       </div>
