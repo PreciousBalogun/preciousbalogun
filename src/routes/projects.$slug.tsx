@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
+import { CountUp } from "@/components/motion/CountUp";
+import { useParallax } from "@/hooks/useMotion";
 import {
   getNextProject,
   getProjectBySlug,
@@ -63,6 +66,7 @@ function CaseStudy() {
   const decisions = project.designDecisions ?? defaultDecisions(project);
   const finals = project.finalDesigns ?? project.gallery;
   const stats = project.stats ?? [];
+  const [heroRef, heroY] = useParallax<HTMLImageElement>(0.1, 40);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -72,18 +76,19 @@ function CaseStudy() {
           <Link
             to="/"
             hash="projects"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-primary"
           >
-            <ArrowLeft className="h-4 w-4" /> Back to Work
+            <ArrowLeft className="h-4 w-4 transition-transform duration-300 ease-out group-hover:-translate-x-1" /> Back to Work
           </Link>
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:opacity-80"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-primary transition-opacity duration-300 hover:opacity-80"
             >
-              Visit Live Site <ExternalLink className="h-4 w-4" />
+              Visit Live Site
+              <ExternalLink className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           )}
         </div>
@@ -93,13 +98,15 @@ function CaseStudy() {
       <section className="relative overflow-hidden">
         <div className="relative h-[70vh] min-h-[520px] w-full">
           <img
+            ref={heroRef}
             src={project.heroImage}
             alt={project.title}
-            className="absolute inset-0 h-full w-full object-cover"
+            style={{ transform: `translate3d(0, ${heroY}px, 0) scale(1.08)` }}
+            className="absolute inset-0 h-full w-full object-cover will-change-transform"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
           <div className="relative z-10 mx-auto flex h-full max-w-[1200px] flex-col justify-end px-6 pb-14 sm:px-10 lg:px-16 lg:pb-20">
-            <div className="flex flex-wrap gap-2">
+            <Reveal className="flex flex-wrap gap-2">
               {project.tags.map((t) => (
                 <span
                   key={t}
@@ -108,18 +115,19 @@ function CaseStudy() {
                   {t}
                 </span>
               ))}
-            </div>
-            <h1 className="mt-5 text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
+            </Reveal>
+            <Reveal as="h1" delay={100} className="mt-5 text-4xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl">
               {project.title}
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
+            </Reveal>
+            <Reveal as="p" delay={200} className="mt-4 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
               {project.tagline ?? project.summary}
-            </p>
+            </Reveal>
 
             <dl className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
-              {chips.map((c) => (
-                <div
+              {chips.map((c, i) => (
+                <Reveal
                   key={c.label}
+                  delay={280 + i * 80}
                   className="rounded-xl border border-white/15 bg-white/5 px-4 py-3 backdrop-blur"
                 >
                   <dt className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/60">
@@ -128,7 +136,7 @@ function CaseStudy() {
                   <dd className="mt-1 text-sm font-medium text-white">
                     {c.value}
                   </dd>
-                </div>
+                </Reveal>
               ))}
             </dl>
           </div>
