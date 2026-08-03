@@ -155,7 +155,7 @@ function CaseStudy() {
         <Section>
           <Eyebrow>The Problem</Eyebrow>
           <SectionHeading>What we set out to solve</SectionHeading>
-          <div className="mx-auto max-w-[720px] rounded-2xl border border-border bg-background p-6 sm:p-8">
+          <Reveal delay={150} className="mx-auto max-w-[720px] rounded-2xl border border-border bg-background p-6 sm:p-8">
             <p className="text-base leading-relaxed text-foreground/85 md:text-lg">
               {project.problem ?? project.challenge}
             </p>
@@ -172,7 +172,7 @@ function CaseStudy() {
                 ))}
               </ul>
             )}
-          </div>
+          </Reveal>
         </Section>
       </div>
 
@@ -180,7 +180,7 @@ function CaseStudy() {
       <Section>
         <Eyebrow>My Role</Eyebrow>
         <SectionHeading>What I owned</SectionHeading>
-        <div className="mx-auto max-w-[720px]">
+        <Reveal delay={150} className="mx-auto max-w-[720px]">
           <p className="text-base leading-relaxed text-foreground/80">
             {project.roleDetails ??
               `As ${project.role} on ${project.title}, I led the end-to-end design work — from research and IA through to polished, developer-ready specs.`}
@@ -198,7 +198,7 @@ function CaseStudy() {
               ))}
             </ul>
           )}
-        </div>
+        </Reveal>
       </Section>
 
       {/* 5. Research & Discovery */}
@@ -211,16 +211,17 @@ function CaseStudy() {
               "I combined competitive teardown, stakeholder conversations, and analytics review to ground the design in evidence rather than opinion."}
           </Prose>
           <div className="mt-10 grid gap-5 sm:grid-cols-2">
-            {insights.map((i) => (
-              <div
+            {insights.map((i, idx) => (
+              <Reveal
                 key={i.title}
-                className="rounded-2xl border border-border bg-background p-6"
+                delay={idx * 100}
+                className="rounded-2xl border border-border bg-background p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/40 hover:shadow-md"
               >
                 <h3 className="text-base font-bold">{i.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {i.body}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </Section>
@@ -230,10 +231,10 @@ function CaseStudy() {
       <Section>
         <Eyebrow>Defining the Problem</Eyebrow>
         <SectionHeading>How Might We</SectionHeading>
-        <blockquote className="mx-auto max-w-3xl border-l-4 border-primary pl-6 text-2xl font-semibold leading-snug text-foreground md:text-3xl md:leading-snug">
+        <Reveal as="blockquote" delay={150} className="mx-auto block max-w-3xl border-l-4 border-primary pl-6 text-2xl font-semibold leading-snug text-foreground md:text-3xl md:leading-snug">
           {project.hmw ??
             `How might we help ${project.client}'s audience understand and act on the product's value within the first few seconds?`}
-        </blockquote>
+        </Reveal>
       </Section>
 
       {/* 8. Design Decisions */}
@@ -243,18 +244,19 @@ function CaseStudy() {
           <SectionHeading>The why behind the pixels</SectionHeading>
           <div className="mt-4 flex flex-col gap-16">
             {decisions.map((d, i) => (
-              <div
+              <Reveal
                 key={d.title}
+                delay={60}
                 className={`grid items-center gap-8 md:grid-cols-2 md:gap-12 ${
                   i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
-                <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-background">
+                <div className="group aspect-[4/3] overflow-hidden rounded-2xl bg-background">
                   <img
                     src={d.image}
                     alt={d.title}
                     loading="lazy"
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
                 <div>
@@ -263,7 +265,7 @@ function CaseStudy() {
                     {d.body}
                   </p>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </Section>
@@ -275,30 +277,32 @@ function CaseStudy() {
         <SectionHeading>The shipped experience</SectionHeading>
         <div className="flex flex-col gap-8">
           {finals.map((src, i) => (
-            <div
+            <Reveal
               key={`${src}-${i}`}
-              className="overflow-hidden rounded-2xl bg-surface-muted"
+              delay={i * 80}
+              className="group overflow-hidden rounded-2xl bg-surface-muted"
             >
               <img
                 src={src}
                 alt={`${project.title} — final ${i + 1}`}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
-            </div>
+            </Reveal>
           ))}
         </div>
         {project.prototypeUrl && (
-          <div className="mt-10 flex justify-center">
+          <Reveal delay={100} className="mt-10 flex justify-center">
             <a
               href={project.prototypeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:translate-y-0 active:scale-[0.98]"
             >
-              View Prototype <ExternalLink className="h-4 w-4" />
+              View Prototype
+              <ExternalLink className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-          </div>
+          </Reveal>
         )}
       </Section>
 
@@ -310,18 +314,19 @@ function CaseStudy() {
           {stats.length > 0 ? (
             <>
               <div className="grid gap-5 sm:grid-cols-3">
-                {stats.map((s) => (
-                  <div
+                {stats.map((s, i) => (
+                  <Reveal
                     key={s.label}
-                    className="rounded-2xl border border-border bg-background p-6 text-center"
+                    delay={i * 110}
+                    className="rounded-2xl border border-border bg-background p-6 text-center transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/40 hover:shadow-md"
                   >
                     <div className="text-4xl font-bold text-primary md:text-5xl">
-                      {s.value}
+                      <CountUp value={s.value} />
                     </div>
                     <div className="mt-2 text-sm text-muted-foreground">
                       {s.label}
                     </div>
-                  </div>
+                  </Reveal>
                 ))}
               </div>
               <div className="mt-8">
@@ -329,9 +334,9 @@ function CaseStudy() {
               </div>
             </>
           ) : (
-            <blockquote className="mx-auto max-w-3xl border-l-4 border-primary pl-6 text-xl font-medium leading-snug text-foreground md:text-2xl">
+            <Reveal as="blockquote" delay={150} className="mx-auto block max-w-3xl border-l-4 border-primary pl-6 text-xl font-medium leading-snug text-foreground md:text-2xl">
               {project.forwardLooking ?? project.results}
-            </blockquote>
+            </Reveal>
           )}
         </Section>
       </div>
@@ -340,24 +345,25 @@ function CaseStudy() {
       <Section>
         <Eyebrow>What I Learned</Eyebrow>
         <SectionHeading>Reflection</SectionHeading>
-        <div className="mx-auto max-w-[720px]">
+        <Reveal delay={150} className="mx-auto max-w-[720px]">
           <p className="text-base italic leading-relaxed text-muted-foreground">
             {project.reflection ??
               `Working on ${project.title} reminded me that the sharpest design decisions come from listening carefully — to the client, to users, and to what the data quietly keeps saying.`}
           </p>
-        </div>
+        </Reveal>
       </Section>
 
       {/* Next Project */}
       <section className="border-t border-border">
         <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 lg:px-16 lg:py-20">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+          <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             Next Project
-          </p>
+          </Reveal>
+          <Reveal delay={100} className="mt-4 block">
           <Link
             to="/projects/$slug"
             params={{ slug: next.slug }}
-            className="group mt-4 flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl md:flex-row"
+            className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-xl md:flex-row"
           >
             <div className="aspect-[16/9] overflow-hidden bg-surface-muted md:aspect-auto md:w-1/2">
               <img
@@ -387,6 +393,7 @@ function CaseStudy() {
               </p>
             </div>
           </Link>
+          </Reveal>
         </div>
       </section>
     </div>
@@ -403,27 +410,27 @@ function Section({ children }: { children: React.ReactNode }) {
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+    <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
       {children}
-    </p>
+    </Reveal>
   );
 }
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-3 mb-8 text-3xl font-bold tracking-tight md:text-4xl">
+    <Reveal as="h2" delay={90} className="mt-3 mb-8 text-3xl font-bold tracking-tight md:text-4xl">
       {children}
-    </h2>
+    </Reveal>
   );
 }
 
 function Prose({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mx-auto max-w-[720px]">
+    <Reveal delay={150} className="mx-auto max-w-[720px]">
       <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
         {children}
       </p>
-    </div>
+    </Reveal>
   );
 }
 
