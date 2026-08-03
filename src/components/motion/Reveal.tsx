@@ -1,4 +1,4 @@
-import type { ElementType, ReactNode } from "react";
+import { useEffect, useState, type ElementType, type ReactNode } from "react";
 import { useInView, usePrefersReducedMotion } from "@/hooks/useMotion";
 import { cn } from "@/lib/utils";
 
@@ -33,18 +33,28 @@ export function Reveal({
   const [ref, inView] = useInView<HTMLElement>();
   const reduced = usePrefersReducedMotion();
   const show = reduced || inView;
+  // Once the entrance finishes, drop the inline transform/transition so
+  // hover utilities (translate/scale) on the same element keep working.
+  const [settled, setSettled] = useState(false);
+  useEffect(() => {
+    if (!show || settled) return;
+    const t = setTimeout(() => setSettled(true), delay + duration + 60);
+    return () => clearTimeout(t);
+  }, [show, settled, delay, duration]);
 
   return (
     <Tag
       ref={ref as never}
       className={cn("will-change-[opacity,transform]", className)}
-      style={{
-        opacity: show ? 1 : 0,
-        transform: show ? "none" : OFFSETS[from],
-        transition: reduced
+      style={
+        settled || reduced
           ? undefined
-          : `opacity ${duration}ms cubic-bezier(0.22,1,0.36,1) ${delay}ms, transform ${duration}ms cubic-bezier(0.22,1,0.36,1) ${delay}ms`,
-      }}
+          : {
+              opacity: show ? 1 : 0,
+              transform: show ? "none" : OFFSETS[from],
+              transition: `opacity ${duration}ms cubic-bezier(0.22,1,0.36,1) ${delay}ms, transform ${duration}ms cubic-bezier(0.22,1,0.36,1) ${delay}ms`,
+            }
+      }
       {...rest}
     >
       {children}
