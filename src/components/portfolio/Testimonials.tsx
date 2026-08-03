@@ -1,4 +1,5 @@
 import { Quote } from "lucide-react";
+import { Reveal } from "@/components/motion/Reveal";
 
 const testimonials = [
   {
@@ -28,7 +29,7 @@ export function Testimonials() {
   return (
     <section id="testimonials" className="bg-surface py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-        <div className="mb-14 text-center">
+        <Reveal className="mb-14 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             04 — Testimonials
           </p>
@@ -36,12 +37,14 @@ export function Testimonials() {
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             A few thoughts from teammates and clients I've had the pleasure of working with.
           </p>
-        </div>
+        </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((t) => (
-            <figure
+          {testimonials.map((t, i) => (
+            <Reveal
+              as="figure"
               key={t.name}
-              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+              delay={i * 120}
+              className="flex h-full flex-col rounded-2xl border border-border bg-background p-7 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-lg"
             >
               <Quote className="h-6 w-6 text-primary" />
               <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-foreground">
@@ -56,7 +59,7 @@ export function Testimonials() {
                   <p className="text-xs text-muted-foreground">{t.title}</p>
                 </div>
               </figcaption>
-            </figure>
+            </Reveal>
           ))}
         </div>
       </div>

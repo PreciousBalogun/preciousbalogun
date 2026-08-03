@@ -1,5 +1,6 @@
 import { Mail, Phone, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
+import { Reveal } from "@/components/motion/Reveal";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -47,24 +48,34 @@ export function Contact() {
   return (
     <section id="contact" className="bg-primary py-24 text-primary-foreground md:py-32">
       <div className="mx-auto max-w-4xl px-6 sm:px-10 lg:px-16 text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">
+        <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">
           05 — Contact
-        </p>
-        <h2 className="mt-3 text-4xl font-bold md:text-6xl">Let's Build Something Together</h2>
-        <p className="mx-auto mt-5 max-w-xl text-lg text-primary-foreground/80">
+        </Reveal>
+        <Reveal as="h2" delay={80} className="mt-3 text-4xl font-bold md:text-6xl">
+          Let's Build Something Together
+        </Reveal>
+        <Reveal as="p" delay={160} className="mx-auto mt-5 max-w-xl text-lg text-primary-foreground/80">
           Open to full-time roles, freelance projects, and collaborations.
-        </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
-          <a href="mailto:preciousbalogun1406@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80">
+        </Reveal>
+        <Reveal delay={220} className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm">
+          <a
+            href="mailto:preciousbalogun1406@gmail.com"
+            className="inline-flex items-center gap-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:opacity-80"
+          >
             <Mail className="h-4 w-4" />
             <span>preciousbalogun1406@gmail.com</span>
           </a>
-          <a href="tel:+2349030724216" className="inline-flex items-center gap-2 hover:opacity-80">
+          <a
+            href="tel:+2349030724216"
+            className="inline-flex items-center gap-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:opacity-80"
+          >
             <Phone className="h-4 w-4" />
             <span>+234 903 072 4216</span>
           </a>
-        </div>
-        <form
+        </Reveal>
+        <Reveal
+          as="form"
+          delay={120}
           onSubmit={handleSubmit}
           className="mx-auto mt-12 grid max-w-2xl gap-4 rounded-3xl bg-white/10 p-6 text-left backdrop-blur md:p-8"
         >
@@ -73,14 +84,14 @@ export function Contact() {
               required
               name="name"
               placeholder="Your name"
-              className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
+              className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm transition-all duration-300 ease-out placeholder:text-primary-foreground/60 hover:border-white/40 focus:border-white focus:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40"
             />
             <input
               required
               type="email"
               name="email"
               placeholder="Email address"
-              className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
+              className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm transition-all duration-300 ease-out placeholder:text-primary-foreground/60 hover:border-white/40 focus:border-white focus:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40"
             />
           </div>
           <textarea
@@ -88,35 +99,45 @@ export function Contact() {
             name="message"
             rows={4}
             placeholder="Tell me about your project…"
-            className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm placeholder:text-primary-foreground/60 focus:border-white focus:outline-none"
+            className="rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-sm transition-all duration-300 ease-out placeholder:text-primary-foreground/60 hover:border-white/40 focus:border-white focus:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/40"
           />
           <button
             type="submit"
             disabled={sending}
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-primary shadow-md transition-transform hover:-translate-y-0.5 disabled:opacity-60"
+            className="group inline-flex items-center justify-center gap-2 rounded-lg bg-white px-5 py-3 text-sm font-semibold text-primary shadow-md transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 active:scale-[0.98] disabled:opacity-60"
           >
-            {sent ? "Message Sent ✓" : sending ? "Sending…" : (<>Send Message <Send className="h-4 w-4" /></>)}
+            {sent ? (
+              "Message Sent ✓"
+            ) : sending ? (
+              "Sending…"
+            ) : (
+              <>
+                Send Message
+                <Send className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-0.5" />
+              </>
+            )}
           </button>
-        </form>
+        </Reveal>
 
-        <div className="mt-10 flex justify-center gap-4">
+        <Reveal delay={120} className="mt-10 flex justify-center gap-4">
           {[
             { icon: Linkedin, href: "https://www.linkedin.com/in/precious-balogun?utm_source=share_via&utm_content=profile&utm_medium=member_ios", label: "LinkedIn" },
             { icon: InstagramIcon, href: "#", label: "Instagram" },
             { icon: SubstackIcon, href: "https://substack.com/@funbidesigner", label: "Substack" },
-          ].map(({ icon: Icon, href, label }) => (
+          ].map(({ icon: Icon, href, label }, i) => (
             <a
               key={label}
               href={href}
               aria-label={label}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white hover:text-primary"
+              style={{ transitionDelay: `${i * 40}ms` }}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-105 hover:bg-white hover:text-primary"
             >
               <Icon className="h-5 w-5" />
             </a>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );
