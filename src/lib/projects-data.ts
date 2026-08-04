@@ -391,8 +391,18 @@ export const projects: Project[] = [
         image: capdal,
       },
       {
-        title: "Consistent navigation as the connective thread across five pages",
-        body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
+        title: "A Careers page that sells a legacy, not just a job listing",
+        body: "The Careers page opens with 'Build Your Legacy With Nigeria's Engineering Leader,' immediately reframing a job search as joining a 90-year institution rather than filling a vacancy. A stat bar (90+ Years of Excellence, 1.2k+ Active Staff, 450+ Completed Projects, Top 5 Global ESG Rating) repeats the same trust-through-numbers pattern used elsewhere on the site, adapted for a talent audience instead of a client one. A 'Life at Capdal' section pairs a real employee testimonial with three culture pillars (Engineering Precision, Culture of Mentorship, Shaping Landmarks), giving the page an emotional register the rest of the site doesn't need. Below that, open roles are organized into a filterable, categorized card grid (Engineering, Project Management, Skilled Trades, Corporate) with location and employment type shown upfront — so a specific type of candidate can scan straight to relevant roles — plus a general application path for anyone who doesn't see an exact fit.",
+        image: capdal,
+      },
+      {
+        title: "A Contact page split between conversation and credibility",
+        body: "The Contact page pairs a straightforward Inquiry Form (Full Name, Email, Subject, Message) with a dark 'Our Headquarters' panel holding the firm's address, phone, and email alongside social links — keeping the warmer, conversational form separate from the harder, reference-style company details a serious inquiry needs to verify. A location marker section beneath reinforces the Lagos Island HQ visually, and the page closes into the same footer newsletter signup used sitewide, giving even a one-off inquiry a path to stay connected to the firm's ongoing work.",
+        image: capdal,
+      },
+      {
+        title: "Consistent navigation as the connective thread across six pages",
+        body: "With content deliberately spread across six distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, Careers, and Contact Us never costs them orientation.",
         image: capdal,
       },
     ],
