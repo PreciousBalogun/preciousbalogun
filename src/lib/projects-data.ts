@@ -401,8 +401,8 @@ export const projects: Project[] = [
         image: capdal,
       },
       {
-        title: "Consistent navigation as the connective thread across six pages",
-        body: "With content deliberately spread across six distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, Careers, and Contact Us never costs them orientation.",
+        title: "Consistent navigation as the connective thread across five pages",
+        body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
         image: capdal,
       },
     ],
