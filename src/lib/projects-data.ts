@@ -332,14 +332,15 @@ export const projects: Project[] = [
     ],
 
     roleDetails:
-      "I designed every page on the Capdal website end-to-end — visual language, layout, navigation system, and the project portfolio structure — and implemented the front end directly in Tailwind and HTML.",
+      "I designed and built all five pages of the Capdal website end-to-end — Home, About Us, Services, Projects, and Contact Us — covering the visual language, cross-page information architecture, the shared navigation system, and the filterable project portfolio, then implemented the front end directly in Tailwind and HTML.",
 
     responsibilities: [
-      "Full visual and UI design across every page of the site",
-      "Information architecture for a multi-page, content-heavy site",
-      "Scroll-triggered navigation behaviour design and implementation",
-      "Project portfolio design, including filtering logic by sector/category",
-      "Front-end implementation using Stitch and Tailwind CSS",
+      "Designed and implemented 5 distinct pages: Home, About Us, Services, Projects, Contact Us",
+      "Cross-page information architecture — deciding what content lived on which page",
+      "Shared navigation system designed to stay consistent and predictable across all five pages",
+      "Services page card system covering six distinct capabilities",
+      "Projects page design including category-based filtering by sector",
+      "Front-end implementation of every page using Stitch and Tailwind CSS",
       "Incorporating design review feedback across multiple revision rounds",
     ],
 
@@ -364,6 +365,37 @@ export const projects: Project[] = [
     hmw: "How might we redesign a website for a company built on decades of trust — without making the site feel like it belongs to a different, less established company?",
 
     finalDesigns: [capdal],
+
+    // NOTE: placeholder images — ideally swap each entry for a real per-page
+    // screenshot (homepage, about page, services page, projects page, contact
+    // page), following the same pattern used for Verun's design decisions.
+    designDecisions: [
+      {
+        title: "A homepage that opens with scale, not a sales pitch",
+        body: "The homepage leads with \"Builders to the Nation, Since 1932\" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.",
+        image: capdal,
+      },
+      {
+        title: "An About Us page built to carry institutional weight",
+        body: "Capdal's history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm's origins, milestones, and values room to breathe — cleanly separating \"why trust us\" from \"what we do,\" so each page can make one argument well instead of two arguments halfway.",
+        image: capdal,
+      },
+      {
+        title: "A Services page that organizes six distinct capabilities clearly",
+        body: "Civil Engineering, General Construction, Project Management, Interior Fit-out, MEP Systems, and Heritage Restoration are presented in one consistent, scannable card system. A visitor evaluating Capdal for a specific need can locate the relevant capability in seconds rather than reading through a wall of undifferentiated text — and the uniform card treatment signals that each discipline is a first-class offering, not a footnote.",
+        image: capdal,
+      },
+      {
+        title: "A filterable Projects page for a large, varied portfolio",
+        body: "The portfolio spans sectors and decades — Dover Hotel Annex, Afrexim Tower, AMCE Medical Complex, the National Theatre restoration — so the dedicated Projects page uses category-based filtering (Hospitality, Financial Hub, Healthcare, National Monument) to let visitors browse by relevance. Filtering turns an undifferentiated scroll into a discovery tool, and keeps the firm's best work from being buried by sheer volume.",
+        image: capdal,
+      },
+      {
+        title: "Consistent navigation as the connective thread across five pages",
+        body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
+        image: capdal,
+      },
+    ],
 
     stats: [
       {
