@@ -139,7 +139,7 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
         <div style={slide("left")}>
-          <span className="group relative inline-flex animate-fade-up cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
+          <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
             <MapPin className="h-3.5 w-3.5 text-primary" />
             <span className="relative">
               Lagos, Nigeria
@@ -149,17 +149,17 @@ export function Hero() {
               {lagosTime ? `Lagos · ${lagosTime}` : "Based in West Africa · GMT+1"}
             </span>
           </span>
-          <h1 className="mt-6 animate-fade-up font-display text-5xl font-extrabold leading-[1.05] tracking-tight [animation-delay:120ms] md:text-7xl">
+          <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
             Designing with{" "}
             <span className="text-primary">
               <RotatingWord />
             </span>
           </h1>
-          <p className="mt-6 max-w-xl animate-fade-up text-lg leading-relaxed text-muted-foreground [animation-delay:240ms]">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Product Designer crafting user-centered digital experiences that work
             across industries and markets.
           </p>
-          <div className="mt-8 flex animate-fade-up flex-wrap gap-3 [animation-delay:360ms]">
+          <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#projects"
               className="group inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md transition-all duration-300 ease-out hover:-translate-y-0.5 hover:opacity-90 hover:shadow-lg active:translate-y-0 active:scale-[0.98]"
