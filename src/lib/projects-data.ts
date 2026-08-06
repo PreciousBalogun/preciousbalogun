@@ -434,22 +434,168 @@ export const projects: Project[] = [
       "This project sharpened how I think about heritage in design — the instinct is often to signal 'established' with literal historical cues, but the more convincing move was restraint: clean typography, real photography, and getting out of the way of the work itself. Next time, I'd push even further on differentiating the project categories visually, so the filtering feels like a discovery tool rather than just a sorting mechanism.",
   },
   // ─────────────────────────────────────────────────────────────
-  // STUDYSNAP
+  // SCRUTIA
   // ─────────────────────────────────────────────────────────────
   {
-    slug: "studysnap",
-    title: "StudySnap",
-    tags: ["Product Design", "Mobile", "EdTech"],
-    summary: "Placeholder summary for StudySnap.",
-    client: "StudySnap",
-    role: "Product Design, UI/UX",
+    slug: "scrutia",
+    title: "Scrutia",
+    tags: ["Web Design", "SaaS", "AdTech", "Compliance"],
+
+    summary:
+      "Landing experience for Scrutia — an AI pre-vetting tool that checks ad creative against ARCON's advertising code and the ad policies of Meta, Google, TikTok, and X before anything is submitted.",
+
+    client: "Scrutia (WBCi)",
+    role: "Product Designer",
     year: "2026",
+    timeline: "Q2 2026",
+    platform: "Web (Desktop + Mobile)",
+    tools: "Figma · Tailwind · Stitch",
+    liveUrl: "https://usescrutia.com",
+
     heroImage: webcoupers,
     gallery: [webcoupers, webcoupers],
-    overview: "Placeholder overview paragraph for StudySnap.",
-    challenge: "Placeholder challenge copy for StudySnap.",
-    solution: "Placeholder solution copy for StudySnap.",
-    results: "Placeholder results copy for StudySnap.",
+
+    tagline:
+      "Pre-vet every ad before ARCON, Meta, Google, TikTok, or X ever see it.",
+
+    overview:
+      "Scrutia is a desktop application that reviews advertising creative — images, video, and copy — against Nigeria's ARCON advertising code and the ad policies of Meta, Google, TikTok, and X, before the asset is ever submitted. It serves Nigerian ad agencies, in-house brand and marketing teams, media buyers, and production studios: the people who ship campaigns weekly and absorb the cost when one gets rejected. Ad compliance in this market is expensive to get wrong — a flagged creative means lost media spend, restarted approval cycles, and in some cases regulatory levies. The value proposition is timing: catch the violation while it is still a revision, not after it becomes a rejection. My work covered the public-facing site — Home (which doubles as the platform overview), Compliance, and Pricing — the surface that has to make a technically dense regulatory product legible in about thirty seconds.",
+
+    challenge:
+      "Scrutia sits at the intersection of regulation, AI, and media buying — three subjects that each invite jargon. The site had to explain what the product actually inspects, prove the engine is credible enough to trust with a client's campaign, and do it without turning into a policy document. It also had to sell a downloadable desktop app with in-app payment, which breaks the usual SaaS sign-up flow the visitor expects.",
+
+    problem:
+      "Compliance work in Nigerian advertising is manual, fragmented, and reactive. Teams learn a creative is non-compliant only after ARCON or a platform rejects it — when the budget is committed and the timeline is gone. The site had to make that cost visceral, then position pre-vetting as the obvious fix.",
+
+    problemBullets: [
+      "Compliance review is manual — assets get checked by whoever happens to know the rules, if they get checked at all.",
+      "Standards live in scattered places: ARCON's code in one document, Meta, Google, TikTok, and X policies in four more, each updated on its own schedule.",
+      "The same creative has to clear multiple gates, so one asset generates duplicate review work across every channel it runs on.",
+      "Rejections surface late, after media spend is committed — turning a revision into a restarted approval cycle.",
+      "Category-specific risks (restricted claims, missing disclaimers, IP and music rights, ARCON's foreign-talent levy) are easy to miss and expensive to trigger.",
+      "Constant firefighting produces compliance fatigue — teams stop checking properly because checking properly takes too long.",
+    ],
+
+    roleDetails:
+      "I owned the design of Scrutia's public site end-to-end — UX strategy, information architecture across Home, Compliance, and Pricing, the landing page itself, the component system, and the responsive behaviour — working from the product team's regulatory material to decide what a first-time visitor actually needs to understand and in what order.",
+
+    responsibilities: [
+      "UX strategy — defining what each page had to prove and to whom",
+      "Information architecture across Home, Compliance, and Pricing",
+      "Landing page design, including the problem-first narrative structure",
+      "Visual hierarchy tuned for scanning rather than reading",
+      "Reusable component system: capability cards, engine panels, pricing tiers, comparison table",
+      "Responsive layouts for desktop, tablet, and mobile",
+      "User journey optimisation from first scroll to download and in-app activation",
+    ],
+
+    researchIntro:
+      "I worked through Scrutia's own regulatory material and the way agencies currently handle vetting, then looked at how comparable review and compliance products explain automated checking without either overclaiming or drowning the reader in policy detail.",
+
+    insights: [
+      {
+        title: "The cost of a rejection is felt after the money is spent",
+        body: "Teams don't budget for compliance failure because it's invisible until it happens. Leading with the cost of finding out late — not with feature lists — was what made the product's timing argument land.",
+      },
+      {
+        title: "One creative has to clear several unrelated gates",
+        body: "ARCON, Meta, Google, TikTok, and X each apply different rules to the same asset. Visitors immediately understood the value of a single review that covers every gate at once, so that became the organising idea of the page.",
+      },
+      {
+        title: "Automated review is only trusted when it shows its work",
+        body: "\"AI-powered\" claims read as noise on their own. Findings shown as concrete output — a flagged clause, a risk profile, an estimated ARCON vetting fee — did far more to establish credibility than any adjective.",
+      },
+      {
+        title: "Agencies buy on volume and control, not on features",
+        body: "The compliance engine is the same across every plan; what differs is devices, team seats, white-labelling, and whether the AI keys are managed. Pricing had to make that distinction obvious instead of implying a weaker product at the lower tier.",
+      },
+      {
+        title: "Data residency is a purchase requirement, not a footnote",
+        body: "For Nigerian clients, where ad assets are processed matters. Local-first handling, Lagos-based infrastructure, and audit-ready logs needed a dedicated place on the Compliance page rather than a line in the footer.",
+      },
+    ],
+
+    hmw: "How might we turn compliance from a stressful, after-the-fact scramble into a routine step teams take before they spend — without burying them in the regulation itself?",
+
+    finalDesigns: [webcoupers],
+
+    // NOTE: placeholder images — swap each entry for a real screenshot of the
+    // corresponding Scrutia section (hero, platform overview, compliance
+    // engines, pricing, nav, mobile) once available, following the same
+    // pattern used for Verun's design decisions.
+    designDecisions: [
+      {
+        title: "A hero that names the moment, not the technology",
+        body: "The hero leads with \"Pre-Vet Every Ad Before ARCON, Meta, Google, TikTok, or X Ever See It\" — a sentence that contains the product, the audience, and the timing all at once. Naming the five gates explicitly does more work than any abstract phrase about compliance automation: a media buyer recognises their own problem in the first line. A trust badge sits directly beneath, so the claim and the proof arrive together rather than being separated by a scroll.",
+        image: webcoupers,
+      },
+      {
+        title: "A platform overview that explains the workflow before the engine",
+        body: "The homepage doubles as the platform page, so it opens the product with four plain steps — upload the asset, choose the standards, run the review, read the report — before introducing any of the underlying analysis. Sequencing the workflow first gives visitors a mental model to hang the technical detail on; the same detail presented up front reads as complexity, and complexity in a compliance product reads as more work, not less.",
+        image: webcoupers,
+      },
+      {
+        title: "A compliance section built as discrete engines, not one blob",
+        body: "ARCON, the Meta policy sandbox, Google, TikTok, X, and IP/copyright are each presented as their own panel with its own scope and sample finding. Splitting them makes coverage countable — a visitor can verify their specific channel is handled — and lets the page grow as pan-African presets for Ghana, Kenya, and South Africa come online, without redesigning the section.",
+        image: webcoupers,
+      },
+      {
+        title: "Pricing framed around volume and control, not capability",
+        body: "Solo, Agency, and Enterprise share the same compliance engine, so the tiers are differentiated on devices, team seats, white-label reporting, support speed, and whether AI keys are bring-your-own or managed. A comparison table makes the shared core explicit, which removes the usual fear that the affordable plan is the crippled one, and lets a buyer self-select on team size in a single pass.",
+        image: webcoupers,
+      },
+      {
+        title: "CTAs placed at decision points, not at intervals",
+        body: "The primary action repeats after the problem framing, after the workflow, and at the close — the three moments where a visitor has just been given a reason to act. Secondary paths (book a demo, view pricing) are demoted to text-weight links so they never compete. Because payment happens inside the desktop app, the site's job is narrowed to one honest handoff rather than a fake checkout.",
+        image: webcoupers,
+      },
+      {
+        title: "Hierarchy tuned for enterprise credibility",
+        body: "Media houses evaluating Scrutia need reassurance before they need features, so infrastructure claims — local-first processing, encryption, Lagos-based data residency, audit-ready logs — get typographic weight equal to the product sections rather than being tucked into fine print. Restraint does the rest: generous whitespace and a narrow type scale read as institutional, where dense decoration would read as a startup demo.",
+        image: webcoupers,
+      },
+      {
+        title: "Navigation that mirrors how the decision is actually made",
+        body: "Home, Compliance, Pricing, Roadmap, and Download follow the real evaluation order: what is it, can I trust it, what does it cost, where is it going, how do I start. The same header and footer anchor every page, so moving between them never costs orientation — and the Download action stays visible throughout, since it is the only conversion the site itself has to produce.",
+        image: webcoupers,
+      },
+      {
+        title: "Spacing and typography doing the readability work",
+        body: "Regulatory content is dense by nature, so the layout compensates: a constrained measure for body copy, consistent vertical rhythm between sections, and eyebrow labels that let someone scan the page structure without reading it. The result is a page a busy account director can skim in thirty seconds and a compliance lead can read properly.",
+        image: webcoupers,
+      },
+      {
+        title: "A responsive layout that survives the mobile read",
+        body: "Multi-column capability grids collapse to single-column stacks in the order the argument is made, the pricing comparison becomes tier-by-tier cards rather than a horizontally-scrolling table, and product screenshots crop to their meaningful region instead of shrinking to illegibility. Much of this traffic arrives from phones via shared links, so the mobile version had to carry the full argument, not a summary of it.",
+        image: webcoupers,
+      },
+      {
+        title: "Trust built from output, screenshots, and named standards",
+        body: "Rather than asserting accuracy, the page shows it: sample product UI with a real-looking finding, an approval-probability read-out, an estimated ARCON vetting fee, and the specific standards being checked, named. Social proof from Nigerian agencies sits next to the claims it supports rather than in an isolated testimonials strip — trust delivered exactly where the doubt appears.",
+        image: webcoupers,
+      },
+    ],
+
+    stats: [
+      { value: "3", label: "Core pages designed: Home, Compliance, Pricing" },
+      { value: "5", label: "Regulatory and platform gates surfaced in one review" },
+      { value: "10", label: "Design decisions documented across the landing experience" },
+    ],
+
+    solution:
+      "A problem-first landing experience that opens with the cost of a late rejection, explains the review as a four-step workflow, breaks compliance coverage into verifiable per-standard engines, and closes with pricing organised around team size rather than capability — all in a restrained, enterprise-legible visual system.",
+
+    results:
+      "The site now explains a technically dense regulatory product in a single scroll: what Scrutia inspects, which standards it covers, how the review runs, and what it costs.",
+
+    resultsContext:
+      "Rather than claiming business metrics I can't verify, the honest outcome is qualitative: clearer product comprehension for first-time visitors, better discoverability of the individual compliance engines, sharper positioning around pre-vetting as a timing advantage, stronger credibility from infrastructure and data-residency content given proper prominence, and a pricing structure that removes the main hesitation before download.",
+
+    forwardLooking:
+      "The engine-card and tier structures were built to extend — pan-African presets for Ghana, Kenya, and South Africa, and roadmap items like API access, can slot into the existing system without a redesign.",
+
+    reflection:
+      "Designing for compliance meant resisting the instinct to explain everything. The regulation is genuinely complicated, and every draft that tried to be thorough became a page nobody would finish. What worked was deciding that the site's job is comprehension and trust, and the product's job is detail. The harder balance was credibility versus simplicity: enterprise buyers want evidence of rigour, but rigour rendered literally becomes clutter. Showing real product output — a flagged finding, a fee estimate — turned out to convey more competence than any amount of explanatory copy. If I revisited it, I'd push the product screenshots earlier and larger; the sections where you can actually see the tool working are where the page earns the most.",
   },
 ];
 
