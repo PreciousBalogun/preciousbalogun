@@ -210,7 +210,7 @@ export function Hero() {
               <span className="block text-sm font-semibold">Full-time & Freelance</span>
             </span>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
