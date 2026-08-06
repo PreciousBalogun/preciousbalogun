@@ -1,4 +1,5 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
+import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import workspace from "@/assets/hero-workspace.jpg";
 import profileImage from "@/assets/profile.jpg";
@@ -113,22 +114,14 @@ export function Hero() {
   const isDark = useIsDark();
   const [parallaxRef, parallaxY] = useParallax<HTMLDivElement>(0.06, 22);
   const reducedMotion = usePrefersReducedMotion();
-  const [entered, setEntered] = useState(false);
-  useEffect(() => {
-    const id = requestAnimationFrame(() => setEntered(true));
-    return () => cancelAnimationFrame(id);
-  }, []);
-  const slide = (dir: "left" | "right") =>
+  const slide = (offset: number) =>
     reducedMotion
-      ? undefined
+      ? {}
       : {
-          opacity: entered ? 1 : 0,
-          transform: entered
-            ? "translate3d(0,0,0)"
-            : `translate3d(${dir === "left" ? "-60px" : "60px"},0,0)`,
-          transition:
-            "opacity 900ms cubic-bezier(0.16,1,0.3,1), transform 900ms cubic-bezier(0.16,1,0.3,1)",
-          willChange: "opacity, transform",
+          initial: { opacity: 0, x: offset },
+          whileInView: { opacity: 1, x: 0 },
+          viewport: { once: true, amount: 0.2 },
+          transition: { duration: 0.9, ease: "easeOut" as const },
         };
   return (
     <section id="top" className="relative overflow-hidden pt-28 pb-20 md:pt-36 md:pb-28">
@@ -138,7 +131,7 @@ export function Hero() {
         aria-hidden
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-10 lg:px-16 md:grid-cols-[1.2fr_1fr]">
-        <div style={slide("left")}>
+        <motion.div {...slide(-60)}>
           <span className="group relative inline-flex cursor-default items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-300 ease-out hover:scale-105 hover:border-primary hover:text-primary hover:shadow-md">
             <MapPin className="h-3.5 w-3.5 text-primary" />
             <span className="relative">
@@ -174,8 +167,8 @@ export function Hero() {
               <Download className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-y-0.5" /> Download CV
             </a>
           </div>
-        </div>
-        <div className="relative" style={slide("right")}>
+        </motion.div>
+        <motion.div className="relative" {...slide(60)}>
           <div
   key={`profile-glow-${isDark ? "dark" : "light"}`}
   className="absolute -inset-6 -z-10 rounded-3xl blur-2xl"
