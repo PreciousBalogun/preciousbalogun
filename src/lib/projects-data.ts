@@ -12,6 +12,7 @@ import scrutiaCover from "@/assets/scrutia-cover.png";
 import scrutiaHero from "@/assets/scrutia-cover.png";
 import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
 import scrutiaCompliance from "@/assets/scrutia-compliance.png";
+import scrutiaPricing from "@/assets/scrutia-pricing.png";
 
 export type Project = {
   slug: string;
@@ -546,7 +547,7 @@ export const projects: Project[] = [
       {
         title: "Pricing framed around volume and control, not capability",
         body: "Solo, Agency, and Enterprise share the same compliance engine, so the tiers are differentiated on devices, team seats, white-label reporting, support speed, and whether AI keys are bring-your-own or managed. A comparison table makes the shared core explicit, which removes the usual fear that the affordable plan is the crippled one, and lets a buyer self-select on team size in a single pass.",
-        image: webcoupers,
+        image: scrutiaPricing,
       },
       {
         title: "CTAs placed at decision points, not at intervals",
