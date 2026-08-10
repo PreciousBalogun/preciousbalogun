@@ -8,6 +8,10 @@ import verunblue from "@/assets/verunblue.png";
 import veruntestimonials from "@/assets/veruntestimonials.png";
 import veruncontactform from "@/assets/veruncontactform.png";
 import capdal from "@/assets/project-naan.jpg";
+import scrutiaCover from "@/assets/scrutia-cover.png";
+import scrutiaHero from "@/assets/scrutia-cover.png";
+import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
+import scrutiaCompliance from "@/assets/scrutia-compliance.png";
 
 export type Project = {
   slug: string;
@@ -452,7 +456,7 @@ export const projects: Project[] = [
     tools: "Figma · Tailwind · Stitch",
     liveUrl: "https://usescrutia.com",
 
-    heroImage: webcoupers,
+    heroImage: scrutiaCover,
     gallery: [webcoupers, webcoupers],
 
     tagline:
@@ -527,17 +531,17 @@ export const projects: Project[] = [
       {
         title: "A hero that names the moment, not the technology",
         body: "The hero leads with \"Pre-Vet Every Ad Before ARCON, Meta, Google, TikTok, or X Ever See It\" — a sentence that contains the product, the audience, and the timing all at once. Naming the five gates explicitly does more work than any abstract phrase about compliance automation: a media buyer recognises their own problem in the first line. A trust badge sits directly beneath, so the claim and the proof arrive together rather than being separated by a scroll.",
-        image: webcoupers,
+        image: scrutiaHero,
       },
       {
         title: "A platform overview that explains the workflow before the engine",
         body: "The homepage doubles as the platform page, so it opens the product with four plain steps — upload the asset, choose the standards, run the review, read the report — before introducing any of the underlying analysis. Sequencing the workflow first gives visitors a mental model to hang the technical detail on; the same detail presented up front reads as complexity, and complexity in a compliance product reads as more work, not less.",
-        image: webcoupers,
+        image: scrutiaPlatformOverview,
       },
       {
         title: "A compliance section built as discrete engines, not one blob",
         body: "ARCON, the Meta policy sandbox, Google, TikTok, X, and IP/copyright are each presented as their own panel with its own scope and sample finding. Splitting them makes coverage countable — a visitor can verify their specific channel is handled — and lets the page grow as pan-African presets for Ghana, Kenya, and South Africa come online, without redesigning the section.",
-        image: webcoupers,
+        image: scrutiaCompliance,
       },
       {
         title: "Pricing framed around volume and control, not capability",
