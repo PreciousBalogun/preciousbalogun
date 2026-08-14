@@ -7,7 +7,13 @@ import verunfeatures from "@/assets/verunfeatures.png";
 import verunblue from "@/assets/verunblue.png";
 import veruntestimonials from "@/assets/veruntestimonials.png";
 import veruncontactform from "@/assets/veruncontactform.png";
-import capdal from "@/assets/project-naan.jpg";
+import capdalHero from "@/assets/capdal-hero.jpg";
+import capdalAbout from "@/assets/capdal-about.jpg";
+import capdalServices from "@/assets/capdal-services.jpg";
+import capdalProjects from "@/assets/capdal-projects.jpg";
+import capdalCareers from "@/assets/capdal-careers.jpg";
+import capdalContact from "@/assets/capdal-contact.jpg";
+import capdalFinalcta from "@/assets/capdal-finalcta.jpg";
 import scrutiaCover from "@/assets/scrutia-cover.png";
 import scrutiaHero from "@/assets/scrutia-cover.png";
 import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
@@ -411,37 +417,37 @@ export const projects: Project[] = [
       {
         title: "A homepage that opens with scale, not a sales pitch",
         body: "The homepage leads with \"Builders to the Nation, Since 1932\" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.",
-        image: capdal-hero.jpg,
+        image: capdalHero.jpg,
       },
       {
         title: "An About Us page built to carry institutional weight",
         body: "Capdal's history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm's origins, milestones, and values room to breathe — cleanly separating \"why trust us\" from \"what we do,\" so each page can make one argument well instead of two arguments halfway.",
-        image: capdal-about.jpg,
+        image: capdalAbout.jpg,
       },
       {
         title: "A Services page that organizes six distinct capabilities clearly",
         body: "Civil Engineering, General Construction, Project Management, Interior Fit-out, MEP Systems, and Heritage Restoration are presented in one consistent, scannable card system. A visitor evaluating Capdal for a specific need can locate the relevant capability in seconds rather than reading through a wall of undifferentiated text — and the uniform card treatment signals that each discipline is a first-class offering, not a footnote.",
-        image: capdal,
+        image: capdalServices,
       },
       {
         title: "A filterable Projects page for a large, varied portfolio",
         body: "The portfolio spans sectors and decades — Dover Hotel Annex, Afrexim Tower, AMCE Medical Complex, the National Theatre restoration — so the dedicated Projects page uses category-based filtering (Hospitality, Financial Hub, Healthcare, National Monument) to let visitors browse by relevance. Filtering turns an undifferentiated scroll into a discovery tool, and keeps the firm's best work from being buried by sheer volume.",
-        image: capdal-ptojects.jpg,
+        image: capdalProjects.jpg,
       },
       {
         title: "A Careers page that sells a legacy, not just a job listing",
         body: "The Careers page opens with 'Build Your Legacy With Nigeria's Engineering Leader,' immediately reframing a job search as joining a 90-year institution rather than filling a vacancy. A stat bar (90+ Years of Excellence, 1.2k+ Active Staff, 450+ Completed Projects, Top 5 Global ESG Rating) repeats the same trust-through-numbers pattern used elsewhere on the site, adapted for a talent audience instead of a client one. A 'Life at Capdal' section pairs a real employee testimonial with three culture pillars (Engineering Precision, Culture of Mentorship, Shaping Landmarks), giving the page an emotional register the rest of the site doesn't need. Below that, open roles are organized into a filterable, categorized card grid (Engineering, Project Management, Skilled Trades, Corporate) with location and employment type shown upfront — so a specific type of candidate can scan straight to relevant roles — plus a general application path for anyone who doesn't see an exact fit.",
-        image: capdal,
+        image: capdalCareers,
       },
       {
         title: "A Contact page split between conversation and credibility",
         body: "The Contact page pairs a straightforward Inquiry Form (Full Name, Email, Subject, Message) with a dark 'Our Headquarters' panel holding the firm's address, phone, and email alongside social links — keeping the warmer, conversational form separate from the harder, reference-style company details a serious inquiry needs to verify. A location marker section beneath reinforces the Lagos Island HQ visually, and the page closes into the same footer newsletter signup used sitewide, giving even a one-off inquiry a path to stay connected to the firm's ongoing work.",
-        image: capdal,
+        image: capdalContact,
       },
       {
         title: "Consistent navigation as the connective thread across five pages",
         body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
-        image: capdal-finalcta.jpg,
+        image: capdalFinalcta.jpg,
       },
     ],
 
