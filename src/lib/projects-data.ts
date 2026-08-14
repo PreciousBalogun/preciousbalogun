@@ -351,8 +351,8 @@ export const projects: Project[] = [
     tools: "Stitch · VSCode",
     liveUrl: "https://capdal.wbcstaging.com",
 
-    heroImage: capdal,
-    gallery: [capdal, capdal],
+    heroImage: capdalHero,
+    gallery: [capdalHero, capdalProjects],
 
     tagline: "Nine decades of building Nigeria. A website that finally looked like it.",
 
@@ -361,7 +361,7 @@ export const projects: Project[] = [
 
     statusNote:
       "Concept & Skill Showcase: Beyond solving the brand's digital presence, I used this multi-page redesign to test-run and refine my skills using AI-powered design tools alongside modern programming languages and front-end frameworks.",
-    
+
     challenge:
       "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage risked looking dated, while one that leaned too hard into 'modern' risked losing the gravitas that comes with being a nearly century-old institution. The site also needed to organise a large amount of content — services, a sizeable project portfolio, company history — without becoming a maze.",
 
@@ -408,11 +408,8 @@ export const projects: Project[] = [
 
     hmw: "How might we redesign a website for a company built on decades of trust — without making the site feel like it belongs to a different, less established company?",
 
-    finalDesigns: [capdal],
+    finalDesigns: [capdalHero],
 
-    // NOTE: placeholder images — ideally swap each entry for a real per-page
-    // screenshot (homepage, about page, services page, projects page, contact
-    // page), following the same pattern used for Verun's design decisions.
     designDecisions: [
       {
         title: "A homepage that opens with scale, not a sales pitch",
@@ -563,10 +560,6 @@ export const projects: Project[] = [
 
     finalDesigns: [webcoupers],
 
-    // NOTE: placeholder images — swap each entry for a real screenshot of the
-    // corresponding Scrutia section (hero, platform overview, compliance
-    // engines, pricing, nav, mobile) once available, following the same
-    // pattern used for Verun's design decisions.
     designDecisions: [
       {
         title: "A hero that names the moment, not the technology",
