@@ -7,7 +7,13 @@ import verunfeatures from "@/assets/verunfeatures.png";
 import verunblue from "@/assets/verunblue.png";
 import veruntestimonials from "@/assets/veruntestimonials.png";
 import veruncontactform from "@/assets/veruncontactform.png";
-
+import capdalHero from "@/assets/capdal-hero.jpg";
+import capdalAbout from "@/assets/capdal-about.jpg";
+import capdalServices from "@/assets/capdal-services.jpg";
+import capdalProjects from "@/assets/capdal-projects.jpg";
+import capdalCareers from "@/assets/capdal-careers.jpg";
+import capdalContact from "@/assets/capdal-contact.jpg";
+import capdalFinalcta from "@/assets/capdal-finalcta.jpg";
 import scrutiaCover from "@/assets/scrutia-cover.png";
 import scrutiaHero from "@/assets/scrutia-cover.png";
 import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
