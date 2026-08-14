@@ -75,9 +75,9 @@ export const projects: Project[] = [
     client: "Webcoupers",
     role: "Product Designer",
     year: "2026",
-    timeline: "Q1 – Q2 2026",
+    timeline: "Q1",
     platform: "Web (Desktop + Mobile)",
-    tools: "Figma · Stitch · Tailwind · Vercel",
+    tools: "Figma",
     liveUrl: "https://verun.app",
 
     heroImage: verun,
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     ],
 
     researchIntro:
-      "Before opening Figma, I studied the competitive landscape — how tools like Smartly, AdEspresso, and Triple Whale present themselves — and looked at how Verun's core users (media buyers and performance marketers) talk about their pain points in the wild. This grounded the redesign in what a modern AdTech landing page needs to do, rather than starting from a blank page.",
+      "Before opening Stitch, I studied the competitive landscape — how tools like Smartly, AdEspresso, and Triple Whale present themselves — and looked at how Verun's core users (media buyers and performance marketers) talk about their pain points in the wild. This grounded the redesign in what a modern AdTech landing page needs to do, rather than starting from a blank page.",
 
     insights: [
       {
@@ -212,9 +212,9 @@ export const projects: Project[] = [
     client: "Webcoupers",
     role: "Product Designer",
     year: "2026",
-    timeline: "Q1 – Q2 2026",
+    timeline: "3 Months",
     platform: "Web (Desktop + Mobile)",
-    tools: "Figma · Stitch · Tailwind · Vercel",
+    tools: "Stitch · VSCode",
     inDevelopment: true,
     statusNote:
       "Note: Clarity is currently in active development and not yet live. This case study showcases the core design decisions, design system, and product strategy.",
@@ -340,9 +340,9 @@ export const projects: Project[] = [
     client: "Cappa & D'Alberto",
     role: "Product Designer",
     year: "2026",
-    timeline: "Q1 2026",
+    timeline: "Q2 2026",
     platform: "Web (Desktop + Mobile)",
-    tools: "Figma · Stitch · Tailwind · Vercel",
+    tools: "Stitch · VSCode",
     liveUrl: "https://capdal.wbcstaging.com",
 
     heroImage: capdal,
@@ -353,6 +353,9 @@ export const projects: Project[] = [
     overview:
       "Cappa & D'Alberto is one of Nigeria's oldest and most established construction and engineering firms, with a project portfolio spanning some of the country's most recognisable buildings and infrastructure. The existing website undersold that history — it read as generic and dated, out of step with a company whose actual body of work commands serious institutional trust. The redesign covered every page of the site: home, about, services, projects, and contact, each rebuilt from the ground up.",
 
+    statusNote:
+      "Concept & Skill Showcase: Beyond solving the brand's digital presence, I used this multi-page redesign to test-run and refine my skills using AI-powered design tools alongside modern programming languages and front-end frameworks.",
+    
     challenge:
       "The core tension was age versus relevance. Capdal's decades of history are its biggest asset — but a website that leaned too hard into heritage risked looking dated, while one that leaned too hard into 'modern' risked losing the gravitas that comes with being a nearly century-old institution. The site also needed to organise a large amount of content — services, a sizeable project portfolio, company history — without becoming a maze.",
 
@@ -408,12 +411,12 @@ export const projects: Project[] = [
       {
         title: "A homepage that opens with scale, not a sales pitch",
         body: "The homepage leads with \"Builders to the Nation, Since 1932\" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.",
-        image: capdal,
+        image: capdal-hero.jpg,
       },
       {
         title: "An About Us page built to carry institutional weight",
         body: "Capdal's history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm's origins, milestones, and values room to breathe — cleanly separating \"why trust us\" from \"what we do,\" so each page can make one argument well instead of two arguments halfway.",
-        image: capdal,
+        image: capdal-about.jpg,
       },
       {
         title: "A Services page that organizes six distinct capabilities clearly",
@@ -423,7 +426,7 @@ export const projects: Project[] = [
       {
         title: "A filterable Projects page for a large, varied portfolio",
         body: "The portfolio spans sectors and decades — Dover Hotel Annex, Afrexim Tower, AMCE Medical Complex, the National Theatre restoration — so the dedicated Projects page uses category-based filtering (Hospitality, Financial Hub, Healthcare, National Monument) to let visitors browse by relevance. Filtering turns an undifferentiated scroll into a discovery tool, and keeps the firm's best work from being buried by sheer volume.",
-        image: capdal,
+        image: capdal-ptojects.jpg,
       },
       {
         title: "A Careers page that sells a legacy, not just a job listing",
@@ -438,7 +441,7 @@ export const projects: Project[] = [
       {
         title: "Consistent navigation as the connective thread across five pages",
         body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
-        image: capdal,
+        image: capdal-finalcta.jpg,
       },
     ],
 
@@ -482,9 +485,9 @@ export const projects: Project[] = [
     client: "Scrutia (WBCi)",
     role: "Product Designer",
     year: "2026",
-    timeline: "Q2 2026",
+    timeline: "Q3 2026",
     platform: "Web (Desktop + Mobile)",
-    tools: "Figma · Tailwind · Stitch",
+    tools: "Stitch  · VSCode",
     liveUrl: "https://usescrutia.com",
 
     heroImage: scrutiaCover,
