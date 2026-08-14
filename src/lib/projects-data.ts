@@ -417,12 +417,12 @@ export const projects: Project[] = [
       {
         title: "A homepage that opens with scale, not a sales pitch",
         body: "The homepage leads with \"Builders to the Nation, Since 1932\" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.",
-        image: capdalHero.jpg,
+        image: capdalHero,
       },
       {
         title: "An About Us page built to carry institutional weight",
         body: "Capdal's history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm's origins, milestones, and values room to breathe — cleanly separating \"why trust us\" from \"what we do,\" so each page can make one argument well instead of two arguments halfway.",
-        image: capdalAbout.jpg,
+        image: capdalAbout,
       },
       {
         title: "A Services page that organizes six distinct capabilities clearly",
@@ -432,7 +432,7 @@ export const projects: Project[] = [
       {
         title: "A filterable Projects page for a large, varied portfolio",
         body: "The portfolio spans sectors and decades — Dover Hotel Annex, Afrexim Tower, AMCE Medical Complex, the National Theatre restoration — so the dedicated Projects page uses category-based filtering (Hospitality, Financial Hub, Healthcare, National Monument) to let visitors browse by relevance. Filtering turns an undifferentiated scroll into a discovery tool, and keeps the firm's best work from being buried by sheer volume.",
-        image: capdalProjects.jpg,
+        image: capdalProjects,
       },
       {
         title: "A Careers page that sells a legacy, not just a job listing",
@@ -447,7 +447,7 @@ export const projects: Project[] = [
       {
         title: "Consistent navigation as the connective thread across five pages",
         body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
-        image: capdalFinalcta.jpg,
+        image: capdalFinalcta,
       },
     ],
 
