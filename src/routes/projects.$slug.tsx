@@ -80,7 +80,12 @@ function CaseStudy() {
           >
             <ArrowLeft className="h-4 w-4 transition-transform duration-300 ease-out group-hover:-translate-x-1" /> Back to Work
           </Link>
-          {project.liveUrl && (
+          {project.inDevelopment ? (
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+              Coming Soon
+            </span>
+          ) : project.liveUrl ? (
             <a
               href={project.liveUrl}
               target="_blank"
@@ -90,7 +95,7 @@ function CaseStudy() {
               Visit Live Site
               <ExternalLink className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-          )}
+          ) : null}
         </div>
       </div>
 
@@ -107,6 +112,12 @@ function CaseStudy() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
           <div className="relative z-10 mx-auto flex h-full max-w-[1200px] flex-col justify-end px-6 pb-14 sm:px-10 lg:px-16 lg:pb-20">
             <Reveal className="flex flex-wrap gap-2">
+              {project.inDevelopment && (
+                <span className="inline-flex items-center gap-2 rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold text-primary-foreground backdrop-blur">
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary-foreground" />
+                  In Active Development
+                </span>
+              )}
               {project.tags.map((t) => (
                 <span
                   key={t}
@@ -139,6 +150,14 @@ function CaseStudy() {
                 </Reveal>
               ))}
             </dl>
+
+            {project.statusNote && (
+              <Reveal delay={420} className="mt-6 max-w-2xl rounded-xl border border-white/15 bg-white/5 px-4 py-3 backdrop-blur">
+                <p className="text-xs leading-relaxed text-white/70">
+                  {project.statusNote}
+                </p>
+              </Reveal>
+            )}
           </div>
         </div>
       </section>
