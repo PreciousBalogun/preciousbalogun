@@ -13,6 +13,9 @@ import scrutiaHero from "@/assets/scrutia-cover.png";
 import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
 import scrutiaCompliance from "@/assets/scrutia-compliance.png";
 import scrutiaPricing from "@/assets/scrutia-pricing.png";
+import scrutiaProblem from "@/assets/scrutia-problem.jpg";
+import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
+import scrutiaCta from "@/assets/scrutia-cta.jpg";
 
 export type Project = {
   slug: string;
