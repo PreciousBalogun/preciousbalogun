@@ -16,6 +16,10 @@ import scrutiaPricing from "@/assets/scrutia-pricing.png";
 import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
+import clarityHero from "@/assets/clarity-hero.jpg";
+import clarityBento from "@/assets/clarity-bento.jpg";
+import clarityWorkflow from "@/assets/clarity-workflow.jpg";
+import clarityCta from "@/assets/clarity-cta.jpg";
 
 export type Project = {
   slug: string;
@@ -32,6 +36,9 @@ export type Project = {
   solution: string;
   results: string;
   liveUrl?: string;
+  /** Project is not live yet — shows a WIP badge instead of a live link. */
+  inDevelopment?: boolean;
+  statusNote?: string;
   tagline?: string;
   timeline?: string;
   platform?: string;
@@ -208,10 +215,12 @@ export const projects: Project[] = [
     timeline: "Q1 – Q2 2026",
     platform: "Web (Desktop + Mobile)",
     tools: "Figma · Stitch · Tailwind · Vercel",
-    liveUrl: "https://clarity.webcoupers.com",
+    inDevelopment: true,
+    statusNote:
+      "Note: Clarity is currently in active development and not yet live. This case study showcases the core design decisions, design system, and product strategy.",
 
-    heroImage: lima,
-    gallery: [lima, lima],
+    heroImage: clarityHero,
+    gallery: [clarityHero, clarityBento],
 
     tagline: "Run your projects. Not the other way around.",
 
@@ -267,7 +276,25 @@ export const projects: Project[] = [
 
     hmw: "How might we design a landing page that makes a team lead, a contributor, and an executive all feel like Clarity was built specifically for them — without writing three different pages?",
 
-    finalDesigns: [lima],
+    designDecisions: [
+      {
+        title: "Bento grid layout for complex features",
+        body: "Instead of a repetitive stacked feature list, an asymmetrical bento grid groups distinct value propositions—like velocity tracking, AI risk analysis, dependency routing, and automated standups—into visual cards. High-contrast dark containers highlight real-time AI telemetry, instantly guiding the eye to high-priority features without visual overload.",
+        image: clarityBento,
+      },
+      {
+        title: "Role-tailored progressive disclosure",
+        body: "To demonstrate product versatility across cross-functional teams, an interactive side-tab switcher segregates workflows for Developers, Designers, and Product Ops. Clicking a role dynamically swaps the interactive preview card—such as showing terminal/CLI integration for engineers—giving each persona immediate visual proof of relevance without forcing a long page scroll.",
+        image: clarityWorkflow,
+      },
+      {
+        title: "High-contrast closure that commands action",
+        body: "The final call-to-action uses a rounded dark navy container to create a stark visual anchor at the bottom of the light landing page background. Paired with a bold outcome-driven headline (\"Ready for absolute focus?\") and clear primary vs. secondary button hierarchy, it provides a high-converting, friction-free path for visitors ready to convert.",
+        image: clarityCta,
+      },
+    ],
+
+    finalDesigns: [clarityHero],
 
     stats: [
       {
