@@ -553,34 +553,19 @@ export const projects: Project[] = [
         image: scrutiaPricing,
       },
       {
-        title: "CTAs placed at decision points, not at intervals",
-        body: "The primary action repeats after the problem framing, after the workflow, and at the close — the three moments where a visitor has just been given a reason to act. Secondary paths (book a demo, view pricing) are demoted to text-weight links so they never compete. Because payment happens inside the desktop app, the site's job is narrowed to one honest handoff rather than a fake checkout.",
-        image: webcoupers,
+        title: "Proof placed where the doubt is highest",
+        body: "Rather than asserting the product saves time, the page shows it: the 85% ARCON rework reduction stat sits directly beside a real dashboard screenshot, at the exact point in the page where a skeptical visitor is being asked to believe the pain described above is solvable. The three named failure modes — Late Rejection, Regulatory Delay, Overlooked Detail — mirror language agencies already use for these moments, rather than generic problem statements.",
+        image: scrutiaProblem,
       },
       {
         title: "Hierarchy tuned for enterprise credibility",
         body: "Media houses evaluating Scrutia need reassurance before they need features, so infrastructure claims — local-first processing, encryption, Lagos-based data residency, audit-ready logs — get typographic weight equal to the product sections rather than being tucked into fine print. Restraint does the rest: generous whitespace and a narrow type scale read as institutional, where dense decoration would read as a startup demo.",
-        image: webcoupers,
+        image: scrutiaInfrastructure,
       },
       {
-        title: "Navigation that mirrors how the decision is actually made",
-        body: "Home, Compliance, Pricing, Roadmap, and Download follow the real evaluation order: what is it, can I trust it, what does it cost, where is it going, how do I start. The same header and footer anchor every page, so moving between them never costs orientation — and the Download action stays visible throughout, since it is the only conversion the site itself has to produce.",
-        image: webcoupers,
-      },
-      {
-        title: "Spacing and typography doing the readability work",
-        body: "Regulatory content is dense by nature, so the layout compensates: a constrained measure for body copy, consistent vertical rhythm between sections, and eyebrow labels that let someone scan the page structure without reading it. The result is a page a busy account director can skim in thirty seconds and a compliance lead can read properly.",
-        image: webcoupers,
-      },
-      {
-        title: "A responsive layout that survives the mobile read",
-        body: "Multi-column capability grids collapse to single-column stacks in the order the argument is made, the pricing comparison becomes tier-by-tier cards rather than a horizontally-scrolling table, and product screenshots crop to their meaningful region instead of shrinking to illegibility. Much of this traffic arrives from phones via shared links, so the mobile version had to carry the full argument, not a summary of it.",
-        image: webcoupers,
-      },
-      {
-        title: "Trust built from output, screenshots, and named standards",
-        body: "Rather than asserting accuracy, the page shows it: sample product UI with a real-looking finding, an approval-probability read-out, an estimated ARCON vetting fee, and the specific standards being checked, named. Social proof from Nigerian agencies sits next to the claims it supports rather than in an isolated testimonials strip — trust delivered exactly where the doubt appears.",
-        image: webcoupers,
+        title: "CTAs placed at decision points, not at intervals",
+        body: "The primary 'Get Scrutia' action appears at the points where a visitor has just been given a reason to act — held consistently in the nav bar and a closing full-width block on every page (Platform, Compliance, Pricing), for six placements total site-wide, so the action is never more than one click away regardless of which page a visitor is evaluating. Within the homepage specifically, it repeats after the hero's compliance proof and again after the problem section's cost is made concrete with real numbers (85% reduction in ARCON rework, 4x faster approval cycles) — placed where trust has just been built, not at fixed scroll intervals. Because payment is completed securely inside the Scrutia desktop app rather than on the marketing site itself, the site's job is narrowed to one honest handoff to download and sign up, rather than a fake in-browser checkout.",
+        image: scrutiaCta,
       },
     ],
 
