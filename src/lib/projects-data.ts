@@ -22,7 +22,7 @@ import scrutiaPricing from "@/assets/scrutia-pricing.png";
 import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
-import clarityHeroCoverAsset from "@/assets/clarity-hero-cover.jpg.asset.json";
+import clarityHero from "@/assets/clarity-hero.jpg";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
 import clarityCta from "@/assets/clarity-cta.jpg";
@@ -227,8 +227,8 @@ export const projects: Project[] = [
     statusNote:
       "Note: Clarity is currently in active development and not yet live. This case study showcases the core design decisions, design system, and product strategy.",
 
-    heroImage: clarityHeroCoverAsset,
-    gallery: [clarityHeroCoverAsset, clarityBento],
+    heroImage: clarityHero,
+    gallery: [clarityHero, clarityBento],
 
     tagline: "Run your projects. Not the other way around.",
 
@@ -307,7 +307,7 @@ export const projects: Project[] = [
       },
     ],
 
-    finalDesigns: [clarityHeroCoverAsset],
+    finalDesigns: [clarityHero],
 
     stats: [
       {
