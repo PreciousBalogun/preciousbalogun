@@ -278,30 +278,46 @@ function CaseStudy() {
           <Eyebrow>Design Decisions</Eyebrow>
           <SectionHeading>The why behind the pixels</SectionHeading>
           <div className="mt-4 flex flex-col gap-16">
-            {decisions.map((d, i) => (
-              <Reveal
-                key={d.title}
-                delay={60}
-                className={`grid items-center gap-8 md:grid-cols-2 md:gap-12 ${
-                  i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
-                }`}
-              >
-                <div className="group aspect-[4/3] overflow-hidden rounded-2xl bg-surface-muted">
-                  <img
-                    src={d.image}
-                    alt={d.title}
-                    loading="lazy"
-                    className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold md:text-3xl">{d.title}</h3>
-                  <p className="mt-4 text-base leading-relaxed text-foreground/80">
-                    {d.body}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+            {decisions.map((d, i) => {
+              const isVideo = d.isVideo || typeof d.image === "string" && d.image.endsWith(".mp4");
+
+              return (
+                <Reveal
+                  key={d.title}
+                  delay={60}
+                  className={`grid items-center gap-8 md:grid-cols-2 md:gap-12 ${
+                    i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+                  }`}
+                >
+                  <div className="group aspect-[4/3] overflow-hidden rounded-2xl bg-surface-muted">
+                    {isVideo ? (
+                      <video
+                        src={d.image}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        className="h-full w-full object-contain"
+                      />
+                    ) : (
+                      <img
+                        src={d.image}
+                        alt={d.title}
+                        loading="lazy"
+                        className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
+                      />
+                    )}
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold md:text-3xl">{d.title}</h3>
+                    <p className="mt-4 text-base leading-relaxed text-foreground/80">
+                      {d.body}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </Section>
       </div>
@@ -311,20 +327,37 @@ function CaseStudy() {
         <Eyebrow>Final Designs</Eyebrow>
         <SectionHeading>The shipped experience</SectionHeading>
         <div className="flex flex-col gap-8">
-          {finals.map((src, i) => (
-            <Reveal
-              key={`${src}-${i}`}
-              delay={i * 80}
-              className="group overflow-hidden rounded-2xl bg-surface-muted"
-            >
-              <img
-                src={src}
-                alt={`${project.title} — final ${i + 1}`}
-                loading="lazy"
-                className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-              />
-            </Reveal>
-          ))}
+          {finals.map((item, i) => {
+            const src = typeof item === "string" ? item : item.src;
+            const isVideo = (typeof item === "object" && item.isVideo) || (typeof src === "string" && src.endsWith(".mp4"));
+
+            return (
+              <Reveal
+                key={`${src}-${i}`}
+                delay={i * 80}
+                className="group overflow-hidden rounded-2xl bg-surface-muted"
+              >
+                {isVideo ? (
+                  <video
+                    src={src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    controls
+                    className="h-full w-full object-contain"
+                  />
+                ) : (
+                  <img
+                    src={src}
+                    alt={`${project.title} — final ${i + 1}`}
+                    loading="lazy"
+                    className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  />
+                )}
+              </Reveal>
+            );
+          })}
         </div>
         {project.prototypeUrl && (
           <Reveal delay={100} className="mt-10 flex justify-center">
