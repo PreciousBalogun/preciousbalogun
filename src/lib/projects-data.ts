@@ -67,7 +67,7 @@ export type Project = {
   hmw?: string;
   ideation?: { image: string; caption: string }[];
   designDecisions?: { title: string; body: string; image: string; isVideo?: boolean }[];
-  finalDesigns?: string[];
+  finalDesigns?: { src: string; isVideo?: boolean }[] | string[];
   prototypeUrl?: string;
   stats?: { value: string; label: string }[];
   resultsContext?: string;
@@ -568,7 +568,7 @@ export const projects: Project[] = [
 
     hmw: "How might we turn compliance from a stressful, after-the-fact scramble into a routine step teams take before they spend — without burying them in the regulation itself?",
 
-    finalDesigns: [scrutiaFinaldesign],
+    finalDesigns: [{ src: scrutiaFinaldesign, isVideo: true }],
 
     designDecisions: [
       {
