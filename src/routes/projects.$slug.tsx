@@ -106,7 +106,7 @@ function CaseStudy() {
             ref={heroRef}
             src={project.heroImage}
             alt={project.title}
-            style={{ transform: `translate3d(0, ${heroY}px, 0) scale(1.08)` }}
+            style={{ transform: `translate3d(0, ${heroY}px, 0)` }}
             className="absolute inset-0 h-full w-full object-contain will-change-transform"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
