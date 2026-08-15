@@ -108,9 +108,9 @@ function CaseStudy() {
             alt={project.title}
             style={{
               transform: `translate3d(0, ${heroY}px, 0)`,
-              objectPosition: "70% 88%",
+              objectPosition: "78% 100%",
             }}
-            className="absolute inset-0 h-full w-full scale-105 object-cover will-change-transform"
+            className="absolute inset-0 h-full w-full scale-[1.35] object-cover will-change-transform"
           />
           <div
             className="absolute inset-0"
