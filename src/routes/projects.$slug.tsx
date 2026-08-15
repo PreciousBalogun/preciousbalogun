@@ -101,13 +101,13 @@ function CaseStudy() {
 
       {/* 1. Hero */}
       <section className="relative overflow-hidden">
-        <div className="relative h-[70vh] min-h-[520px] w-full">
+        <div className="relative h-[70vh] min-h-[520px] w-full bg-surface-muted">
           <img
             ref={heroRef}
             src={project.heroImage}
             alt={project.title}
             style={{ transform: `translate3d(0, ${heroY}px, 0) scale(1.08)` }}
-            className="absolute inset-0 h-full w-full object-cover will-change-transform"
+            className="absolute inset-0 h-full w-full object-contain will-change-transform"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
           <div className="relative z-10 mx-auto flex h-full max-w-[1200px] flex-col justify-end px-6 pb-14 sm:px-10 lg:px-16 lg:pb-20">
@@ -270,12 +270,12 @@ function CaseStudy() {
                   i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
-                <div className="group aspect-[4/3] overflow-hidden rounded-2xl bg-background">
+                <div className="group aspect-[4/3] overflow-hidden rounded-2xl bg-surface-muted">
                   <img
                     src={d.image}
                     alt={d.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
                 <div>
@@ -305,7 +305,7 @@ function CaseStudy() {
                 src={src}
                 alt={`${project.title} — final ${i + 1}`}
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
             </Reveal>
           ))}
@@ -389,7 +389,7 @@ function CaseStudy() {
                 src={next.heroImage}
                 alt={next.title}
                 loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="flex flex-1 flex-col justify-center p-8 md:p-10">
