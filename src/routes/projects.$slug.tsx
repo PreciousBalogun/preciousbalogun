@@ -101,15 +101,31 @@ function CaseStudy() {
 
       {/* 1. Hero */}
       <section className="relative overflow-hidden">
-        <div className="relative h-[70vh] min-h-[520px] w-full bg-surface-muted">
+        <div className="relative h-[70vh] min-h-[520px] w-full bg-[#0a0a0c]">
           <img
             ref={heroRef}
             src={project.heroImage}
             alt={project.title}
-            style={{ transform: `translate3d(0, ${heroY}px, 0)` }}
-            className="absolute inset-0 h-full w-full object-contain will-change-transform"
+            style={{
+              transform: `translate3d(0, ${heroY}px, 0)`,
+              objectPosition: "78% 100%",
+            }}
+            className="absolute inset-0 h-full w-full scale-[1.35] object-cover will-change-transform"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/80" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(115deg, rgba(10,10,12,0.96) 0%, rgba(10,10,12,0.92) 30%, rgba(10,10,12,0.75) 55%, rgba(10,10,12,0.1) 100%)",
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to top, rgba(10,10,12,0.92) 0%, rgba(10,10,12,0.4) 40%, rgba(10,10,12,0) 75%)",
+            }}
+          />
           <div className="relative z-10 mx-auto flex h-full max-w-[1200px] flex-col justify-end px-6 pb-14 sm:px-10 lg:px-16 lg:pb-20">
             <Reveal className="flex flex-wrap gap-2">
               {project.inDevelopment && (
