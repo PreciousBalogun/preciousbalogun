@@ -559,7 +559,7 @@ export const projects: Project[] = [
 
     hmw: "How might we turn compliance from a stressful, after-the-fact scramble into a routine step teams take before they spend — without burying them in the regulation itself?",
 
-    finalDesigns: [ScrutiaHero],
+    finalDesigns: [scrutiaHero],
 
     designDecisions: [
       {
