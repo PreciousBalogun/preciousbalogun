@@ -22,6 +22,7 @@ import scrutiaPricing from "@/assets/scrutia-pricing.png";
 import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
+import scrutiaFinaldesign from "@/src/scrutia-finaldesign.mp4";
 import clarityHero from "@/assets/clarity-hero.jpg";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
@@ -559,7 +560,7 @@ export const projects: Project[] = [
 
     hmw: "How might we turn compliance from a stressful, after-the-fact scramble into a routine step teams take before they spend — without burying them in the regulation itself?",
 
-    finalDesigns: [scrutiaHero],
+    finalDesigns: [scrutiaFinaldesign],
 
     designDecisions: [
       {
