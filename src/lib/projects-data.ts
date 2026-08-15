@@ -58,7 +58,7 @@ export type Project = {
   insights?: { title: string; body: string }[];
   hmw?: string;
   ideation?: { image: string; caption: string }[];
-  designDecisions?: { title: string; body: string; image: string }[];
+  designDecisions?: { title: string; body: string; image: string; isVideo?: boolean }[];
   finalDesigns?: string[];
   prototypeUrl?: string;
   stats?: { value: string; label: string }[];
@@ -597,6 +597,12 @@ export const projects: Project[] = [
         title: "CTAs placed at decision points, not at intervals",
         body: "The primary 'Get Scrutia' action appears at the points where a visitor has just been given a reason to act — held consistently in the nav bar and a closing full-width block on every page (Platform, Compliance, Pricing), for six placements total site-wide, so the action is never more than one click away regardless of which page a visitor is evaluating. Within the homepage specifically, it repeats after the hero's compliance proof and again after the problem section's cost is made concrete with real numbers (85% reduction in ARCON rework, 4x faster approval cycles) — placed where trust has just been built, not at fixed scroll intervals. Because payment is completed securely inside the Scrutia desktop app rather than on the marketing site itself, the site's job is narrowed to one honest handoff to download and sign up, rather than a fake in-browser checkout.",
         image: scrutiaCta,
+      },
+      {
+        title: "Interactive video preview of the Scrutia landing experience",
+        body: "A high-definition video walkthrough showcasing the complete responsive web experience, scroll animations, and interactive compliance engine modules in real-time.",
+        image: scrutiaFinaldesign,
+        isVideo: true,
       },
     ],
 
