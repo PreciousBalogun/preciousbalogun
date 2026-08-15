@@ -22,7 +22,7 @@ import scrutiaPricing from "@/assets/scrutia-pricing.png";
 import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
-import scrutiaFinaldesign from "@/src/scrutia-finaldesign.mp4";
+import scrutiaFinaldesign from "@/assets/scrutia-finaldesign.mp4";
 import clarityHero from "@/assets/clarity-hero.jpg";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
