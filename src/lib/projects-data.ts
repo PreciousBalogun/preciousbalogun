@@ -23,9 +23,12 @@ import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
 import clarityHero from "@/assets/clarity-hero.jpg";
+import clarityHeroCoverAsset from "@/assets/clarity-hero-cover.jpg.asset.json";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
 import clarityCta from "@/assets/clarity-cta.jpg";
+
+const clarityHeroCover = clarityHeroCoverAsset.url;
 
 export type Project = {
   slug: string;
@@ -225,8 +228,8 @@ export const projects: Project[] = [
     statusNote:
       "Note: Clarity is currently in active development and not yet live. This case study showcases the core design decisions, design system, and product strategy.",
 
-    heroImage: clarityHero,
-    gallery: [clarityHero, clarityBento],
+    heroImage: clarityHeroCover,
+    gallery: [clarityHeroCover, clarityBento],
 
     tagline: "Run your projects. Not the other way around.",
 
@@ -283,6 +286,11 @@ export const projects: Project[] = [
     hmw: "How might we design a landing page that makes a team lead, a contributor, and an executive all feel like Clarity was built specifically for them — without writing three different pages?",
 
     designDecisions: [
+      {
+        title: "A hero that leads with the outcome, not the tool",
+        body: "The hero opens on a deep navy field with a two-line statement — \"Run your projects. Not the other way around.\" — set in heavy display type, so the first thing a visitor reads is the change in their working life rather than a category label like \"project management software\". The subhead does the qualifying work in one breath (\"the command center built for high-velocity product teams\"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter \"Book a demo\", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose — proof that the interface exists arrives before any feature copy has to argue for it.",
+        image: clarityHeroCover,
+      },
       {
         title: "Bento grid layout for complex features",
         body: "Instead of a repetitive stacked feature list, an asymmetrical bento grid groups distinct value propositions—like velocity tracking, AI risk analysis, dependency routing, and automated standups—into visual cards. High-contrast dark containers highlight real-time AI telemetry, instantly guiding the eye to high-priority features without visual overload.",
@@ -452,10 +460,6 @@ export const projects: Project[] = [
       {
         value: "5+",
         label: "Full pages redesigned end-to-end across the site",
-      },
-      {
-        value: "90+",
-        label: "Years of company history reframed for a modern audience",
       },
     ],
 
