@@ -27,8 +27,6 @@ import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
 import clarityCta from "@/assets/clarity-cta.jpg";
 
-const clarityHeroCover = clarityHeroCoverAsset.url;
-
 export type Project = {
   slug: string;
   title: string;
