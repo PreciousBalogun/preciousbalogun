@@ -228,8 +228,8 @@ export const projects: Project[] = [
     statusNote:
       "Note: Clarity is currently in active development and not yet live. This case study showcases the core design decisions, design system, and product strategy.",
 
-    heroImage: clarityHeroCover,
-    gallery: [clarityHeroCover, clarityBento],
+    heroImage: clarityHeroCoverAsset,
+    gallery: [clarityHeroCoverAsset, clarityBento],
 
     tagline: "Run your projects. Not the other way around.",
 
@@ -289,7 +289,7 @@ export const projects: Project[] = [
       {
         title: "A hero that leads with the outcome, not the tool",
         body: "The hero opens on a deep navy field with a two-line statement — \"Run your projects. Not the other way around.\" — set in heavy display type, so the first thing a visitor reads is the change in their working life rather than a category label like \"project management software\". The subhead does the qualifying work in one breath (\"the command center built for high-velocity product teams\"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter \"Book a demo\", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose — proof that the interface exists arrives before any feature copy has to argue for it.",
-        image: clarityHeroCover,
+        image: clarityHeroCoverAsset,
       },
       {
         title: "Bento grid layout for complex features",
