@@ -285,8 +285,8 @@ export const projects: Project[] = [
     designDecisions: [
       {
         title: "A hero that leads with the outcome, not the tool",
-        body: "The hero opens on a deep navy field with a two-line statement — \"Run your projects. Not the other way around.\" — set in heavy display type, so the first thing a visitor reads is the change in their working life rather than a category label like \"project management software\". The subhead does the qualifying work in one breath (\"the command center built for high-velocity product teams\"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter \"Book a demo\", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose — proof that the interface exists arrives before any feature copy has to argue for it.",
-        image: clarityHeroCoverAsset,
+        body: 'The hero opens on a deep navy field with a two-line statement — "Run your projects. Not the other way around." — set in heavy display type, so the first thing a visitor reads is the change in their working life rather than a category label like "project management software". The subhead does the qualifying work in one breath ("the command center built for high-velocity product teams"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter "Book a demo", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose — proof that the interface exists arrives before any feature copy has to argue for it.',
+        image: clarityHero,
       },
       {
         title: "Bento grid layout for complex features",
@@ -300,7 +300,7 @@ export const projects: Project[] = [
       },
       {
         title: "High-contrast closure that commands action",
-        body: "The final call-to-action uses a rounded dark navy container to create a stark visual anchor at the bottom of the light landing page background. Paired with a bold outcome-driven headline (\"Ready for absolute focus?\") and clear primary vs. secondary button hierarchy, it provides a high-converting, friction-free path for visitors ready to convert.",
+        body: 'The final call-to-action uses a rounded dark navy container to create a stark visual anchor at the bottom of the light landing page background. Paired with a bold outcome-driven headline ("Ready for absolute focus?") and clear primary vs. secondary button hierarchy, it provides a high-converting, friction-free path for visitors ready to convert.',
         image: clarityCta,
       },
     ],
@@ -418,12 +418,12 @@ export const projects: Project[] = [
     designDecisions: [
       {
         title: "A homepage that opens with scale, not a sales pitch",
-        body: "The homepage leads with \"Builders to the Nation, Since 1932\" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.",
+        body: 'The homepage leads with "Builders to the Nation, Since 1932" over hero imagery of a real landmark project — the Wings Office Complex — so credibility is established through visual proof before any copy has to do the convincing. Directly beneath the hero sits a stat bar (90+ Years, 500+ Projects, 1,000+ Professionals, 36 States) that turns nine decades of work into an immediate, scannable trust signal rather than a story a visitor has to read their way into.',
         image: capdalHero,
       },
       {
         title: "An About Us page built to carry institutional weight",
-        body: "Capdal's history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm's origins, milestones, and values room to breathe — cleanly separating \"why trust us\" from \"what we do,\" so each page can make one argument well instead of two arguments halfway.",
+        body: 'Capdal\'s history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm\'s origins, milestones, and values room to breathe — cleanly separating "why trust us" from "what we do," so each page can make one argument well instead of two arguments halfway.',
         image: capdalAbout,
       },
       {
@@ -545,7 +545,7 @@ export const projects: Project[] = [
       },
       {
         title: "Automated review is only trusted when it shows its work",
-        body: "\"AI-powered\" claims read as noise on their own. Findings shown as concrete output — a flagged clause, a risk profile, an estimated ARCON vetting fee — did far more to establish credibility than any adjective.",
+        body: '"AI-powered" claims read as noise on their own. Findings shown as concrete output — a flagged clause, a risk profile, an estimated ARCON vetting fee — did far more to establish credibility than any adjective.',
       },
       {
         title: "Agencies buy on volume and control, not on features",
@@ -564,7 +564,7 @@ export const projects: Project[] = [
     designDecisions: [
       {
         title: "A hero that names the moment, not the technology",
-        body: "The hero leads with \"Pre-Vet Every Ad Before ARCON, Meta, Google, TikTok, or X Ever See It\" — a sentence that contains the product, the audience, and the timing all at once. Naming the five gates explicitly does more work than any abstract phrase about compliance automation: a media buyer recognises their own problem in the first line. A trust badge sits directly beneath, so the claim and the proof arrive together rather than being separated by a scroll.",
+        body: 'The hero leads with "Pre-Vet Every Ad Before ARCON, Meta, Google, TikTok, or X Ever See It" — a sentence that contains the product, the audience, and the timing all at once. Naming the five gates explicitly does more work than any abstract phrase about compliance automation: a media buyer recognises their own problem in the first line. A trust badge sits directly beneath, so the claim and the proof arrive together rather than being separated by a scroll.',
         image: scrutiaHero,
       },
       {
