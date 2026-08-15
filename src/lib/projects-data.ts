@@ -22,7 +22,6 @@ import scrutiaPricing from "@/assets/scrutia-pricing.png";
 import scrutiaProblem from "@/assets/scrutia-problem.jpg";
 import scrutiaInfrastructure from "@/assets/scrutia-infrastructure.jpg";
 import scrutiaCta from "@/assets/scrutia-cta.jpg";
-import clarityHero from "@/assets/clarity-hero.jpg";
 import clarityHeroCoverAsset from "@/assets/clarity-hero-cover.jpg.asset.json";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
@@ -308,7 +307,7 @@ export const projects: Project[] = [
       },
     ],
 
-    finalDesigns: [clarityHero],
+    finalDesigns: [clarityHeroCoverAsset],
 
     stats: [
       {
