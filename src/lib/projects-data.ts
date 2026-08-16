@@ -607,12 +607,6 @@ export const projects: Project[] = [
         image: scrutiaCta,
       },
       {
-        title: "Interactive video preview of the Scrutia landing experience",
-        body: "A high-definition video walkthrough showcasing the complete responsive web experience, scroll animations, and interactive compliance engine modules in real-time.",
-        image: scrutiaFinaldesign,
-        isVideo: true,
-      },
-    ],
 
     stats: [
       { value: "3", label: "Core pages designed: Home, Compliance, Pricing" },
