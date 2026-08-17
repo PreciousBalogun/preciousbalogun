@@ -425,7 +425,7 @@ export const projects: Project[] = [
 
     hmw: "How might we redesign a website for a company built on decades of trust — without making the site feel like it belongs to a different, less established company?",
 
-    finalDesigns: [capdalHero],
+    finalDesigns: [capdalFinaldesign],
 
     designDecisions: [
       {
