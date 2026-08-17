@@ -316,7 +316,7 @@ export const projects: Project[] = [
       },
     ],
 
-    finalDesigns: [clarityHero],
+    finalDesigns: [clarityFinaldesign],
 
    stats: [
   {
