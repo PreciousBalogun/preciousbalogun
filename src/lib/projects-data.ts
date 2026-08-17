@@ -606,7 +606,7 @@ export const projects: Project[] = [
         body: "The primary 'Get Scrutia' action appears at the points where a visitor has just been given a reason to act — held consistently in the nav bar and a closing full-width block on every page (Platform, Compliance, Pricing), for six placements total site-wide, so the action is never more than one click away regardless of which page a visitor is evaluating. Within the homepage specifically, it repeats after the hero's compliance proof and again after the problem section's cost is made concrete with real numbers (85% reduction in ARCON rework, 4x faster approval cycles) — placed where trust has just been built, not at fixed scroll intervals. Because payment is completed securely inside the Scrutia desktop app rather than on the marketing site itself, the site's job is narrowed to one honest handoff to download and sign up, rather than a fake in-browser checkout.",
         image: scrutiaCta,
       },
-      {
+    ],
 
     stats: [
       { value: "3", label: "Core pages designed: Home, Compliance, Pricing" },
