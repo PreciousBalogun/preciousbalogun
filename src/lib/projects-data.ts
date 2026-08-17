@@ -316,20 +316,20 @@ export const projects: Project[] = [
 
     finalDesigns: [clarityHero],
 
-    stats: [
-      {
-        value: "3",
-        label: "Distinct user personas addressed in a single, cohesive landing page",
-      },
-      {
-        value: "98%",
-        label: "Weekly velocity metric surfaced as a headline trust signal in the product",
-      },
-      {
-        value: "365d",
-        label: "Data history — a key differentiator called out as a concrete product stat",
-      },
-    ],
+   stats: [
+  {
+    value: "3",
+    label: "Core user personas aligned into a single narrative structure",
+  },
+  {
+    value: "100%",
+    label: "Design system & high-fidelity UI components complete",
+  },
+  {
+    value: "Beta",
+    label: "Target milestone for initial internal rollout at Webcoupers",
+  },
+],
 
     solution:
       "Designed an outcome-led landing page that addresses three user personas through a single coherent narrative — moving from pain to proof to persona relevance to action. The tabbed product preview, smart feature UI cards, and structured persona section work together to communicate product depth without cognitive overload.",
@@ -337,14 +337,14 @@ export const projects: Project[] = [
     results:
       "Shipped a fully designed landing page for Clarity — live and serving as the primary marketing surface as the product moves toward its broader internal rollout at Webcoupers.",
 
-    resultsContext:
-      "Clarity is an active internal Webcoupers product. The landing page is the primary public-facing surface as the team scales the platform and prepares for broader adoption across client organisations.",
-
+  resultsContext:
+  "Clarity is currently in active development. The landing page and UI framework serve as the foundational blueprint as engineering builds toward an internal beta release, paving the way for broader adoption across client organizations.",
+    
     forwardLooking:
       "Clarity is in active development at Webcoupers. The landing page is the product's primary marketing surface — designed to grow with the platform as it moves from internal tool to client-facing product.",
 
     reflection:
-      "The most interesting constraint on this project was designing for three completely different users without letting the page feel schizophrenic. The solution — persona-specific sections within a single narrative arc — taught me that audience segmentation doesn't have to mean content fragmentation. You can write one story that different people enter at different points. I'd push the product UI mockups even further next time — the sections where you can actually see the Clarity interface are where the page earns the most trust, and I'd want more of them, earlier.",
+  "Designing for an unreleased product meant building high credibility without past performance metrics to lean on. The key was creating an outcome-led story and high-fidelity UI previews that demonstrate value upfront. As Clarity moves through development, I'm eager to gather real user feedback during the upcoming beta phase to refine the onboarding and dashboard flows further.",
   },
   // ─────────────────────────────────────────────────────────────
   // CAPDAL
