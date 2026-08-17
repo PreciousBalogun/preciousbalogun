@@ -322,57 +322,63 @@ function CaseStudy() {
         </Section>
       </div>
 
-      {/* 9. Final Designs */}
-      <Section>
-        <Eyebrow>Final Designs</Eyebrow>
-        <SectionHeading>The shipped experience</SectionHeading>
-        <div className="flex flex-col gap-8">
-          {finals.map((item, i) => {
-            const src = typeof item === "string" ? item : item.src;
-            const isVideo = (typeof item === "object" && item.isVideo) || (typeof src === "string" && src.endsWith(".mp4"));
+{/* 9. Final Designs / Current Progress */}
+<Section>
+  <Eyebrow>
+    {project.inDevelopment ? "Current Progress" : "Final Designs"}
+  </Eyebrow>
+  <SectionHeading>
+    {project.inDevelopment ? "Where the design stands right now" : "The shipped experience"}
+  </SectionHeading>
+  
+  <div className="flex flex-col gap-8">
+    {finals.map((item, i) => {
+      const src = typeof item === "string" ? item : item.src;
+      const isVideo = (typeof item === "object" && item.isVideo) || (typeof src === "string" && src.endsWith(".mp4"));
 
-            return (
-              <Reveal
-                key={`${src}-${i}`}
-                delay={i * 80}
-                className="group overflow-hidden rounded-2xl bg-surface-muted"
-              >
-                {isVideo ? (
-                  <video
-                    src={src}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    controls
-                    className="h-full w-full object-contain"
-                  />
-                ) : (
-                  <img
-                    src={src}
-                    alt={`${project.title} — final ${i + 1}`}
-                    loading="lazy"
-                    className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                  />
-                )}
-              </Reveal>
-            );
-          })}
-        </div>
-        {project.prototypeUrl && (
-          <Reveal delay={100} className="mt-10 flex justify-center">
-            <a
-              href={project.prototypeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:translate-y-0 active:scale-[0.98]"
-            >
-              View Prototype
-              <ExternalLink className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
-          </Reveal>
-        )}
-      </Section>
+      return (
+        <Reveal
+          key={`${src}-${i}`}
+          delay={i * 80}
+          className="group overflow-hidden rounded-2xl bg-surface-muted"
+        >
+          {isVideo ? (
+            <video
+              src={src}
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="h-full w-full object-contain"
+            />
+          ) : (
+            <img
+              src={src}
+              alt={`${project.title} — preview ${i + 1}`}
+              loading="lazy"
+              className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            />
+          )}
+        </Reveal>
+      );
+    })}
+  </div>
+  
+  {project.prototypeUrl && (
+    <Reveal delay={100} className="mt-10 flex justify-center">
+      <a
+        href={project.prototypeUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-lg active:translate-y-0 active:scale-[0.98]"
+      >
+        View Prototype
+        <ExternalLink className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </a>
+    </Reveal>
+  )}
+</Section>
 
       {/* 10. Results & Impact */}
       <div className="bg-surface-muted">
