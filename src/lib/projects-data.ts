@@ -35,6 +35,8 @@ import clarityHero from "@/assets/clarity-hero.jpg";
 import clarityBento from "@/assets/clarity-bento.jpg";
 import clarityWorkflow from "@/assets/clarity-workflow.jpg";
 import clarityCta from "@/assets/clarity-cta.jpg";
+import clarityFinaldesign from "@/assets/clarity-finaldesign.mp4";
+
 
 export type Project = {
   slug: string;
