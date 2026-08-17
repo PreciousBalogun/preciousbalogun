@@ -22,6 +22,7 @@ import capdalProjects from "@/assets/capdal-projects.jpg";
 import capdalCareers from "@/assets/capdal-careers.jpg";
 import capdalContact from "@/assets/capdal-contact.jpg";
 import capdalFinalcta from "@/assets/capdal-finalcta.jpg";
+import capdalFinaldesign from "@/assets/capdal-finaldesign.mp4";
 import scrutiaCover from "@/assets/scrutia-cover.png";
 import scrutiaHero from "@/assets/scrutia-cover.png";
 import scrutiaPlatformOverview from "@/assets/scrutia-platform-overview.png";
