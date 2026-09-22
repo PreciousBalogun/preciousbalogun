@@ -1,8 +1,10 @@
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import workspace from "@/assets/hero-workspace.jpg";
-import profileImage from "@/assets/profile.jpg";
+import workspaceAsset from "@/assets/hero-workspace.jpg.asset.json";
+const workspace = workspaceAsset.url;
+import profileImageAsset from "@/assets/profile.jpg.asset.json";
+const profileImage = profileImageAsset.url;
 import { useIsDark } from "@/hooks/useIsDark";
 import { useParallax, usePrefersReducedMotion } from "@/hooks/useMotion";
 import { cn } from "@/lib/utils";
