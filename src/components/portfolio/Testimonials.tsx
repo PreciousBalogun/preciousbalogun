@@ -11,10 +11,10 @@ const testimonials = [
   },
   {
     quote:
-      "Working with Precious was a turning point for our analytics surface. Her research-led approach surfaced problems we didn't know we had — and her solutions just felt right.",
-    name: "Daniel Ade",
-    title: "Engagement Manager, Webcoupers",
-    initials: "DA",
+      "Precious is so hardworking and dedicated. She is very attentive and gives her best to every task she works on. She listens to understand feedback and does exactly what needs to be done. Precious is a creative genius, she has a lot of creative ideas and is very open to growth and embracing innovation to improve efficiency.",
+    name: "Amarachi Awazie",
+    title: "Engineering Team Lead, Webcoupers",
+    initials: "AA",
   },
   {
     quote:

@@ -560,7 +560,7 @@ function defaultIdeation(p: Project) {
   ];
 }
 
-function defaultDecisions(p: Project) {
+function defaultDecisions(p: Project): NonNullable<Project["designDecisions"]> {
   const g = p.gallery.length ? p.gallery : [p.heroImage];
   const pick = (i: number) => g[i % g.length];
   return [
