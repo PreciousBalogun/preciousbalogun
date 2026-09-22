@@ -1,10 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// TYPESCRIPT MODULE DECLARATION FOR MP4 IMPORTS
-// ─────────────────────────────────────────────────────────────
-declare module "*.mp4" {
-  const src: string;
-  export default src;
-}
 
 import novabuk from "@/assets/project-novabuk.jpg";
 import webcoupers from "@/assets/project-webcoupers.jpg";
