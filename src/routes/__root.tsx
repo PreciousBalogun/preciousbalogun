@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import { IMAGE_FALLBACK } from "@/lib/asset-url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -126,6 +127,19 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  // Swap any image that fails to load for a neutral placeholder.
+  useEffect(() => {
+    const onError = (e: Event) => {
+      const el = e.target;
+      if (el instanceof HTMLImageElement && el.src !== IMAGE_FALLBACK) {
+        console.warn("Image failed to load:", el.src);
+        el.src = IMAGE_FALLBACK;
+      }
+    };
+    document.addEventListener("error", onError, true);
+    return () => document.removeEventListener("error", onError, true);
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
