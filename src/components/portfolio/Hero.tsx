@@ -1,14 +1,13 @@
 import { assetUrl } from "@/lib/asset-url";
 import { MapPin, ArrowRight, Download } from "lucide-react";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import workspaceAsset from "@/assets/hero-workspace.jpg.asset.json";
 const workspace = assetUrl(workspaceAsset.url);
 import profileImageAsset from "@/assets/profile.jpg.asset.json";
 const profileImage = assetUrl(profileImageAsset.url);
 import { useIsDark } from "@/hooks/useIsDark";
 import { useParallax, usePrefersReducedMotion } from "@/hooks/useMotion";
-import { cn } from "@/lib/utils";
 
 
 function useLagosTime() {
@@ -29,86 +28,6 @@ function useLagosTime() {
     return () => clearInterval(id);
   }, []);
   return time;
-}
-
-
-const WORDS = ["Purpose.", "Clarity.", "Intention."];
-const CYCLE_MS = 4000;
-const TRANSITION_MS = 350;
-
-function RotatingWord() {
-  const [items, setItems] = useState<{ id: number; word: string; visible: boolean }[]>([
-    { id: 0, word: WORDS[0], visible: true },
-  ]);
-  const [reduced, setReduced] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const idRef = useRef(1);
-  const lastWordRef = useRef(WORDS[0]);
-
-  useEffect(() => setMounted(true), []);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setReduced(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
-  }, []);
-
-  useEffect(() => {
-    if (reduced || !mounted) return;
-
-    const interval = setInterval(() => {
-      const currentWord = lastWordRef.current;
-      const nextIdx = (WORDS.indexOf(currentWord) + 1) % WORDS.length;
-      const nextWord = WORDS[nextIdx];
-      lastWordRef.current = nextWord;
-      const newId = idRef.current++;
-
-      setItems((prev) => [...prev, { id: newId, word: nextWord, visible: false }]);
-
-      requestAnimationFrame(() => {
-        setItems((prev) =>
-          prev.map((item, i) => (i === prev.length - 1 ? { ...item, visible: true } : item))
-        );
-      });
-
-      setTimeout(() => {
-        setItems((prev) => (prev.length > 1 ? [{ ...prev[0], visible: false }, ...prev.slice(1)] : prev));
-      }, 50);
-
-      setTimeout(() => {
-        setItems((prev) => (prev.length > 1 ? prev.slice(1) : prev));
-      }, TRANSITION_MS);
-    }, CYCLE_MS);
-
-    return () => clearInterval(interval);
-  }, [reduced, mounted]);
-
-  const currentWord = items[items.length - 1].word;
-
-  return (
-    <>
-      <span className="sr-only">{currentWord}</span>
-      <span className="relative inline-block" aria-hidden="true">
-        <span className="invisible inline-block whitespace-nowrap">
-          {WORDS.reduce((a, b) => (a.length >= b.length ? a : b))}
-        </span>
-        {items.map((item) => (
-          <span
-            key={item.id}
-            className={cn(
-              "absolute bottom-0 left-0 inline-flex items-center justify-start whitespace-nowrap transition-all duration-300 ease-out will-change-transform",
-              item.visible ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0"
-            )}
-            aria-hidden="true"
-          >
-            {item.word}
-          </span>
-        ))}
-      </span>
-    </>
-  );
 }
 
 
@@ -146,14 +65,10 @@ export function Hero() {
             </span>
           </span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
-            Designing with{" "}
-            <span className="text-primary">
-              <RotatingWord />
-            </span>
+            I'm Precious, a product designer in Lagos.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Product Designer crafting user-centered digital experiences that work
-            across industries and markets.
+            I design product screens and build the front end for Nigerian startups and firms: an ad-compliance tool, a project management app, a construction company founded in 1932.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

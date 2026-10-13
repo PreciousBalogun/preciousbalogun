@@ -2,14 +2,11 @@ import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 
 const skills = [
-  "UI/UX Design",
-  "Product Strategy",
+  "UI design",
+  "Design systems",
+  "Landing pages",
   "Wireframing",
-  "Prototyping",
-  "Design Systems",
-  "User Research",
-  "Usability Testing",
-  "Information Architecture",
+  "Front end (Tailwind)",
 ];
 
 const tools = ["Figma", "Stitch", "Lovable", "VS Code", "Wix", "Vercel", "Canva", "WordPress", "Replit"];
@@ -22,10 +19,7 @@ export function About() {
           <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 — About</Reveal>
           <Reveal as="h2" delay={80} className="mt-3 text-4xl font-bold md:text-5xl">About Me</Reveal>
           <Reveal as="p" delay={160} className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            I'm a detail-oriented Product Designer with experience working across
-            diverse industries, startups, and consulting firms. I collaborate with
-            cross-functional teams to turn complex business problems into clean,
-            user-centered solutions.
+            I'm a product designer based in Lagos. Most of my work is at Webcoupers, where I design and build landing pages and web products for clients and for the agency's own tools. Before that I built two MVPs at NovaBuk. I write the front end myself, so what I design is what ships.
           </Reveal>
           <Reveal delay={240}>
             <a

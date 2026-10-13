@@ -82,7 +82,7 @@ export function Navbar() {
             href="#contact"
             className="hidden items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:opacity-90 hover:shadow-md active:translate-y-0 active:scale-[0.98] sm:inline-flex"
           >
-            Let's Build Together
+            Contact
           </a>
           <button
             type="button"
@@ -131,7 +131,7 @@ export function Navbar() {
             onClick={close}
             className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-sm"
           >
-            <Download className="h-4 w-4" /> Let's Build Together
+            <Download className="h-4 w-4" /> Contact
           </a>
         </div>
       </div>

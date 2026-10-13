@@ -11,9 +11,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Precious Balogun — Product Designer" },
-      { name: "description", content: "Product Designer specialising in design systems, MVPs, and user-centered digital experiences across Fintech and Agency environments." },
+      { name: "description", content: "Product designer in Lagos. Websites and product screens for AdTech, SaaS and construction companies." },
       { property: "og:title", content: "Precious Balogun — Product Designer" },
-      { property: "og:description", content: "Designing with purpose. Portfolio of Precious Balogun, Lagos-based product designer." },
+      { property: "og:description", content: "Product designer in Lagos. Websites and product screens for AdTech, SaaS and construction companies." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
   }),
   component: Index,
