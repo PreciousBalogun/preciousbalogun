@@ -10,25 +10,25 @@ const META: Record<string, { industry: string; type: string; blurb: string }> = 
     industry: "AdTech",
     type: "Product Design",
     blurb:
-      "A compliance tool that pre-vets ad creative against ARCON, Meta, Google, TikTok and X rules before submission — turning a slow, late-stage rejection cycle into a single clear pass-or-fix review.",
+      "Website for an ad-compliance tool. Agencies upload a creative and see whether it breaks ARCON or platform rules before they spend on it. I designed Home, Compliance and Pricing.",
   },
   clarity: {
     industry: "SaaS",
     type: "Product Design",
     blurb:
-      "A project management product positioned around visibility rather than features — one page that speaks to contributors, team leads and executives without fragmenting into three separate pitches.",
+      "Landing page for Webcoupers' internal project management tool, still in development. One page for contributors, team leads and executives.",
   },
   capdal: {
     industry: "Construction",
     type: "Web Design",
     blurb:
-      "A multi-page site for a 90-year-old engineering firm, rebuilt around restraint and proof points so decades of institutional weight read instantly to B2B decision-makers.",
+      "Redesign of a construction firm's website, founded 1932. I designed and built the pages in Tailwind.",
   },
   verun: {
     industry: "AdTech",
     type: "Web Design",
     blurb:
-      "A landing page redesign for an AI-powered advertising platform — making a technically complex product feel immediately clear and credible to performance marketers.",
+      "The old page didn't say what Verun does. I rebuilt it so a media buyer gets the point in one scroll.",
   },
 };
 

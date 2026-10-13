@@ -6,7 +6,7 @@ const experience = [
     role: "Product Design Intern",
     date: "Oct 2025 – Present",
     bullets: [
-      "End-to-end design execution across client projects",
+      "Designed and built the landing pages for Verun, Clarity and Capdal",
       "User research and iterative testing",
     ],
   },
@@ -47,7 +47,7 @@ export function Experience() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             03 — Experience
           </p>
-          <h2 className="mt-3 text-4xl font-bold md:text-5xl">A journey through craft</h2>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Where I've worked</h2>
         </Reveal>
         <ol className="relative border-l-2 border-border pl-8 md:pl-12">
           {experience.map((exp, i) => (

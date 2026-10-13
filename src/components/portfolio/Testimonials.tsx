@@ -33,10 +33,7 @@ export function Testimonials() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             04 — Testimonials
           </p>
-          <h2 className="mt-3 text-4xl font-bold md:text-5xl">Kind words from collaborators</h2>
-          <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            A few thoughts from teammates and clients I've had the pleasure of working with.
-          </p>
+          <h2 className="mt-3 text-4xl font-bold md:text-5xl">What people said</h2>
         </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
