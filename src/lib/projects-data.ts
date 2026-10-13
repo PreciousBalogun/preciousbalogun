@@ -107,7 +107,7 @@ export const projects: Project[] = [
     tags: ["Web Design", "SaaS", "AdTech", "Landing Page"],
 
     summary:
-      "Redesign of the landing page for Verun, an AI-powered digital advertising platform built at Webcoupers. The previous page was outdated and underselling the product — this redesign makes a technically complex platform feel instantly clear and credible to performance marketers.",
+      "The old page didn't say what Verun does. I rebuilt it so a media buyer gets the point in one scroll.",
 
     client: "Webcoupers",
     role: "Product Designer",
@@ -120,8 +120,7 @@ export const projects: Project[] = [
     heroImage: verun,
     gallery: [verun, verun],
 
-    tagline:
-      "Redesigning an outdated AdTech landing page into something instantly trustworthy — and worth a second look.",
+    tagline: "Landing page for an AI advertising platform.",
 
     overview:
       "Verun is an AI-powered digital advertising platform built at Webcoupers, designed for marketing teams running campaigns across Meta, Google, and TikTok. It gives advertisers a unified dashboard to monitor performance, compare spend, and get AI-driven recommendations — all without switching between platforms. The existing landing page had grown outdated and no longer reflected the product's real depth or credibility. This project was a full redesign: repositioning Verun clearly and confidently for a crowded market, while making a complex, multi-channel product easy to understand within seconds of landing on the page.",
@@ -183,17 +182,17 @@ export const projects: Project[] = [
       },
       {
         title: "Four features, not a wall of them",
-        body: "The outdated version tried to communicate everything Verun could do in one dense block. The redesign narrows the feature grid to four: Unified Ad Performance View, AI Powered Optimization, Precision Targeting, and Real-Time Tracking & Analytics — each named around the outcome it delivers, not the mechanism behind it. Fewer, clearer claims read as more credible than an exhaustive list.",
+        body: "Verun has more than four capabilities. I cut the grid to four because eight cards made a list nobody would read. Each feature name describes what the user gets, not how it works.",
         image: verunfeatures,
       },
       {
-        title: "A colour break to signal conviction",
-        body: "Midway down the page, the layout shifts into a full-width blue section — 'Run Smarter Campaigns. Grow Faster.' This colour change marks a deliberate shift in register: the page stops introducing Verun and starts making its case, reinforced with a checklist of concrete capabilities (best-time monitoring, cross-platform intelligence, AI-driven recommendations, multi-user access).",
+        title: "A navy section halfway down",
+        body: "Halfway down, a full-width navy section ends the explaining and starts the pitch. 'Run Smarter Campaigns. Grow Faster.' sits there. I wanted the colour change to mark that.",
         image: verunblue,
       },
       {
-        title: "Trust signals placed where scepticism peaks",
-        body: "The old page buried or omitted social proof. The redesign places a 'Trusted by Marketing Leaders' testimonial section right after the feature and conviction sections — timed for the moment a sceptical performance marketer is deciding whether to believe the claims they've just read, rather than asking for trust upfront.",
+        title: "Testimonials after the features",
+        body: "Testimonials come after the features. A visitor who has already formed a view of the product is more likely to believe a quote about it.",
         image: veruntestimonials,
       },
       {
@@ -244,7 +243,7 @@ export const projects: Project[] = [
     tags: ["Web Design", "SaaS", "Product", "Landing Page"],
 
     summary:
-      "Landing page for Clarity — a project management and team collaboration tool built at Webcoupers. Designed a focused, conversion-led page that communicates the product's core value to team leads, contributors, and executives without overwhelming them.",
+      "Landing page for Webcoupers' internal project management tool, still in development. One page for contributors, team leads and executives.",
 
     client: "Webcoupers",
     role: "Product Designer",
@@ -307,7 +306,7 @@ export const projects: Project[] = [
       },
       {
         title: "Trust for a new product comes from specificity",
-        body: "Without existing customers to quote, trust had to come from the design itself — precise copy, detailed UI mockups that show real use cases, and concrete numbers that feel earned rather than aspirational.",
+        body: "Without customers to quote, I leaned on precise copy and detailed UI mockups. The numbers in the mockups are sample data, since Clarity has no users yet.",
       },
     ],
 
@@ -316,22 +315,22 @@ export const projects: Project[] = [
     designDecisions: [
       {
         title: "A hero that leads with the outcome, not the tool",
-        body: 'The hero opens on a deep navy field with a two-line statement — "Run your projects. Not the other way around." — set in heavy display type, so the first thing a visitor reads is the change in their working life rather than a category label like "project management software". The subhead does the qualifying work in one breath ("the command center built for high-velocity product teams"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter "Book a demo", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose — proof that the interface exists arrives before any feature copy has to argue for it.',
+        body: 'The hero opens on a deep navy field with the two-line statement "Run your projects. Not the other way around." in heavy display type. The subhead does the qualifying work in one breath ("the command center built for high-velocity product teams"), which keeps the headline free to be a promise instead of a description. A single orange primary action sits beside a quieter "Book a demo", so the page never asks the visitor to weigh two equal choices. Immediately below, a real product window breaks the fold on purpose. Proof that the interface exists arrives before any feature copy has to argue for it.',
         image: clarityHero,
       },
       {
         title: "Bento grid layout for complex features",
-        body: "Instead of a repetitive stacked feature list, an asymmetrical bento grid groups distinct value propositions—like velocity tracking, AI risk analysis, dependency routing, and automated standups—into visual cards. High-contrast dark containers highlight real-time AI telemetry, instantly guiding the eye to high-priority features without visual overload.",
+        body: "I grouped velocity tracking, AI risk analysis, dependency routing and automated standups into one grid of cards instead of a stacked list. The dark cards are the ones I wanted seen first.",
         image: clarityBento,
       },
       {
-        title: "Role-tailored progressive disclosure",
-        body: "To demonstrate product versatility across cross-functional teams, an interactive side-tab switcher segregates workflows for Developers, Designers, and Product Ops. Clicking a role dynamically swaps the interactive preview card—such as showing terminal/CLI integration for engineers—giving each persona immediate visual proof of relevance without forcing a long page scroll.",
+        title: "Tabs for each role",
+        body: "Tabs for Developers, Designers and Product Ops. Click one and the preview card changes.",
         image: clarityWorkflow,
       },
       {
-        title: "High-contrast closure that commands action",
-        body: 'The final call-to-action uses a rounded dark navy container to create a stark visual anchor at the bottom of the light landing page background. Paired with a bold outcome-driven headline ("Ready for absolute focus?") and clear primary vs. secondary button hierarchy, it provides a high-converting, friction-free path for visitors ready to convert.',
+        title: "A closing block with one main button",
+        body: "The page ends on a navy block with the headline 'Ready for absolute focus?', one main button and one quieter one.",
         image: clarityCta,
       },
     ],
@@ -377,7 +376,7 @@ export const projects: Project[] = [
     tags: ["Web Design", "Construction", "Corporate", "Multi-page"],
 
     summary:
-      "Full website redesign for Cappa & D'Alberto (Capdal) — one of Nigeria's oldest construction and engineering firms. Designed every page of the site, translating decades of institutional credibility into a modern, navigable digital presence.",
+      "Redesign of a construction firm's website, founded 1932. I designed and built the pages in Tailwind.",
 
     client: "Cappa & D'Alberto",
     role: "Product Designer",
@@ -453,7 +452,7 @@ export const projects: Project[] = [
         image: capdalHero,
       },
       {
-        title: "An About Us page built to carry institutional weight",
+        title: "A separate About page for the history",
         body: 'Capdal\'s history is its strongest asset, but forcing that legacy onto the homepage would have crowded out everything else. A dedicated About Us page gives the firm\'s origins, milestones, and values room to breathe — cleanly separating "why trust us" from "what we do," so each page can make one argument well instead of two arguments halfway.',
         image: capdalAbout,
       },
@@ -473,13 +472,13 @@ export const projects: Project[] = [
         image: capdalCareers,
       },
       {
-        title: "A Contact page split between conversation and credibility",
-        body: "The Contact page pairs a straightforward Inquiry Form (Full Name, Email, Subject, Message) with a dark 'Our Headquarters' panel holding the firm's address, phone, and email alongside social links — keeping the warmer, conversational form separate from the harder, reference-style company details a serious inquiry needs to verify. A location marker section beneath reinforces the Lagos Island HQ visually, and the page closes into the same footer newsletter signup used sitewide, giving even a one-off inquiry a path to stay connected to the firm's ongoing work.",
+        title: "Contact: form on the left, company details on the right",
+        body: "Form on the left, headquarters details on the right, so someone checking the firm's address doesn't have to read past the form.",
         image: capdalContact,
       },
       {
-        title: "Consistent navigation as the connective thread across five pages",
-        body: "With content deliberately spread across five distinct pages, the navigation bar and underlying page structure had to stay predictable throughout. The same header, the same hierarchy, and the same footer anchor every page, so users always know where they are and how to get back — moving between Home, About Us, Services, Projects, and Contact Us never costs them orientation.",
+        title: "Same header and footer on every page",
+        body: "Same header and footer on every page, so nobody loses their place.",
         image: capdalFinalcta,
       },
     ],
@@ -515,7 +514,7 @@ export const projects: Project[] = [
     tags: ["Web Design", "SaaS", "AdTech", "Compliance"],
 
     summary:
-      "Landing experience for Scrutia — an AI pre-vetting tool that checks ad creative against ARCON's advertising code and the ad policies of Meta, Google, TikTok, and X before anything is submitted.",
+      "Website for an ad-compliance tool. Agencies upload a creative and see whether it breaks ARCON or platform rules before they spend on it. I designed Home, Compliance and Pricing.",
 
     client: "Scrutia (WBCi)",
     role: "Product Designer",
@@ -532,7 +531,7 @@ export const projects: Project[] = [
       "Pre-vet every ad before ARCON, Meta, Google, TikTok, or X ever see it.",
 
     overview:
-      "Scrutia is a desktop application that reviews advertising creative — images, video, and copy — against Nigeria's ARCON advertising code and the ad policies of Meta, Google, TikTok, and X, before the asset is ever submitted. It serves Nigerian ad agencies, in-house brand and marketing teams, media buyers, and production studios: the people who ship campaigns weekly and absorb the cost when one gets rejected. Ad compliance in this market is expensive to get wrong — a flagged creative means lost media spend, restarted approval cycles, and in some cases regulatory levies. The value proposition is timing: catch the violation while it is still a revision, not after it becomes a rejection. My work covered the public-facing site — Home (which doubles as the platform overview), Compliance, and Pricing — the surface that has to make a technically dense regulatory product legible in about thirty seconds.",
+      "Scrutia checks ad creative against ARCON's advertising code and the ad policies of Meta, Google, TikTok and X before it's submitted. I designed the public site: Home, Compliance and Pricing. The readers are agency staff, media buyers and brand teams, who pay when an ad gets rejected.",
 
     challenge:
       "Scrutia sits at the intersection of regulation, AI, and media buying — three subjects that each invite jargon. The site had to explain what the product actually inspects, prove the engine is credible enough to trust with a client's campaign, and do it without turning into a policy document. It also had to sell a downloadable desktop app with in-app payment, which breaks the usual SaaS sign-up flow the visitor expects.",
@@ -572,11 +571,11 @@ export const projects: Project[] = [
       },
       {
         title: "One creative has to clear several unrelated gates",
-        body: "ARCON, Meta, Google, TikTok, and X each apply different rules to the same asset. Visitors immediately understood the value of a single review that covers every gate at once, so that became the organising idea of the page.",
+        body: "ARCON, Meta, Google, TikTok, and X each apply different rules to the same asset. I made one review across all five rulebooks the organising idea because that's the pain: one ad, five sets of rules.",
       },
       {
         title: "Automated review is only trusted when it shows its work",
-        body: '"AI-powered" claims read as noise on their own. Findings shown as concrete output — a flagged clause, a risk profile, an estimated ARCON vetting fee — did far more to establish credibility than any adjective.',
+        body: "I put real output on the page, like a flagged clause and an estimated ARCON fee, instead of writing 'AI-powered'.",
       },
       {
         title: "Agencies buy on volume and control, not on features",
@@ -625,7 +624,7 @@ export const projects: Project[] = [
       },
       {
         title: "CTAs placed at decision points, not at intervals",
-        body: "The primary 'Get Scrutia' action appears at the points where a visitor has just been given a reason to act — held consistently in the nav bar and a closing full-width block on every page (Platform, Compliance, Pricing), for six placements total site-wide, so the action is never more than one click away regardless of which page a visitor is evaluating. Within the homepage specifically, it repeats after the hero's compliance proof and again after the problem section's cost is made concrete with real numbers (85% reduction in ARCON rework, 4x faster approval cycles) — placed where trust has just been built, not at fixed scroll intervals. Because payment is completed securely inside the Scrutia desktop app rather than on the marketing site itself, the site's job is narrowed to one honest handoff to download and sign up, rather than a fake in-browser checkout.",
+        body: "'Get Scrutia' is in the nav and in a closing block on every page. On the homepage it repeats after the proof section and after the problem section. Payment happens inside the desktop app, so the site only hands people off to download.",
         image: scrutiaCta,
       },
     ],
@@ -649,7 +648,7 @@ export const projects: Project[] = [
       "The engine-card and tier structures were built to extend — pan-African presets for Ghana, Kenya, and South Africa, and roadmap items like API access, can slot into the existing system without a redesign.",
 
     reflection:
-      "Designing for compliance meant resisting the instinct to explain everything. The regulation is genuinely complicated, and every draft that tried to be thorough became a page nobody would finish. What worked was deciding that the site's job is comprehension and trust, and the product's job is detail. The harder balance was credibility versus simplicity: enterprise buyers want evidence of rigour, but rigour rendered literally becomes clutter. Showing real product output — a flagged finding, a fee estimate — turned out to convey more competence than any amount of explanatory copy. If I revisited it, I'd push the product screenshots earlier and larger; the sections where you can actually see the tool working are where the page earns the most.",
+      "Every draft that explained the regulation became a page nobody would finish. I cut it to what a visitor needs to decide whether to download. Next time I'd put the product screenshots higher and larger.",
   },
 ];
 
