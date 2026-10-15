@@ -22,18 +22,20 @@ export function About() {
           <Reveal as="h2" delay={80} className="mt-3 text-4xl font-bold md:text-5xl">
             About Me
           </Reveal>
-         <Reveal as="p" delay={160} className="mt-6 text-lg leading-relaxed text-muted-foreground">
-         I'm a product designer based in Lagos. Most of my work is at Webcoupers, where I design and build landing pages and web products for clients and for the agency's own tools. Before that I built two MVPs at NovaBuk. My mantra is that good design should make things easier for people, not harder.
-         </Reveal>
+<Reveal as="p" delay={160} className="mt-6 text-lg leading-relaxed text-muted-foreground">
+  I'm a product designer based in Lagos. Most of my work is at Webcoupers, where I design and build landing pages and web products for clients and for the agency's own tools. Before that I built two MVPs at NovaBuk. My mantra is that good design should make things easier for people, not harder.
+</Reveal>
 
-        <Reveal as="div" delay={240} className="mt-8">
-  <a
-    href="#contact"
-    className="group inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 ease-out hover:gap-3"
-  >
-    Let's Connect
-    <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
-  </a>
+<Reveal delay={240}>
+  <div className="mt-8">
+    <a
+      href="#contact"
+      className="group inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 ease-out hover:gap-3"
+    >
+      Let's Connect
+      <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+    </a>
+  </div>
 </Reveal>
         </div>
         <div>
