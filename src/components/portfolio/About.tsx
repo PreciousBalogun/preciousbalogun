@@ -19,9 +19,7 @@ export function About() {
           <Reveal as="p" className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">01 — About</Reveal>
           <Reveal as="h2" delay={80} className="mt-3 text-4xl font-bold md:text-5xl">About Me</Reveal>
           <Reveal as="p" delay={160} className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            I'm a product designer based in Lagos. Most of my work is at Webcoupers, where I design and build landing pages and web products for clients and for the agency's own tools. Before that I built two MVPs at NovaBuk. I write the front end myself, so what I design is what ships.
-          </Reveal>
-          <Reveal delay={240}>
+            I'm a product designer based in Lagos. Most of my work is at Webcoupers, where I design and build landing pages and web products for clients and for the agency's own tools. Before that I built two MVPs at NovaBuk.My mantra is that good design should make things easier for people, not harder.
             <a
               href="#contact"
               className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 ease-out hover:gap-3"
