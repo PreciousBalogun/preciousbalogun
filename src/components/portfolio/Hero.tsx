@@ -65,11 +65,10 @@ export function Hero() {
             </span>
           </span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
-            I'm Precious, a product designer in Lagos.
+            I'm Precious, a product designer.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            I design product screens and build the front end for Nigerian startups and firms: an ad-compliance tool, a project management app, a construction company founded in 1932.
-          </p>
+          I design digital products with clarity and intention, paying attention to the little details to create experiences that feel natural, look good, and genuinely help people.          </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="#projects"
