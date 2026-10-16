@@ -6,7 +6,7 @@ const experience = [
     role: "Product Design Intern",
     date: "Oct 2025 – Present",
     bullets: [
-      "Designed and built the landing pages for Verun, Clarity and Capdal",
+      "Designed and built the landing pages for Scrutia, Verun, Clarity and Capdal",
       "User research and iterative testing",
     ],
   },
