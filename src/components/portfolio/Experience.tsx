@@ -28,15 +28,6 @@ const experience = [
       "UI refinements based on senior designer feedback",
     ],
   },
-  {
-    company: "Dominion City Church",
-    role: "UI Designer",
-    date: "Apr – May 2025",
-    bullets: [
-      "Built mobile app for church community engagement",
-      "Applied UX principles for accessible mobile interfaces",
-    ],
-  },
 ];
 
 export function Experience() {
