@@ -78,7 +78,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1izdGYDBm6ZDXY9F5bavPmaow5fjSuiQc/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1Sn_aug041q4xtXoXbJWGnbH9I5QiJLLf/view?usp=drivesdk"
               className="group inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-5 py-3 text-sm font-semibold text-foreground transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-primary hover:text-primary hover:shadow-sm active:translate-y-0 active:scale-[0.98]"
             >
               <Download className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-y-0.5" /> Download CV
