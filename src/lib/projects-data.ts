@@ -172,7 +172,7 @@ export const projects: Project[] = [
       },
     ],
 
-    hmw: "How might we redesign Verun's outdated landing page so performance marketers, who've seen every AdTech pitch, immediately understand why this platform is worth their attention?",
+    hmw: "Media buyers have seen every AdTech pitch, and the old page gave them no quick way to see what made Verun different. I asked myself: what's the least I can say that makes one of them stop and keep scrolling?",
 
     designDecisions: [
       {
@@ -310,7 +310,7 @@ export const projects: Project[] = [
       },
     ],
 
-    hmw: "How might we design a landing page that makes a team lead, a contributor, and an executive all feel like Clarity was built specifically for them, without writing three different pages?",
+    hmw: "Contributors, team leads and executives all need something different from this tool. I didn't want three pitches stitched into one page, so I asked: what would make each of them feel it was built for them, on a single page?",
 
     designDecisions: [
       {
@@ -441,7 +441,7 @@ export const projects: Project[] = [
       },
     ],
 
-    hmw: "How might we redesign a website for a company built on decades of trust, without making the site feel like it belongs to a different, less established company?",
+    hmw: "The firm has been building since 1932, and the old site made it look generic and dated. My question was how to modernise it without making it look like a different, newer company.",
 
     finalDesigns: [capdalFinaldesign],
 
@@ -587,7 +587,7 @@ export const projects: Project[] = [
       },
     ],
 
-    hmw: "How might we turn compliance from a stressful, after-the-fact scramble into a routine step teams take before they spend, without burying them in the regulation itself?",
+    hmw: "Teams only find out an ad is non-compliant after the money is spent. I kept asking one thing: how do I get them to run the check before they spend, without making them read the regulation?",
 
     finalDesigns: [{ src: scrutiaFinaldesign, isVideo: true }],
 
