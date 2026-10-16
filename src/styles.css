@@ -191,3 +191,19 @@
 .animate-fade-up {
   animation: fade-up 0.7s ease-out both;
 }
+
+@keyframes hero-breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-hero-breathe {
+  animation: hero-breathe 5s ease-in-out 0.9s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-breathe {
+    animation: none;
+    opacity: 1;
+  }
+}
