@@ -72,7 +72,7 @@ export function Projects() {
                     <div className="aspect-[16/10] w-full">
                       <img
                         src={p.heroImage}
-                        alt={`${p.title} — ${meta?.industry ?? ""} case study cover`}
+                        alt={`${p.title} ${meta?.industry ?? ""} case study cover`}
                         loading="lazy"
                         className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                       />
