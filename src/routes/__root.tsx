@@ -78,10 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Precious Balogun — Product Designer" },
+      { title: "Precious Balogun | Product Designer" },
       { name: "description", content: "Product designer in Lagos. Websites and product screens for AdTech, SaaS and construction companies." },
       { name: "author", content: "Precious Balogun" },
-      { property: "og:title", content: "Precious Balogun — Product Designer" },
+      { property: "og:title", content: "Precious Balogun | Product Designer" },
       { property: "og:description", content: "Product designer in Lagos. Websites and product screens for AdTech, SaaS and construction companies." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

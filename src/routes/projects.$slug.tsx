@@ -20,9 +20,9 @@ export const Route = createFileRoute("/projects/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.project.title} — Case Study` },
+          { title: `${loaderData.project.title} | Case Study` },
           { name: "description", content: loaderData.project.summary },
-          { property: "og:title", content: `${loaderData.project.title} — Case Study` },
+          { property: "og:title", content: `${loaderData.project.title} | Case Study` },
           { property: "og:description", content: loaderData.project.summary },
           { property: "og:type", content: "website" },
           { name: "twitter:card", content: "summary" },
@@ -220,7 +220,7 @@ function CaseStudy() {
         <Reveal delay={150} className="mx-auto max-w-[720px]">
           <p className="text-base leading-relaxed text-foreground/80">
             {project.roleDetails ??
-              `As ${project.role} on ${project.title}, I led the end-to-end design work — from research and IA through to polished, developer-ready specs.`}
+              `As ${project.role} on ${project.title}, I led the end-to-end design work, from research and IA through to polished, developer-ready specs.`}
           </p>
           {responsibilities.length > 0 && (
             <ul className="mt-6 grid gap-x-8 gap-y-2 sm:grid-cols-2">
@@ -357,7 +357,7 @@ function CaseStudy() {
           ) : (
             <img
               src={src}
-              alt={`${project.title} — preview ${i + 1}`}
+              alt={`${project.title} preview ${i + 1}`}
               loading="lazy"
               className="h-full w-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.03]"
             />
@@ -424,7 +424,7 @@ function CaseStudy() {
         <Reveal delay={150} className="mx-auto max-w-[720px]">
           <p className="text-base italic leading-relaxed text-muted-foreground">
             {project.reflection ??
-              `Working on ${project.title} reminded me that the sharpest design decisions come from listening carefully — to the client, to users, and to what the data quietly keeps saying.`}
+              `Working on ${project.title} reminded me that the sharpest design decisions come from listening carefully: to the client, to users, and to what the data quietly keeps saying.`}
           </p>
         </Reveal>
       </Section>
@@ -534,7 +534,7 @@ const defaultInsights = [
   },
   {
     title: "Trust cues matter more than features",
-    body: "Prospects consistently asked 'who else uses this?' before they asked what it does — social proof needed to sit near the primary CTA.",
+    body: "Prospects consistently asked 'who else uses this?' before they asked what it does, so social proof needed to sit near the primary CTA.",
   },
   {
     title: "Jargon is a silent bounce",
@@ -568,7 +568,7 @@ function defaultDecisions(p: Project): NonNullable<Project["designDecisions"]> {
   return [
     {
       title: "A hero that earns its space",
-      body: "The hero leads with an outcome, not the product name. The headline names the problem in the visitor's language and the subhead promises a concrete result — so the value is legible before anyone scrolls.",
+      body: "The hero leads with an outcome, not the product name. The headline names the problem in the visitor's language and the subhead promises a concrete result, so the value is legible before anyone scrolls.",
       image: pick(0),
     },
     {
@@ -578,7 +578,7 @@ function defaultDecisions(p: Project): NonNullable<Project["designDecisions"]> {
     },
     {
       title: "Proof placed where doubt appears",
-      body: "Logos, quotes, and metrics sit adjacent to the claims they support — not quarantined in a testimonials strip. Trust is delivered exactly when the visitor is weighing the claim.",
+      body: "Logos, quotes, and metrics sit adjacent to the claims they support, not quarantined in a testimonials strip. Trust is delivered exactly when the visitor is weighing the claim.",
       image: pick(0),
     },
   ];
