@@ -77,6 +77,7 @@ export type Project = {
   inDevelopment?: boolean;
   statusNote?: string;
   tagline?: string;
+  intro?: string;
   timeline?: string;
   platform?: string;
   tools?: string;
@@ -172,10 +173,9 @@ export const projects: Project[] = [
       },
     ],
 
-  intro: "The question I started with: \"Media buyers have seen every AdTech pitch, and the old page gave them no way quick way to see what made Verun different. I asked myself: what's the least I can say that makes one of them stop and keep scrolling?",
-  ],
+    intro:
+      "The question I started with: \"Media buyers have seen every AdTech pitch, and the old page gave them no quick way to see what made Verun different. What's the least I can say that makes one of them stop and keep scrolling?\"",
 
-  designDecisions: [
     designDecisions: [
       {
         title: "Leading with the future, not the feature list",
@@ -339,20 +339,20 @@ export const projects: Project[] = [
 
     finalDesigns: [clarityFinaldesign],
 
-   stats: [
-  {
-    value: "3",
-    label: "Core user personas aligned into a single narrative structure",
-  },
-  {
-    value: "100%",
-    label: "Design system & high-fidelity UI components complete",
-  },
-  {
-    value: "Beta",
-    label: "Target milestone for initial internal rollout at Webcoupers",
-  },
-],
+    stats: [
+      {
+        value: "3",
+        label: "Core user personas aligned into a single narrative structure",
+      },
+      {
+        value: "100%",
+        label: "Design system & high-fidelity UI components complete",
+      },
+      {
+        value: "Beta",
+        label: "Target milestone for initial internal rollout at Webcoupers",
+      },
+    ],
 
     solution:
       "Designed an outcome-led landing page that addresses three user personas through a single coherent narrative, moving from pain to proof to persona relevance to action. The tabbed product preview, smart feature UI cards, and structured persona section work together to communicate product depth without cognitive overload.",
@@ -360,14 +360,14 @@ export const projects: Project[] = [
     results:
       "Shipped a fully designed landing page for Clarity, live and serving as the primary marketing surface as the product moves toward its broader internal rollout at Webcoupers.",
 
-  resultsContext:
-  "Clarity is currently in active development. The landing page and UI framework serve as the foundational blueprint as engineering builds toward an internal beta release, paving the way for broader adoption across client organizations.",
-    
+    resultsContext:
+      "Clarity is currently in active development. The landing page and UI framework serve as the foundational blueprint as engineering builds toward an internal beta release, paving the way for broader adoption across client organizations.",
+
     forwardLooking:
       "Clarity is in active development at Webcoupers. The landing page is the product's primary marketing surface, designed to grow with the platform as it moves from internal tool to client-facing product.",
 
     reflection:
-  "Designing for an unreleased product meant building high credibility without past performance metrics to lean on. The key was creating an outcome-led story and high-fidelity UI previews that demonstrate value upfront. As Clarity moves through development, I'm eager to gather real user feedback during the upcoming beta phase to refine the onboarding and dashboard flows further.",
+      "Designing for an unreleased product meant building high credibility without past performance metrics to lean on. The key was creating an outcome-led story and high-fidelity UI previews that demonstrate value upfront. As Clarity moves through development, I'm eager to gather real user feedback during the upcoming beta phase to refine the onboarding and dashboard flows further.",
   },
   // ─────────────────────────────────────────────────────────────
   // CAPDAL
