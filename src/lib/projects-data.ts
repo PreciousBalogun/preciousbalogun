@@ -172,7 +172,7 @@ export const projects: Project[] = [
       },
     ],
 
-    hmw: "How might we redesign Verun's outdated landing page so performance marketers, who've seen every AdTech pitch, immediately understand why this platform is worth their attention?",
+    The question I started with: "Media buyers have seen every AdTech pitch, and the old page gave them no quick way to see what made Verun different. I asked myself: what's the least I can say that makes one of them stop and keep scrolling?",
 
     designDecisions: [
       {
