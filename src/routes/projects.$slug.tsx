@@ -267,7 +267,7 @@ function CaseStudy() {
       {/* 6. Defining the Problem */}
       <Section>
         <Eyebrow>Defining the Problem</Eyebrow>
-        <SectionHeading>How Might We</SectionHeading>
+        <SectionHeading>The question I started with</SectionHeading>
         <Reveal as="blockquote" delay={150} className="mx-auto block max-w-3xl border-l-4 border-primary pl-6 text-2xl font-semibold leading-snug text-foreground md:text-3xl md:leading-snug">
           {project.hmw ??
             `How might we help ${project.client}'s audience understand and act on the product's value within the first few seconds?`}
