@@ -65,8 +65,9 @@ export function Hero() {
             </span>
           </span>
           <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight md:text-7xl">
-            I'm Precious, a <span className="text-primary"> product designer.</span>
-          </h1>
+  I'm Precious, a{" "}
+  <span className="animate-breathe text-primary">product designer.</span>
+</h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
           I design digital products with clarity and intention, paying attention to the little details to create experiences that feel natural, look good, and genuinely help people.          </p>
           <div className="mt-8 flex flex-wrap gap-3">
