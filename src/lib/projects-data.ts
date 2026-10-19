@@ -172,8 +172,10 @@ export const projects: Project[] = [
       },
     ],
 
-    The question I started with: "Media buyers have seen every AdTech pitch, and the old page gave them no quick way to see what made Verun different. I asked myself: what's the least I can say that makes one of them stop and keep scrolling?",
+  intro: "The question I started with: \"Media buyers have seen every AdTech pitch, and the old page gave them no way quick way to see what made Verun different. I asked myself: what's the least I can say that makes one of them stop and keep scrolling?",
+  ],
 
+  designDecisions: [
     designDecisions: [
       {
         title: "Leading with the future, not the feature list",
